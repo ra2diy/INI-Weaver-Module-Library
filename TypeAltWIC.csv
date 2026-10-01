@@ -1,0 +1,4 @@
+﻿语句名,链接种类,链接限制,短描述,长描述,连线颜色(RGB),输入类型,许可模块类型,英文注释
+订单上限,String,-1,订单上限,订单上限,,订单上限
+FactoryMatrix1,String,-1,工厂生产相关,,,FactoryMatrix1
+FactoryMatrix2,String,-1,产物挂buff相关,,,FactoryMatrix2

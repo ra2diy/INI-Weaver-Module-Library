@@ -1,0 +1,1114 @@
+﻿语句名,链接种类,链接限制,短描述,长描述,连线颜色(RGB),输入类型,许可模块类型,英文注释
+Grinding.Weapon,WeaponTypes,1,Grinding.Weapon,当此建筑回收单位时，建筑向自身开火的武器，遵循ROF设定。,ffff00,,BuildingTypes
+DropPod.Weapon,WeaponTypes,1,DropPod.Weapon,空降仓武器，默认[General]►DropPodWeapon= 。,ffff00,,TechnoTypes
+Weapon,WeaponTypes,1,Weapon,可设置为特定武器类型，用于生成抛射体并立即引爆（而非仅通过弹头造成伤害），从而实现武器效果的应用。,ffff00,,Animations
+Respawn.Weapon,WeaponTypes,1,Respawn.Weapon,定义护盾重生时对挂载该护盾的单位释放的武器。,ffff00,,ShieldTypes
+BreakWeapon,WeaponTypes,1,BreakWeapon,护盾被击碎时引爆的武器。,ffff00,,ShieldTypes
+Shield.BreakWeapon,WeaponTypes,1,Shield.BreakWeapon,覆盖被此弹头击碎的护盾本身的BreakWeapon引爆。,ffff00,,Warheads
+Shield.Respawn.Weapon,WeaponTypes,1,Shield.Respawn.Weapon,覆盖被此弹头击中的护盾的Respawn.Weapon。,ffff00,,Warheads
+ExpireWeapon,WeaponTypes,1,ExpireWeapon,定义AE处于某些情况下会发射的武器。,ffff00,,PhobosAE
+WeaponRange.AllowWeapons,WeaponTypes,1,WeaponRange.AllowWeapons,定义AE的武器射程加成只能用于这些武器。,ffff00,,PhobosAE
+WeaponRange.DisallowWeapons,WeaponTypes,1,WeaponRange.DisallowWeapons,定义AE的武器射程加成不能用于这些武器。覆盖AllowWeapons。,ffff00,,PhobosAE
+RevengeWeapon,WeaponTypes,1,RevengeWeapon,定义AE生效期间物体获得的复仇武器。,ffff00,,PhobosAE
+RevengeWeapon,WeaponTypes,1,RevengeWeapon,定义单位的复仇武器。,ffff00,,TechnoTypes
+SuppressRevengeWeapons.Types,WeaponTypes,1,SuppressRevengeWeapons.Types,该弹头击杀目标时不触发目标的复仇武器类型，不定义则为不触发击杀目标的任何复仇武器。,ffff00,,Warheads
+WarpInWeapon,WeaponTypes,1,WarpInWeapon,传送到达时开火的武器。,ffff00,,TechnoTypes
+WarpInMinRangeWeapon,WeaponTypes,1,WarpInMinRangeWeapon,在传送距离小于ChronoRangeMinimum代替WarpInWeapon开火的武器。默认与WarpInWeapon相同。,ffff00,,TechnoTypes
+WarpOutWeapon,WeaponTypes,1,WarpOutWeapon,传送离开时开火的武器。,ffff00,,TechnoTypes
+FeedbackWeapon,WeaponTypes,1,FeedbackWeapon,开火者发射武器的同时在自身（实体，不是格子）位置发射的武器。武器自身不得为Spawner=yes/DiskLaser=yes/DrainWeapon等无法完整引爆甚至不能实际开火的特殊武器。,ffff00,,WeaponTypes
+Interceptor.WeaponOverride,WeaponTypes,1,Interceptor.WeaponOverride,拦截抛射体时用该武器的弹头和伤害替换被拦截抛射体原本的伤害和弹头，覆盖抛射体的Interceptable.WeaponOverride。,ffff00,,TechnoTypes
+Interceptable.WeaponOverride,WeaponTypes,1,Interceptable.WeaponOverride,抛射体被拦截时用该武器的弹头和伤害替换原本的伤害和弹头。,ffff00,,ProjectileTypes
+ReturnWeapon,WeaponTypes,1,ReturnWeapon,抛射体归返给开火者的武器。,ffff00,,ProjectileTypes
+ReturnWeapon.ApplyFirepowerMult,WeaponTypes,1,ReturnWeapon.ApplyFirepowerMult,归返武器是否受到发射者的火力加成系数影响。默认false。,ffff00,,ProjectileTypes
+KillWeapon,WeaponTypes,1,KillWeapon,目标单位被此弹头击杀时，在目标单位的位置处触发指定武器。,ffff00,,Warheads
+KillWeapon.OnFirer,WeaponTypes,1,KillWeapon.OnFirer,目标单位被此弹头击杀时，在造成击杀的开火者位置处触发指定武器（若弹头来源不是科技类型则不会触发）。,ffff00,,Warheads
+SuppressKillWeapons.Types,WeaponTypes,1,SuppressKillWeapons.Types,该科技类型被击杀不会触发哪些击杀武器，不填则默认不会触发所有击杀武器,ffff00,,TechnoTypes
+Detonate.Weapon,WeaponTypes,1,Detonate.Weapon,在超武的目标单元释放的武器,ffff00,,WeaponTypes
+IronCurtain.KillWarhead,Warheads,1,IronCurtain.KillWarhead,单独指定铁幕在杀死有机单位时使用的弹头。默认[CombatDamage]►C4Warhead。,ff6666,,TechnoTypes
+ForceShield.KillWarhead,Warheads,1,ForceShield.KillWarhead,单独指定立场护盾在杀死有机单位时使用的弹头。默认[CombatDamage]►C4Warhead。,ff6666,,TechnoTypes
+AmbientDamage.Warhead,Warheads,1,AmbientDamage.Warhead,穿透伤害的弹头。,ff6666,,WeaponTypes
+ArmorMultiplier.AllowWarheads,Warheads,1,ArmorMultiplier.AllowWarheads,定义AE的护甲加成只能用于这些弹头。,ff6666,,PhobosAE
+ArmorMultiplier.DisallowWarheads,Warheads,1,ArmorMultiplier.DisallowWarheads,定义AE的护甲加成不能用于这些弹头。,ff6666,,PhobosAE
+Crit.AllowWarheads,Warheads,1,Crit.AllowWarheads,定义AE的暴击加成只能用于这些弹头。,ff6666,,PhobosAE
+Crit.DisallowWarheads,Warheads,1,Crit.DisallowWarheads,定义AE的暴击加成不能用于这些弹头。覆盖AllowWarheads。,ff6666,,PhobosAE
+ReflectDamage.Warhead,Warheads,1,ReflectDamage.Warhead,定义该反弹伤害的弹头，默认为[General]►C4Warhead设定的弹头。,ff6666,,PhobosAE
+RadSiteWarhead,Warheads,1,RadSiteWarhead,辐射伤害的弹头。,ff6666,,RadiationTypes
+ExtraWarheads,Warheads,1,ExtraWarheads,武器的额外弹头，可以设置一个或多个，多个弹头直接用逗号隔开。,ff6666,,WeaponTypes
+Trajectory.Straight.PassDetonateWarhead,Warheads,1,Trajectory.Straight.PassDetonateWarhead,穿透伤害使用的弹头，该弹头需要注册。,ff6666,,ProjectileTypes
+Trajectory.Straight.ProximityWarhead,Warheads,1,Trajectory.Straight.ProximityWarhead,撞击伤害使用的弹头，可以让武器的Warhead仅使用一个索敌用的低修正比假弹头来播放动画或是防止对抛体本身的目标造成二次伤害（即撞击弹头和武器弹头）。该弹头需要注册。,ff6666,,ProjectileTypes
+Crit.Warhead,Warheads,1,Crit.Warhead,弹头暴击时使用的代替原弹头生效的弹头，如果不设定则使用原弹头。,ff6666,,Warheads
+Detonate.Warhead,Warheads,1,Detonate.Warhead,在超武的目标单元释放的弹头，如果与Detonate.Weapon同时设定，则本条语句不生效,ff6666,,WeaponTypes
+Grinding.AllowTypes,VehicleTypes,1,Grinding.AllowTypes,可以用于定义何种单位可以被回收。一旦列出，所有未被列出的单位不可被回收。,00ff00,,BuildingTypes
+Grinding.DisallowTypes,VehicleTypes,1,Grinding.DisallowTypes,定义何种单位不可以被回收。,00ff00,,BuildingTypes
+Image.ConditionYellow,TechnoTypes,1,Image.ConditionYellow,定义该飞机或车血量低于[AudioVisual]►ConditionYellow时切换显示的模型单位注册名。,00ff00,,VehicleTypes
+Image.ConditionRed,TechnoTypes,1,Image.ConditionRed,定义该飞机或车血量低于[AudioVisual]►ConditionYellow时切换显示的模型单位注册名。,00ff00,,VehicleTypes
+WaterImage.ConditionYellow,VehicleTypes,1,WaterImage.ConditionYellow,定义该载具显示WaterImage并且血量低于[AudioVisual]►ConditionYellow时切换显示的模型单位注册名。,00ff00,,VehicleTypes
+WaterImage.ConditionRed,VehicleTypes,1,WaterImage.ConditionRed,定义该载具显示WaterImage并且血量低于[AudioVisual]►ConditionRed时切换显示的模型单位注册名。,00ff00,,VehicleTypes
+FactoryPlant.AllowTypes,TechnoTypes,1,FactoryPlant.AllowTypes,定义该工业工厂提供这些单位的造价优惠。,00ff00,,BuildingTypes
+FactoryPlant.DisallowTypes,TechnoTypes,1,FactoryPlant.DisallowTypes,定义该工业工厂不提供这些单位的造价优惠。,00ff00,,BuildingTypes
+InheritArmor.Allowed,TechnoTypes,1,InheritArmor.Allowed,定义允许被继承护甲的单位列表。,00ff00,,ShieldTypes
+InheritArmor.Disallowed,TechnoTypes,1,InheritArmor.Disallowed,定义不允许被继承护甲的单位列表。不允许继承时护盾护甲为[ShieldType]►Armor。,00ff00,,ShieldTypes
+AutoDeath.TechnosDontExist,TechnoTypes,1,AutoDeath.TechnosDontExist,当指定科技类型不存在时自毁。,00ff00,,TechnoTypes
+AutoDeath.TechnosExist,TechnoTypes,1,AutoDeath.TechnosExist,当指定科技类型存在时自毁。,00ff00,,TechnoTypes
+DetonateOnAllMapObjects.AffectTypes,TechnoTypes,1,DetonateOnAllMapObjects.AffectTypes,弹头能够作用的对象，如果不设置则可以作用于所有对象。,00ff00,,Warheads
+DetonateOnAllMapObjects.IgnoreTypes,TechnoTypes,1,DetonateOnAllMapObjects.IgnoreTypes,弹头不能作用的对象。,00ff00,,Warheads
+ConvertN.From,TechnoTypes,1,ConvertN.From,指定哪些单位会被转换。如果不填，则转换所有有效目标。,00ff00,,Warheads
+ConvertN.To,TechnoTypes,1,ConvertN.To,被影响的单位会被转换成什么。,00ff00,,Warheads
+ConvertN.From,TechnoTypes,1,ConvertN.From,指定哪些单位会被转换。如果不填，则转换所有有效目标。,00ff00,,WeaponTypes
+ConvertN.To,TechnoTypes,1,ConvertN.To,被影响的单位会被转换成什么。,00ff00,,WeaponTypes
+CreateUnit,TechnoTypes,1,CreateUnit,动画生成的单位。,00ff00,,Animations
+SpyEffect.VictimSuperWeapon,SuperWeaponTypes,1,SpyEffect.VictimSuperWeapon,建筑物被渗透后，被渗透方立刻在被渗透的建筑处发射的超级武器。,00ffff,,BuildingTypes
+SpyEffect.InfiltratorSuperWeapon,SuperWeaponTypes,1,SpyEffect.InfiltratorSuperWeapon,建筑物被渗透后，渗透方立刻在被渗透的建筑处发射的超级武器。,00ffff,,BuildingTypes
+LaunchSW,SuperWeaponTypes,1,LaunchSW,在对应常规弹头所引爆的格子上发射的超级武器列表。如果该超武需要消耗资金发射（Money.Amount为负值）则发射所属方需要拥有足够资金才能发射。,00ffff,,Warheads
+SW.Next,SuperWeaponTypes,1,SW.Next,超武释放时，对超武的目标点发射此处列出的超武。,00ffff,,WeaponTypes
+SW.Link,SuperWeaponTypes,1,SW.Link,超武发射时联动的超武的列表。,00ffff,,WeaponTypes
+LaserTargetColor,String,-1,LaserTargetColor,设置LaserTarget=yes的单位攻击时绘制至目标的引导线颜色 ，需要填写[ColorAdd]注册表中的颜色索引值(从0开始)。默认继承[AudioVisual]►LaserTargetColor。,0,ColorEdit,TechnoTypes
+AirstrikeLineColor,String,-1,AirstrikeLineColor,设置呼叫空袭时从发射者绘制至目标的空袭引导线颜色与被空袭目标的染色颜色。默认继承[AudioVisual]►AirstrikeLineColor。,0,ColorEdit,TechnoTypes
+SelfHealGainType,String,-1,SelfHealGainType,受到的自愈类型。步兵默认infantry，载具默认units，建筑默认noheal。,0,,TechnoTypes
+Insignia,String,-1,Insignia,单位的军衔图标。,0,,TechnoTypes
+Insignia.Rookie,String,-1,Insignia.Rookie,新兵级单位的军衔图标。,0,,TechnoTypes
+Insignia.Veteran,String,-1,Insignia.Veteran,老兵级单位的军衔图标。,0,,TechnoTypes
+Insignia.Elite,String,-1,Insignia.Elite,精英级单位的军衔图标。,0,,TechnoTypes,"For example, Insignia.Rookie=SAMPLE would display sample.shp as the insignia while the object is rookie. Defaults to PIPS."
+InsigniaFrame,String,-1,InsigniaFrame,单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,TechnoTypes
+InsigniaFrame.Rookie,String,-1,InsigniaFrame.Rookie,新兵级单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,TechnoTypes
+InsigniaFrame.Veteran,String,-1,InsigniaFrame.Veteran,老兵级单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,TechnoTypes
+InsigniaFrame.Elite,String,-1,InsigniaFrame.Elite,精英级单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,TechnoTypes,The frame used from the insignia shape. Set to -1 to use the default frame index.
+InsigniaFrames,String,-1,InsigniaFrames,"总体设定新兵、老兵和精英级单位从军衔中使用的帧。默认-1,-1,-1。现在Gunner=yes的单位可以随着炮塔的变化来变化军衔。",0,,TechnoTypes
+Insignia.Weapon1,String,-1,Insignia.Weapon1,使用第N个炮塔时单位的军衔图标。,0,,TechnoTypes
+Insignia.Weapon1.Rookie,String,-1,Insignia.Weapon1.Rookie,使用第N个炮塔时新兵级单位的军衔图标。,0,,TechnoTypes
+Insignia.Weapon1.Veteran,String,-1,Insignia.Weapon1.Veteran,使用第N个炮塔时老兵级单位的军衔图标。,0,,TechnoTypes
+Insignia.Weapon1.Elite,String,-1,Insignia.Weapon1.Elite,使用第N个炮塔时精英级单位的军衔图标。,0,,TechnoTypes
+InsigniaFrame.Weapon1,String,-1,InsigniaFrame.Weapon1,使用第N个炮塔时单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,TechnoTypes
+InsigniaFrame.Weapon1.Rookie,String,-1,InsigniaFrame.Weapon1.Rookie,使用第N个炮塔时新兵级单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,TechnoTypes
+InsigniaFrame.Weapon1.Veteran,String,-1,InsigniaFrame.Weapon1.Veteran,使用第N个炮塔时老兵级单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,TechnoTypes
+InsigniaFrame.Weapon1.Elite,String,-1,InsigniaFrame.Weapon1.Elite,使用第N个炮塔时精英级单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,TechnoTypes
+InsigniaFrames.Weapon1,String,-1,InsigniaFrames.Weapon1,"总体设定使用第N个炮塔时新兵、老兵和精英级单位从军衔中使用的帧。默认-1,-1,-1。",0,,TechnoTypes
+Insignia.Passengers1,String,-1,Insignia.Passengers1,搭载N个载员时单位显示的军衔图标。,0,,TechnoTypes
+Insignia.Passengers1.Rookie,String,-1,Insignia.Passengers1.Rookie,搭载N个载员时新兵级单位显示的军衔图标。,0,,TechnoTypes
+Insignia.Passengers1.Veteran,String,-1,Insignia.Passengers1.Veteran,搭载N个载员时老兵级单位显示的军衔图标。,0,,TechnoTypes
+Insignia.Passengers1.Elite,String,-1,Insignia.Passengers1.Elite,搭载N个载员时精英级单位显示的军衔图标。,0,,TechnoTypes
+InsigniaFrame.Passengers1,String,-1,InsigniaFrame.Passengers1,搭载N个载员时单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,TechnoTypes
+InsigniaFrame.Passengers1.Rookie,String,-1,InsigniaFrame.Passengers1.Rookie,搭载N个载员时新兵级单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,TechnoTypes
+InsigniaFrame.Passengers1.Veteran,String,-1,InsigniaFrame.Passengers1.Veteran,搭载N个载员时老兵级单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,TechnoTypes
+InsigniaFrame.Passengers1.Elite,String,-1,InsigniaFrame.Passengers1.Elite,搭载N个载员时精英级单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,TechnoTypes
+InsigniaFrames.Passengers1,String,-1,InsigniaFrames.Passengers1,"总体设定搭载N个载员时新兵、老兵和精英级单位从军衔中使用的帧。默认-1,-1,-1。",0,,TechnoTypes
+Insignia,String,-1,Insignia,单位的军衔图标。,0,,InsigniaTypes
+Insignia.Rookie,String,-1,Insignia.Rookie,新兵级单位的军衔图标。,0,,InsigniaTypes
+Insignia.Veteran,String,-1,Insignia.Veteran,老兵级单位的军衔图标。,0,,InsigniaTypes
+Insignia.Elite,String,-1,Insignia.Elite,精英级单位的军衔图标。,0,,InsigniaTypes
+InsigniaFrame,String,-1,InsigniaFrame,单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,InsigniaTypes
+InsigniaFrame.Rookie,String,-1,InsigniaFrame.Rookie,新兵级单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,InsigniaTypes
+InsigniaFrame.Veteran,String,-1,InsigniaFrame.Veteran,老兵级单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,InsigniaTypes
+InsigniaFrame.Elite,String,-1,InsigniaFrame.Elite,精英级单位从军衔文件中使用的帧。设置-1来使用默认帧。默认-1。,0,,InsigniaTypes
+AmmoPipFrame,String,-1,AmmoPipFrame,用pips文件内的哪一帧作为弹药的格子样式。默认13。,0,,TechnoTypes
+EmptyAmmoPipFrame,String,-1,EmptyAmmoPipFrame,用pips文件内的哪一帧作为空弹药的格子样式。默认-1。,0,,TechnoTypes
+PipWrapAmmoPipFrame,String,-1,PipWrapAmmoPipFrame,用pips文件内的哪一帧作为一般格子样式。默认14。,0,,TechnoTypes
+AmmoPipSize,String,-1,AmmoPipSize,微观定义单位弹药格子的大小。覆盖[AudioVisual]►Pips.Ammo.Size。,0,,TechnoTypes
+AmmoPipOffset,String,-1,AmmoPipOffset,定义单位的弹药格子的偏移。默认0.0。,0,,TechnoTypes
+SpawnsPipFrame,String,-1,SpawnsPipFrame,用pips文件内的哪一帧作为子机的格子样式。默认1。,0,,TechnoTypes
+EmptySpawnsPipFrame,String,-1,EmptySpawnsPipFrame,用pips文件内的哪一帧作为空子机的格子样式。默认0。,0,,TechnoTypes
+SpawnsPipSize,String,-1,SpawnsPipSize,微观定义单位子机格子的大小。覆盖[AudioVisual]►Pips.Generic.(buildings.)Size。,0,,TechnoTypes
+SpawnsPipOffset,String,-1,SpawnsPipOffset,定义单位的子机格子的偏移。默认0.0。,0,,TechnoTypes
+FallingDownDamage,String,-1,FallingDownDamage,设定单位坠落到地面时受到的伤害，若设置为负百分比，将根据单位当前生命值按比例计算伤害值。,0,,TechnoTypes
+FallingDownDamage.Water,String,-1,FallingDownDamage.Water,设定单位坠落水面时受到的伤害，若设置为负百分比，将根据单位当前生命值按比例计算伤害值。默认继承FallingDownDamage的设置值。,0,,TechnoTypes
+DamagedSpeed,String,-1,DamagedSpeed,微观定义单位血量低于[AudioVisual]►ConditionYellow时受到的速度修正系数值，默认继承全局设置值。,0,,TechnoTypes
+RadarInvisibleToHouse,String,-1,RadarInvisibleToHouse,该单位对哪些所属方在小地图雷达上不可见。RadarInvisible=true默认enemies，否则默认none。,0,,TechnoTypes
+SubterraneanHeight,String,-1,SubterraneanHeight,自定义钻地单位的钻地高度，默认取全局值。,0,,TechnoTypes
+SubterraneanSpeed,String,-1,SubterraneanSpeed,自定义单位钻地移动的水平速度，若为负数值则取全局值。默认-1。,0,,TechnoTypes
+ProneSpeed,String,-1,ProneSpeed,单独定义步兵匍匐移动速度，默认继承全局值。,0,,InfantryTypes
+HarvesterDumpAmount,String,-1,HarvesterDumpAmount,单独定义矿车每次卸矿的数量。默认继承全局值。,0,,VehicleTypes
+CrushForwardTiltPerFrame,String,-1,CrushForwardTiltPerFrame,碾压围墙等覆盖物时造成倾斜时，每帧向前倾斜多少。碾压覆盖物时默认为-0.02，其他情况默认-0.050000001。,0,,VehicleTypes
+CrushOverlayExtraForwardTilt,String,-1,CrushOverlayExtraForwardTilt,碾压围墙等覆盖物时造成倾斜时额外的倾斜角度。默认0.02。,0,,VehicleTypes
+CrushSlowdownMultiplier,String,-1,CrushSlowdownMultiplier,定义MovementZone=CrusherAll载具碾压围墙等覆盖物时的移动速度衰减系数。默认0.2。,0,,VehicleTypes
+Ammo.AddOnDeploy,String,-1,Ammo.AddOnDeploy,定义该载具在部署或收起时弹药量的增减值。弹药量不会低于0或超过该载具的最大弹药量（若部署发生变形，则按变形后的单位数据计算）。默认0。,0,,VehicleTypes
+DeployDir,String,-1,DeployDir,单独定义载具的部署朝向，填-1时禁用朝向限制。默认继承[AudioVisual]►DeployDir。,0,,VehicleTypes
+KeepTargetOnMove.ExtraDistance,String,-1,KeepTargetOnMove.ExtraDistance,用于单位判定目标是否超出射程范围的额外距离参数，会与单位武器射程相加进行判定。负值可用于减少判定距离，默认0。,0,,VehicleTypes
+TurretTravel,String,-1,TurretTravel,炮塔触发后坐的最大行程，单位为像素。默认2。,0,,VehicleTypes
+TurretCompressFrames,String,-1,TurretCompressFrames,炮塔从开始后坐至到达最大行程的过程帧数，默认1。,0,,VehicleTypes
+TurretHoldFrames,String,-1,TurretHoldFrames,炮塔到达最大后坐行程之后保持最大后坐状态的帧数，默认1。,0,,VehicleTypes
+TurretRecoverFrames,String,-1,TurretRecoverFrames,炮塔从最大后坐行程位置复位到正常状态的过程帧数，默认1.,0,,VehicleTypes
+BarrelTravel,String,-1,BarrelTravel,炮管触发后坐的最大行程，单位为像素。默认2。,0,,VehicleTypes
+BarrelCompressFrames,String,-1,BarrelCompressFrames,炮管从开始后坐至到达最大行程的过程帧数，默认1。,0,,VehicleTypes
+BarrelHoldFrames,String,-1,BarrelHoldFrames,炮管到达最大后坐行程之后保持最大后坐状态的帧数，默认1。,0,,VehicleTypes
+BarrelRecoverFrames,String,-1,BarrelRecoverFrames,炮管从最大后坐行程位置复位到正常状态的过程帧数，默认1。可以单独定义某个武器是否触发后坐效果,0,,VehicleTypes
+SinkSpeed,String,-1,SinkSpeed,定义舰船沉没时的下沉速度，每帧内下沉多少Lepton。默认5。,0,,VehicleTypes
+SpawnDistanceFromTarget,String,-1,SpawnDistanceFromTarget,定义该飞机从距离目标多远的地方生成，而不是地图边界,0,,AircraftTypes
+SpawnHeight,String,-1,SpawnHeight,定义该飞机飞行在什么高度，覆盖[General]里的FlightLevel,0,,AircraftTypes
+LandingDir,String,-1,LandingDir,该飞机的着陆朝向，默认 [AudioVisual]►PoseDir=。该设置会被建筑的AircraftDockingDir设置覆盖,0,,AircraftTypes
+LandingDirN,String,-1,LandingDirN,该机场第N个停靠位的飞机着陆朝向，N为从0开始的机场停靠位的索引( LandingDir等效于 LandingDir0)，后置停靠位不写则默认为 LandingDir0。默认[AudioVisual]►PoseDir=。覆盖飞机的 LandingDir= 。,0,,BuildingTypes
+AircraftDockingDir(N),String,-1,AircraftDockingDir(N),定义第N+1个停机位的战机停靠朝向，不写N为整个机场的战机停靠方向。默认值为[AudioVisual]►PoseDir。,0,,BuildingTypes
+BarracksExitCell,String,-1,BarracksExitCell,定义兵营使用的自定义出兵格位置。,0,,BuildingTypes
+OccupyDamageMultiplier,String,-1,OccupyDamageMultiplier,自定义驻军伤害修正系数，默认继承[CombatDamage]►OccupyDamageMultiplier。,0,,BuildingTypes
+OccupyROFMultiplier,String,-1,OccupyROFMultiplier,自定义驻军开火间隔修正系数，默认继承[CombatDamage]►OccupyROFMultiplier。,0,,BuildingTypes
+BunkerDamageMultiplier,String,-1,BunkerDamageMultiplier,自定义进驻坦克碉堡的单位的伤害修正系数，默认继承[CombatDamage]►BunkerDamageMultiplier。,0,,BuildingTypes
+BunkerROFMultMultiplier,String,-1,BunkerROFMultMultiplier,自定义进驻坦克碉堡的单位的开火间隔修正系数，默认继承[CombatDamage]►BunkerROFMultMultiplier。,0,,BuildingTypes
+SellBuildupLength,String,-1,SellBuildupLength,"自定义该建筑卖掉时逆向播放的建造动画帧长度,单位为帧。默认23。",0,,BuildingTypes
+Grinding.Weapon.RequiredCredits,String,-1,Grinding.Weapon.RequiredCredits,回收单位开火Grinding.Weapon=指定的武器所需的资金，默认0。该资金数目会累计，直至武器开火后重置。,0,,BuildingTypes
+Overpower.KeepOnline,String,-1,Overpower.KeepOnline,定义该建筑拥有几层充能时会在电力不足时仍然保持运行，默认2。,0,,BuildingTypes
+Overpower.ChargeWeapon,String,-1,Overpower.ChargeWeapon,定义该建筑拥有几层充能时会切换至副武器攻击，默认1。,0,,BuildingTypes
+PowerPlant.DamageFactor,String,-1,PowerPlant.DamageFactor,定义该电厂受损时的发电量衰减系数，默认1.0。,0,,BuildingTypes
+Units.RepairRate,String,-1,Units.RepairRate,定义维修单位时的维修速度。对于UnitReload=true建筑默认为[General]►ReloadRate。对于UnitRepair=true建筑默认为[General]►URepairRate。Ares允许AircraftType单独定义ReloadRate，定义Units.RepairRate会覆盖该设置。在UnitReload=true建筑上定义负值会禁用该建筑的单位维修效果。,0,,BuildingTypes
+Units.RepairStep,String,-1,Units.RepairStep,定义每次维修恢复多少血量，默认[General]►RepairStep。,0,,BuildingTypes
+Units.RepairPercent,String,-1,Units.RepairPercent,定义维修成本的加成系数，维修成本= (单位价格/(血量上限/维修回血量))，默认为[General]►RepairPercent。如果最终成本小于1则会当做1计入。,0,,BuildingTypes
+ChronoSphereDelay,String,-1,ChronoSphereDelay,单独定义该单位被超时空传送后的硬直。,0,,TechnoTypes
+ChronoSpherePreDelay,String,-1,ChronoSpherePreDelay,单独定义该单位被超时空传送后的硬直。,0,,TechnoTypes
+ChronoDistanceFactor,String,-1,ChronoDistanceFactor,超时空移动冷却的距离因数。,0,,TechnoTypes
+ChronoMinimumDelay,String,-1,ChronoMinimumDelay,超时空移动的最短冷却时间，无论传送距离。,0,,TechnoTypes
+ChronoRangeMinimum,String,-1,ChronoRangeMinimum,计算超时空移动冷却时间的最短距离。,0,,TechnoTypes
+ChronoDelay,String,-1,ChronoDelay,被超时空传送后的冷却时间，但是似乎并没有什么用，原版全局的也没用（声称用于超武但实际硬编码，直到Phobos中才开始允许通过ChronoSpherePreDelay进行定义）,0,,TechnoTypes
+IronCurtain.Effect,String,-1,IronCurtain.Effect,单独设定铁幕对有机单位的影响。默认kill。,0,,TechnoTypes
+ForceShield.Effect,String,-1,ForceShield.Effect,单独设定立场护盾对有机单位的影响。默认kill。,0,,TechnoTypes
+AnimationLength,String,-1,AnimationLength,自定义地形动画长度。默认值为地形类型图像总帧数的一半（若启用破损帧则为四分之一）。,0,,TerrainType
+MinimapColor,String,-1,MinimapColor,地形对象或矿石在小地图上显示的颜色。,0,ColorEdit,TerrainType
+Palette,String,-1,Palette,地形对象的色盘。不需要.pal后缀和三位气候特征码。,0,,TerrainType,The palette used to draw an image particle of this type. Defaults to ANIM.PAL.
+SpawnsTiberium.Type,String,-1,SpawnsTiberium.Type,填矿石的ID，矿柱生成矿石的种类。默认0。,0,,TerrainType
+SpawnsTiberium.Range,String,-1,SpawnsTiberium.Range,矿石生成的半径。默认1。,0,,TerrainType
+SpawnsTiberium.GrowthStage,String,-1,SpawnsTiberium.GrowthStage,生成矿石的生长阶段。如果写多个值则会在其中随机选取生成。默认3。,0,,TerrainType
+SpawnsTiberium.CellsPerAnim,String,-1,SpawnsTiberium.CellsPerAnim,矿石生成动画周期中会填充多少单元格。如果写多个值则会在其中随机选取填充。默认1。,0,,TerrainType
+OreGathering.FramesPerDir,String,-1,OreGathering.FramesPerDir,每个采矿动画对应的帧数。默认15。,0,,TechnoTypes
+OreGathering.Tiberiums,String,-1,OreGathering.Tiberiums,填矿石的ID，每个采矿动画对应的矿石。默认0。,0,,TechnoTypes
+HideIfNoOre.Threshold,String,-1,HideIfNoOre.Threshold,播放HideIfNoOre动画的最小矿石阶段。默认0。,0,,Animations
+AINormalTargetingDelay,String,-1,AINormalTargetingDelay,单独定义ai的单位正常情况下索敌的延迟帧数。默认继承全局值。,0,,TechnoTypes
+PlayerNormalTargetingDelay,String,-1,PlayerNormalTargetingDelay,单独定义玩家的单位正常情况下索敌的延迟帧数。默认继承全局值。,0,,TechnoTypes
+AIGuardAreaTargetingDelay,String,-1,AIGuardAreaTargetingDelay,单独定义ai的单位区域守卫状态下索敌的延迟帧数。默认继承全局值。,0,,TechnoTypes
+PlayerGuardAreaTargetingDelay,String,-1,PlayerGuardAreaTargetingDelay,单独定义玩家的单位区域守卫状态下索敌的延迟帧数。默认继承全局值。,0,,TechnoTypes
+AIAttackMoveTargetingDelay,String,-1,AIAttackMoveTargetingDelay,单独定义ai的单位侵略移动状态下索敌的延迟帧数。默认继承全局值。,0,,TechnoTypes
+PlayerAttackMoveTargetingDelay,String,-1,PlayerAttackMoveTargetingDelay,单独定义玩家的单位侵略移动状态下索敌的延迟帧数。默认继承全局值。,0,,TechnoTypes
+ShadowIndices,String,-1,ShadowIndices,绘制的阴影部分。 填写值为体素的截面索引。,0,,TechnoTypes
+ShadowIndex.Frame,String,-1,ShadowIndex.Frame,定义来自ShadowIndex部分的HVA动画的哪一帧用于显示阴影。默认0。,0,,TechnoTypes
+ShadowIndices.Frame,String,-1,ShadowIndices.Frame,定义来自ShadowIndices的部分的HVA动画的哪一帧用于显示阴影 。 默认-1，表示当前显示的帧。,0,,TechnoTypes
+ShadowSizeCharacteristicHeight,String,-1,ShadowSizeCharacteristicHeight,定义用于覆盖阴影计算中的最大飞行高度的值。,0,,TechnoTypes
+DebrisMaximums,String,-1,DebrisMaximums,原有功能-定义VXL碎片动画最大生成数量。,0,,TechnoTypes
+DebrisMinimums,String,-1,DebrisMinimums,定义VXL碎片动画最小生成数量。需要与DebrisMaximums一一对应。,0,,TechnoTypes
+Trailer.SpawnDelay,String,-1,Trailer.SpawnDelay,该 Voxel 碎片尾迹动画的生成间隔帧数。默认2。,0,,VoxelAnims
+Gas.MaxDriftSpeed,String,-1,Gas.MaxDriftSpeed,气体粒子系统的漂浮速度。默认2。(TS默认为5),0,,ParticleSystems
+DropPod.Angle,String,-1,DropPod.Angle,空降仓下降角度，默认[General]►DropPodAngle= 。,0,,TechnoTypes
+DropPod.AirImage,String,-1,DropPod.AirImage,空降仓在空中时的图像，默认POD。,0,,TechnoTypes
+DropPod.Height,String,-1,DropPod.Height,空降仓高度，默认[General]►DropPodHeight= 。,0,,TechnoTypes
+DropPod.Speed,String,-1,DropPod.Speed,空降仓速度，默认[General]►DropPodSpeed= 。空降仓速度不得小于当前高度/10+2(原因不明)，过小的速度将会导致其指数级减速。,0,,TechnoTypes
+DropPod.Trailer.SpawnDelay,String,-1,DropPod.Trailer.SpawnDelay,空降仓尾烟DropPod.Trailer= 的刷出间隔，默认6。,0,,TechnoTypes
+CrateGoodie.RerollChance,String,-1,CrateGoodie.RerollChance,定义CrateGoodie=true的载具每次开出来后是否会再次重新变化。（roll到A载具后有多大概率变成另外的CrateGoodie=true载具）,0,,VehicleTypes
+UseWeeds.Amount,String,-1,UseWeeds.Amount,发射该超武消耗多少泰伯利亚藤蔓。默认[General]►WeedCapacity=。,0,,WeaponTypes
+UseWeeds.ReadinessAnimationPercentage,String,-1,UseWeeds.ReadinessAnimationPercentage,当泰伯利亚藤蔓的储存占比达到多少时，超级武器建筑播放准备就绪的动画。填写0~1之间的小数。默认0.9。,0,,WeaponTypes
+ROF.RandomDelay,String,-1,ROF.RandomDelay,武器微观定义， ROF的延迟帧数。,0,,WeaponTypes
+DiskLaser.Radius,String,-1,DiskLaser.Radius,飞碟激光发射前环绕的半径。默认240。,0,,WeaponTypes
+Bolt.Arcs,String,-1,Bolt.Arcs,特斯拉电弧的弧数。默认8。,0,,WeaponTypes
+ChargeTurret.Delays,String,-1,ChargeTurret.Delays,定义武器每次Burst发射时充能炮塔动画的播放间隔。,0,,WeaponTypes
+Bolt.Arcs,String,-1,Bolt.Arcs,定义IsElectricBolt=true武器的电弧转折数，设为0时将绘制直线电弧。默认8。,0,,WeaponTypes
+Bolt.Duration,String,-1,Bolt.Duration,定义电弧视觉效果的持续时间，仅接受1-31范围内的整数值（超出范围将自动截取）。默认17。,0,,WeaponTypes
+Gravity,String,-1,Gravity,抛射体的重力。默认6.0。不推荐设置 Gravity=0。会导致抛射体无法命中不在同一高度的单位。推荐使用 Straight弹道代替之。不建议设置Gravity=0，否则会导致抛射体向后飞行且无法命中不同高度的目标。,0,,ProjectileTypes
+RetargetAccuracy,String,-1,RetargetAccuracy,产生的分裂抛射体和原始抛射体瞄准同一目标的概率。默认0.0。,0,,ProjectileTypes,"The probability that a split cluster will aim for the same target the original projectile was shot at. The higher the value, the less likely it is for the split projectile to choose another target. Valid range is 0.0 to 1.0. Defaults to 0.0."
+RetargetSelf.Probability,String,-1,RetargetSelf.Probability,如果原始发射者被选为目标时，被保留为目标而不是重新抽选其他目标的概率。需要启用RetargetSelf来生效。默认0.5。,0,,ProjectileTypes
+Splits.TargetingDistance,String,-1,Splits.TargetingDistance,产生的分裂抛射体寻找目标的距离，只有在范围内的目标才能被分裂瞄准。默认5.0。,0,,ProjectileTypes
+Splits.TargetCellRange,String,-1,Splits.TargetCellRange,产生的分裂抛射体重新寻找目标的以整格为单位的距离，当原始目标格没有足够的科技类型作为目标时，分裂抛射体可以从定义的格范围中寻找新的目标。默认3。,0,,ProjectileTypes
+AirburstSpread,String,-1,AirburstSpread,空爆效果作用的单元格距离，默认情况下范围内的每一个单元格都是空爆效果作用的目标。默认1.5.,0,,ProjectileTypes,The range the airburst effect covers. Each cell in range will be targeted by the AirburstWeapon. Requires Airburst=yes. Cannot be combined with Splits=yes. Defaults to 1.5.
+ClusterScatter.Min,String,-1,ClusterScatter.Min,设置了Cluster的抛射体最小的散布范围。默认1.0。,0,,ProjectileTypes
+ClusterScatter.Max,String,-1,ClusterScatter.Max,设置了Cluster的抛射体最大的散布范围。默认2.0。,0,,ProjectileTypes
+BallisticScatter.Min,String,-1,BallisticScatter.Min,设置了FlakScatter=yes的Inviso抛射体最小的散布范围。默认0。,0,,ProjectileTypes,"The minimum range in cells a projectile can scatter. Defaults to [CombatDamage]►BallisticScatter / 2 if FlakScatter=no or Inviso=yes, to 0 otherwise."
+BallisticScatter.Max,String,-1,BallisticScatter.Max,设置了FlakScatter=yes的Inviso抛射体最大的散布范围。默认[CombatDamage]►BallisticScatter。,0,,ProjectileTypes,The maximum range in cells a projectile can scatter. Defaults to [CombatDamage]►BallisticScatter.
+CombatLightDetailLevel,String,-1,CombatLightDetailLevel,单独定义闪光效果的最低细节等级，默认继承全局值。,0,,Warheads
+CombatLightChance,String,-1,CombatLightChance,定义弹头命中时触发闪光效果的百分比概率。默认1.0。,0,,Warheads
+AnimList.CreationInterval,String,-1,AnimList.CreationInterval,定义AnimList中的动画需间隔多少次弹头爆炸后才会再次播放。若弹头由科技类型发射，该计数由该单位发射的的所有弹头共用；否则由同类型弹头全局共用计数。适用于空爆弹等大范围武器需要均匀分布动画效果但非每次爆炸都触发的场景。需要填大于0的值才生效。默认0。,0,,Warheads
+AnimList.ScatterMin,String,-1,AnimList.ScatterMin,定义动画生成位置相对弹头爆炸位置的最小随机扩散距离。默认0.0。,0,,Warheads
+AnimList.ScatterMax,String,-1,AnimList.ScatterMax,定义动画生成位置相对弹头爆炸位置的最大随机扩散距离。默认0.0。,0,,Warheads
+SplashList.CreationInterval,String,-1,SplashList.CreationInterval,定义SplashList中的动画需间隔多少次弹头爆炸后才会再次播放。若弹头由科技类型发射，该计数由该单位发射的的所有弹头共用；否则由同类型弹头全局共用计数。适用于空爆弹等大范围武器需要均匀分布动画效果但非每次爆炸都触发的场景。需要填大于0的值才生效。默认0。,0,,Warheads
+SplashList.ScatterMin,String,-1,SplashList.ScatterMin,定义动画生成位置相对弹头爆炸在水面位置的最小随机扩散距离。默认0.0。,0,,Warheads
+SplashList.ScatterMax,String,-1,SplashList.ScatterMax,定义动画生成位置相对弹头爆炸在水面位置的最大随机扩散距离。默认0.0。,0,,Warheads
+DebrisMaximums,String,-1,DebrisMaximums,原有功能-定义VXL碎片动画最大生成数量。,0,,Warheads
+DebrisMinimums,String,-1,DebrisMinimums,定义VXL碎片动画最小生成数量。需要与DebrisMaximums一一对应。,0,,Warheads
+Rocker.AmplitudeMultiplier,String,-1,Rocker.AmplitudeMultiplier,定义弹头掀翻力度的额外倍率系数，默认1.0。,0,,Warheads
+Rocker.AmplitudeOverride,String,-1,Rocker.AmplitudeOverride,定义覆盖武器damage值以计算掀翻力度的值。,0,,Warheads
+AffectBelowPercent,String,-1,AffectBelowPercent,弹头需要目标血量低于多少才能触发。默认1.0。,0,,Warheads
+AffectAbovePercent,String,-1,AffectAbovePercent,弹头需要目标血量高于多少才能触发。默认0.0。,0,,Warheads
+MindControl.ThreatDelay,String,-1,MindControl.ThreatDelay,微观设定被心灵控制的该单位不会被原所属的单位自动索敌的延迟时间帧数。默认继承全局值。该功能对于不在小队内的AI单位与建筑生效，但是延迟期间内仍然会被ai的进攻性小队索敌，并且处于延迟期间的被心控单位攻击AI单位仍然会正常触发AI单位的反击。,0,,Warheads
+Damage.Delay,String,-1,Damage.Delay,决定两次伤害施加之间的延迟帧数。需将Damage值设为1.0以上方可生效，设为0则禁用延迟。请注意此数值以动画帧（非游戏帧）为单位。根据动画速率（Rate）设置，每游戏帧可能会推进多个动画帧。默认0。,0,,Animations
+AttachedAnimPosition,String,-1,AttachedAnimPosition,自定义附属动画的显示位置。默认default。,0,,Animations
+FireAnimDisallowedLandTypes,String,-1,FireAnimDisallowedLandTypes,"定义在哪些地形类型上禁止生成火焰动画，对于Scorch=true动画默认在water,rock,beach,ice地形上禁止生成，其他允许。对于Flamer=true默认所有地形可生成。",0,,Animations
+SmallFireCount,String,-1,SmallFireCount,定义生成的SmallFire动画数量，Flamer=true默认2，其他默认1。,0,,Animations
+SmallFireChances,String,-1,SmallFireChances,"SmallFire动画生成的概率列表，与上一条一一对应，最多可读取SmallFireCount数量的项目。如果数量超过列出的概率数，则使用列出的最后一项。Flamer=true时默认为1.0,0.5，否则为1.0。",0,,Animations
+SmallFireDistances,String,-1,SmallFireDistances,单元格中SmallFire动画从母动画坐标生成的距离列表，最多可读取SmallFireCount数量的项目。如果数量超过列出的概率数，则使用列出的最后一项。Flamer=true时默认为0.25、0.625，否则为0.0。,0,,Animations
+LargeFireCount,String,-1,LargeFireCount,定义生成的LargeFire动画数量，仅用于Flamer=true动画。默认1。,0,,Animations
+LargeFireChances,String,-1,LargeFireChances,LargeFire动画生成的概率列表，与上一条一一对应，最多可读取SmallFireCount数量的项目。如果数量超过列出的概率数，则使用列出的最后一项。默认为0.5。,0,,Animations
+LargeFireDistances,String,-1,LargeFireDistances,单元格中LargeFire动画从母动画坐标生成的距离列表，最多可读取SmallFireCount数量的项目。如果数量超过列出的概率数，则使用列出的最后一项。默认0.4375。如果Flamer母动画在空中则不会生成子动画。,0,,Animations
+Strength,String,-1,Strength,护盾的耐久度,0,,ShieldTypes
+InitialStrength,String,-1,InitialStrength,护盾的初始耐久度。可以超出护盾的最大耐久度。,0,,ShieldTypes
+ConditionYellow,String,-1,ConditionYellow,微观定义护盾黄血阈值。默认继承全局值。,0,,ShieldTypes
+ConditionRed,String,-1,ConditionRed,微观定义护盾红血阈值。默认继承全局值。,0,,ShieldTypes
+Armor,String,-1,Armor,护盾的护甲类型。默认none。,0,,ShieldTypes
+SelfHealing,String,-1,SelfHealing,护盾恢复的血量，0.0将关闭功能，1%到100%为以百分比恢复，其他数字为以固定值直接恢复，负数为扣除护盾血量。默认0.0。注意：如果你想让护盾每次只恢复1HP，目前需要将该标签的值设置在1到2之间的数，如1.1。,0,,ShieldTypes
+SelfHealing.Rate,String,-1,SelfHealing.Rate,护盾恢复的间隔，0.0立即恢复护盾，其他值以游戏内分钟为单位恢复。默认0.0。,0,,ShieldTypes
+SelfHealing.RestartInCombatDelay,String,-1,SelfHealing.RestartInCombatDelay,未定义SelfHealing.RestartInCombat=false的情况下，护盾未受击多少帧后再次开始恢复。默认0。,0,,ShieldTypes
+Respawn,String,-1,Respawn,护盾重生时的血量，同SelfHealing。默认0.0。,0,,ShieldTypes
+Respawn.Rate,String,-1,Respawn.Rate,护盾重生的间隔，同SelfHealing.Rate。默认0.0。,0,,ShieldTypes
+Respawn.RestartInCombatDelay,String,-1,Respawn.RestartInCombatDelay,未定义SelfHealing.RestartInCombat=false的情况下，护盾未受击多少帧后再次开始重生。默认0。,0,,ShieldTypes
+BracketDelta,String,-1,BracketDelta,护盾血条的高度，相当于作用于护盾血条的PixelSelectionBracketDelta。默认0。,0,,ShieldTypes
+Pips,String,-1,Pips,微观设置使用哪一帧作为护盾的血条。,0,,ShieldTypes
+Pips.Building,String,-1,Pips.Building,微观设置使用哪一帧作为建筑护盾的血条。,0,,ShieldTypes
+Pips.Background,String,-1,Pips.Background,微观设定护盾血条框使用的文件。,0,,ShieldTypes
+Pips.Building.Empty,String,-1,Pips.Building.Empty,微观设置使用哪一帧作为建筑类护盾的血条框。,0,,ShieldTypes
+IdleAnim,String,-1,IdleAnim,护盾空闲时播放的动画，暂不支持Bouncer=yes的动画。,0,,ShieldTypes
+IdleAnim.ConditionYellow,String,-1,IdleAnim.ConditionYellow,护盾黄血空闲时播放的动画。,0,,ShieldTypes
+IdleAnim.ConditionRed,String,-1,IdleAnim.ConditionRed,护盾红血空闲时播放的动画。,0,,ShieldTypes
+IdleAnimDamaged,String,-1,IdleAnimDamaged,护盾在单位本身低于黄血空闲时播放的动画。,0,,ShieldTypes
+IdleAnimDamaged.ConditionYellow,String,-1,IdleAnimDamaged.ConditionYellow,护盾黄血且在单位本身低于黄血空闲时播放的动画。,0,,ShieldTypes
+IdleAnimDamaged.ConditionRed,String,-1,IdleAnimDamaged.ConditionRed,护盾红血且在单位本身低于黄血空闲时播放的动画。,0,,ShieldTypes
+IdleAnim.OfflineAction,String,-1,IdleAnim.OfflineAction,护盾空闲动画在断电时的动作。默认Hides。,0,,ShieldTypes
+IdleAnim.TemporalAction,String,-1,IdleAnim.TemporalAction,护盾空闲动画在被超时空时的动作。默认Hides。,0,,ShieldTypes
+HitFlash.FixedSize,String,-1,HitFlash.FixedSize,护盾被攻击时的闪烁大小，有效值是81-252。默认由被攻击的伤害量决定。,0,,ShieldTypes
+AbsorbPercent,String,-1,AbsorbPercent,护盾吸收伤害的比例。默认1.0，即吸收全部伤害。,0,,ShieldTypes
+PassPercent,String,-1,PassPercent,护盾的穿透比例，即不会被吸收的伤害，穿透伤害将直接作用在单位身上。默认0.0，即不穿透。 [ShieldType]►ReceivedDamage.Minimum=（Integer） 护盾在单次受击里收到的最小值，该伤害计算在护甲和AbsorbPercent之后，若AbsorbOverDamage=false，则破盾后单位受到的伤害仍然根据原始伤害计算。 [ShieldType]►ReceivedDamage.Maximum=（Integer） 护盾在单次受击里收到的最大值，该伤害计算在护甲和AbsorbPercent之后，若AbsorbOverDamage=false，则破盾后单位受到的伤害仍然根据原始伤害计算。,0,,ShieldTypes
+Tint.Color,String,-1,Tint.Color,护盾给宿主染什么色。,0,ColorEdit,ShieldTypes
+Tint.Intensity,String,-1,Tint.Intensity,护盾染色强度。,0,,ShieldTypes
+Tint.VisibleToHouses,String,-1,Tint.VisibleToHouses,哪些所属可以看见护盾的染色。,0,,ShieldTypes
+Shield.AbsorbPercent,String,-1,Shield.AbsorbPercent,覆盖被此弹头击中的护盾的AbsorbPercent。,0,,Warheads
+Shield.PassPercent,String,-1,Shield.PassPercent,覆盖被此弹头击中的护盾的PassPercent。 [Warhead]►Shield.ReceivedDamage.Minimum= （Integer） 覆盖被此弹头击中的护盾的ReceivedDamage.Minimum的相关值。 [Warhead]►Shield.ReceivedDamage.Maximum= （Integer） 覆盖被此弹头击中的护盾的ReceivedDamage.Maximum的相关值。,0,,Warheads
+Shield.ReceivedDamage.MinMultiplier,String,-1,Shield.ReceivedDamage.MinMultiplier,定义与Shield.ReceivedDamage.Minimum叠加计算的修正比值。默认1.0。,0,,Warheads
+Shield.ReceivedDamage.MaxMultiplier,String,-1,Shield.ReceivedDamage.MaxMultiplier,定义与Shield.ReceivedDamage.Maximum叠加计算的修正比值。默认1.0。,0,,Warheads
+Shield.Respawn.Duration,String,-1,Shield.Respawn.Duration,弹头的Shield.Respawn.Rate/Amount/Anim/Weapon值覆盖被此弹头击中的护盾重生相关效果值的持续时间。负数或0则默认为护盾本身的值。默认0。,0,,Warheads
+Shield.Respawn.Amount,String,-1,Shield.Respawn.Amount,覆盖被此弹头击中的护盾的Respawn，负数或0则默认为护盾本身的值。默认0.0。,0,,Warheads
+Shield.Respawn.Rate,String,-1,Shield.Respawn.Rate,覆盖被此弹头击中的护盾的Respawn.Rate，负数或0则默认为护盾本身的值。默认-1.0。,0,,Warheads
+Shield.Respawn.RestartInCombatDelay,String,-1,Shield.Respawn.RestartInCombatDelay,覆盖被此弹头击中的护盾的Respawn.RestartInCombatDelay，负数或0则默认为护盾本身的值。默认-1。,0,,Warheads
+Shield.SelfHealing.Duration,String,-1,Shield.SelfHealing.Duration,Shield.SelfHealing.Rate和Shield.SelfHealing.Amount覆盖被此弹头击中的护盾自愈效果的持续时间。默认0。,0,,Warheads
+Shield.SelfHealing.Amount,String,-1,Shield.SelfHealing.Amount,覆盖被此弹头击中的护盾的SelfHealing，负数或0则默认为护盾本身的值。默认0.0。,0,,Warheads
+Shield.SelfHealing.Rate,String,-1,Shield.SelfHealing.Rate,覆盖被此弹头击中的护盾的SelfHealing.Rate，负数或0则默认为护盾本身的值。默认-1.0。,0,,Warheads
+Shield.SelfHealing.RestartInCombatDelay,String,-1,Shield.SelfHealing.RestartInCombatDelay,覆盖被此弹头击中的护盾的SelfHealing.RestartInCombatDelay。负数或0则默认为护盾本身的值。默认-1。,0,,Warheads
+Shield.MinimumReplaceDelay,String,-1,Shield.MinimumReplaceDelay,控制护盾在被击破后多久才能被替换。如果已过帧数不足，就不会被替换。默认0。,0,,Warheads
+AutoDeath.Behavior,String,-1,AutoDeath.Behavior,触发自毁时单位的死亡方式。不设置为不启用功能；kill为正常死亡；vanish为静默死亡，即不会触发死亡武器和EVA事件(即直接抹除)，取代了旧版中的Death.Peaceful；sell为变卖，只能用于建筑且建筑需要能够正常变卖。默认不设置。注意：若自毁的单位带乘客，则乘客无法逃出,0,,TechnoTypes
+AutoDeath.AfterDelay,String,-1,AutoDeath.AfterDelay,在经过多少帧后死亡，取代了旧版中的Death.Countdown。,0,,TechnoTypes
+AutoDeath.TechnosDontExist.Houses,String,-1,AutoDeath.TechnosDontExist.Houses,指定判断科技不存在的依据阵营。默认owner。,0,,TechnoTypes
+AutoDeath.TechnosExist.Houses,String,-1,AutoDeath.TechnosExist.Houses,指定判断科技存在的依据阵营。默认owner。,0,,TechnoTypes
+Duration,String,-1,Duration,定义AE的持续时间。可以被单位上的DurationOverrides覆盖。默认0，负数表示持续时间无限。,0,,PhobosAE
+Cumulative.MaxCount,String,-1,Cumulative.MaxCount,定义可以叠加的AE的叠加次数上限。默认-1表示无限次数,0,,PhobosAE
+DiscardOn,String,-1,DiscardOn,定义AE的附着条件。若值有效，则单位处于对应的情况时AE效果会消失。默认none。Spawner或DrainWeapon之类的特殊武器也会被视为firing。,0,,PhobosAE
+DiscardOn.RangeOverride,String,-1,DiscardOn.RangeOverride,定义AE的DiscardOn的inrange和outofrange条件是否会被该距离覆盖取值。,0,,PhobosAE
+Animation.OfflineAction,String,-1,Animation.OfflineAction,当Powered=true时，附着的单位离线时AE动画的播放情况。,0,,PhobosAE
+Animation.TemporalAction,String,-1,Animation.TemporalAction,定义附着的单位被超时空武器攻击时AE动画的播放情况。,0,,PhobosAE
+ExpireWeapon.TriggerOn,String,-1,ExpireWeapon.TriggerOn,定义AE会在这些情况下发射武器。默认expire。,0,,PhobosAE
+Tint.Color,String,-1,Tint.Color,定义被AE附着的单位被染的颜色。单位染色在单位转换后无法正常更新，在最新开发版中已修复,0,ColorEdit,PhobosAE
+Tint.Intensity,String,-1,Tint.Intensity,定义被AE附着的单位被染的颜色强度。,0,,PhobosAE
+Tint.VisibleToHouses,String,-1,Tint.VisibleToHouses,定义该AE染色可以被哪些所属看见。,0,,PhobosAE
+FirepowerMultiplier,String,-1,FirepowerMultiplier,定义AE附着时物体的火力加成。默认1.0。,0,,PhobosAE
+ArmorMultiplier,String,-1,ArmorMultiplier,定义AE附着时物体的护甲加成。默认1.0。,0,,PhobosAE
+SpeedMultiplier,String,-1,SpeedMultiplier,定义AE附着时物体的速度加成。默认1.0。,0,,PhobosAE
+ROFMultiplier,String,-1,ROFMultiplier,定义AE附着时物体的攻速加成。默认1.0。,0,,PhobosAE
+WeaponRange.Multiplier,String,-1,WeaponRange.Multiplier,定义AE生效期间物体的武器射程加成倍数。,0,,PhobosAE
+WeaponRange.ExtraRange,String,-1,WeaponRange.ExtraRange,定义AE生效期间物体的武器射程加成固定数。先乘完再加,0,,PhobosAE
+Crit.Multiplier,String,-1,Crit.Multiplier,定义AE生效期间物体的暴击加成倍数。,0,,PhobosAE
+Crit.ExtraChance,String,-1,Crit.ExtraChance,定义AE生效期间物体的暴击加成固定数。,0,,PhobosAE
+RevengeWeapon.AffectsHouses,String,-1,RevengeWeapon.AffectsHouses,定义该复仇武器能复仇的所属。,0,,PhobosAE
+ReflectDamage.Multiplier,String,-1,ReflectDamage.Multiplier,定义AE生效期间物体反弹伤害的倍率。,0,,PhobosAE
+ReflectDamage.AffectsHouses,String,-1,ReflectDamage.AffectsHouses,定义AE生效期间物体能反弹伤害的所属。,0,,PhobosAE
+ReflectDamage.Chance,String,-1,ReflectDamage.Chance,定义反弹伤害的触发概率。默认1.0。,0,,PhobosAE
+ReflectDamage.Override,String,-1,ReflectDamage.Override,覆盖反弹伤害的伤害值。,0,,PhobosAE
+Groups,String,-1,Groups,定义该AE归类为该选择组里。可以用选择组来代替具体的AE名称。移除AE，武器过滤之类的都能正常运作。,0,,PhobosAE
+AttachEffect.Delays,String,-1,AttachEffect.Delays,定义该AE在单位上每次生效的间隔。默认0，负数表示不生效。若写多个值则需要和单位附着的一一对应。否则使用最后一个Delay。,0,,TechnoTypes
+AttachEffect.InitialDelays,String,-1,AttachEffect.InitialDelays,定义该AE在单位上初次生效的间隔。默认0，负数表示不生效。若写多个值则需要和单位附着的一一对应。否则使用最后一个InitialDelays。,0,,TechnoTypes
+AttachEffect.RecreationDelays,String,-1,AttachEffect.RecreationDelays,定义该AE在单位上被移除后再次生成的延迟。默认0，负数表示不生效。若写多个值则需要和单位附着的一一对应。否则使用最后一个RecreationDelays。,0,,TechnoTypes
+AttachEffect.RequiredGroups,String,-1,AttachEffect.RequiredGroups,定义该武器只能对该AE类别组开火。若类别组里有多个AE组则需要对象存在所有包含的AE组才能开火。,0,,WeaponTypes
+AttachEffect.DisallowedGroups,String,-1,AttachEffect.DisallowedGroups,定义该武器不能对该AE类别组开火。若类别组里有多个AE则这些AE存在任意一个就不能开火。,0,,WeaponTypes
+AttachEffect.RequiredMinCounts,String,-1,AttachEffect.RequiredMinCounts,当Cumulative=true时，定义该武器可以对持有这些AE的单位开火的需要的AE叠加最小次数。,0,,WeaponTypes
+AttachEffect.RequiredMaxCounts,String,-1,AttachEffect.RequiredMaxCounts,当Cumulative=true时，定义该武器可以对持有这些AE的单位开火的需要的AE叠加最大次数。,0,,WeaponTypes
+AttachEffect.DisallowedMinCounts,String,-1,AttachEffect.DisallowedMinCounts,当Cumulative=true时，定义该武器不可以对持有这些AE的单位开火的需要的AE叠加最小次数。,0,,WeaponTypes
+AttachEffect.DisallowedMaxCounts,String,-1,AttachEffect.DisallowedMaxCounts,当Cumulative=true时，定义该武器不可以对持有这些AE的单位开火的需要的AE叠加最大次数。,0,,WeaponTypes
+AttachEffect.RemoveGroups,String,-1,AttachEffect.RemoveGroups,定义该弹头引爆时令目标移除的AE类别组。,0,,Warheads
+AttachEffect.CumulativeRemoveMinCounts,String,-1,AttachEffect.CumulativeRemoveMinCounts,当Cumulative=true时，弹头引爆时可以移除AE或AE类别组的最小次数。,0,,Warheads
+AttachEffect.CumulativeRemoveMaxCounts,String,-1,AttachEffect.CumulativeRemoveMaxCounts,当Cumulative=true时，弹头引爆时可以移除AE或AE类别组的最大次数。,0,,Warheads
+AttachEffect.DurationOverrides,String,-1,AttachEffect.DurationOverrides,定义是否用该Duration覆盖单位附着的AE。若写多个值则需要和单位附着的一一对应。否则使用最后一个Duration。,0,,Warheads
+SuppressReflectDamage.Groups,String,-1,SuppressReflectDamage.Groups,该弹头是否不触发指定的AE类型组内的所有AE造成的反弹伤害效果,0,,Warheads
+DrawType,String,-1,DrawType,激光尾迹的绘制类型，激光／电弧／辐射。默认laser。,0,,LaserTrailTypes
+FadeDuration,String,-1,FadeDuration,激光尾迹的持续时间。,0,,LaserTrailTypes
+SegmentLength,String,-1,SegmentLength,每一段激光尾迹的最小长度。,0,,LaserTrailTypes
+Color,String,-1,Color,激光尾迹的颜色。,0,ColorEdit,LaserTrailTypes
+Thickness,String,-1,Thickness,激光尾迹的宽度。,0,,LaserTrailTypes
+Bolt.Color1,String,-1,Bolt.Color1,自定义第一条电弧的颜色。,0,ColorEdit,LaserTrailTypes
+Bolt.Color2,String,-1,Bolt.Color2,自定义第二条电弧的颜色。,0,ColorEdit,LaserTrailTypes
+Bolt.Color3,String,-1,Bolt.Color3,自定义第三条电弧的颜色。,0,ColorEdit,LaserTrailTypes
+Beam.Color,String,-1,Beam.Color,定义辐射波颜色。,0,ColorEdit,LaserTrailTypes
+Beam.Amplitude,String,-1,Beam.Amplitude,定义辐射波振幅大小。默认40。,0,,LaserTrailTypes
+LaserTrailN.FLH,String,-1,LaserTrailN.FLH,第N个激光尾迹的坐标。默认0，0，0。,0,,TechnoTypes
+RadDurationMultiple,String,-1,RadDurationMultiple,辐射系数（RedLevel\*RadDurationMultiple为辐射的持续时间）。,0,,RadiationTypes
+RadApplicationDelay,String,-1,RadApplicationDelay,辐射伤害间隔。,0,,RadiationTypes
+RadApplicationDelay.Building,String,-1,RadApplicationDelay.Building,同上，不过是对于建筑。,0,,RadiationTypes
+RadBuildingDamageMaxCount,String,-1,RadBuildingDamageMaxCount,一帧里最多伤害建筑的次数，默认0，表示无限制。,0,,RadiationTypes
+RadLevelMax,String,-1,RadLevelMax,RadLevel的最大值。,0,,RadiationTypes
+RadLevelDelay,String,-1,RadLevelDelay,辐射衰减的间隔。,0,,RadiationTypes
+RadLightDelay,String,-1,RadLightDelay,辐射光照衰减的间隔。,0,,RadiationTypes
+RadLevelFactor,String,-1,RadLevelFactor,每个RadLevel造成的伤害。,0,,RadiationTypes
+RadLightFactor,String,-1,RadLightFactor,辐射的光照强度系数。,0,,RadiationTypes
+RadTintFactor,String,-1,RadTintFactor,辐射的颜色系数。,0,,RadiationTypes
+RadColor,String,-1,RadColor,辐射的颜色。,0,ColorEdit,RadiationTypes
+RevengeWeapon.AffectsHouses,String,-1,RevengeWeapon.AffectsHouses,定义单位的复仇武器能向哪些所属发射。,0,,TechnoTypes
+ForceWeapon.Naval.Decloaked,String,-1,ForceWeapon.Naval.Decloaked,对未隐形时的海军单位强制使用的武器，0为主武器，1为副武器，以此类推。-1为不启用。默认-1。可以用来做一个武器对水面一个武器对水下的海军,0,,TechnoTypes
+ForceWeapon.Cloaked,String,-1,ForceWeapon.Cloaked,对隐形单位强制使用的武器，0为主武器，1为副武器，以此类推。-1为不启用。默认-1。,0,,TechnoTypes
+ForceWeapon.Disguised,String,-1,ForceWeapon.Disguised,对伪装单位强制使用的武器，0为主武器，1为副武器，以此类推。-1为不启用。默认-1。,0,,TechnoTypes
+ForceWeapon.UnderEMP,String,-1,ForceWeapon.UnderEMP,对被EMP的单位强制使用的武器。0为主武器，1为副武器，以此类推。-1为不启用。默认-1。,0,,TechnoTypes
+ForceWeapon.InRange,String,-1,ForceWeapon.InRange,对进入该列表中武器射程内的单位强制使用的武器列表。按列表顺序使用首个满足条件的武器。若设置了ForceAAWeapon.InRange则该武器组只能攻击地面目标，若未设置则可攻击地面与空中目标。,0,,TechnoTypes
+ForceWeapon.InRange.Overrides,String,-1,ForceWeapon.InRange.Overrides,覆盖列表中武器本身的射程值。需与武器列表一一对应。,0,,TechnoTypes
+ForceAAWeapon.InRange,String,-1,ForceAAWeapon.InRange,对进入该列表中武器射程内的空中单位强制使用的对空武器列表。按列表顺序使用首个满足条件的武器。,0,,TechnoTypes
+ForceAAWeapon.InRange.Overrides,String,-1,ForceAAWeapon.InRange.Overrides,覆盖列表中武器本身的射程值。需与对空武器列表一一对应。,0,,TechnoTypes
+ForceWeapon.Buildings,String,-1,ForceWeapon.Buildings,对建筑强制使用的武器。0为主武器，1为副武器，以此类推。-1为不启用。默认-1。,0,,TechnoTypes
+ForceWeapon.Defenses,String,-1,ForceWeapon.Defenses,对防御建筑(BuildCat=Combat)强制使用的武器。优先级高于ForceWeapon.Buildings。0为主武器，1为副武器，以此类推。-1为不启用。默认-1。,0,,TechnoTypes
+ForceWeapon.Infantry,String,-1,ForceWeapon.Infantry,对步兵强制使用的武器。0为主武器，1为副武器，以此类推。-1为不启用。默认-1。,0,,TechnoTypes
+ForceWeapon.Naval.Units,String,-1,ForceWeapon.Naval.Units,对未隐形的海军单位(Naval=yes)强制使用的武器。优先级高于ForceWeapon.Units。0为主武器，1为副武器，以此类推。-1为不启用。默认-1。,0,,TechnoTypes
+ForceWeapon.Units,String,-1,ForceWeapon.Units,对载具强制使用的武器。0为主武器，1为副武器，以此类推。-1为不启用。默认-1。,0,,TechnoTypes
+ForceWeapon.Aircraft,String,-1,ForceWeapon.Aircraft,对战机强制使用的武器。0为主武器，1为副武器，以此类推。-1为不启用。默认-1。,0,,TechnoTypes
+ForceAAWeapon.Infantry,String,-1,ForceAAWeapon.Infantry,对空中步兵强制使用的武器。优先级高于ForceWeapon.Infantry。0为主武器，1为副武器，以此类推。-1为不启用。默认-1。,0,,TechnoTypes
+ForceAAWeapon.Units,String,-1,ForceAAWeapon.Units,对空中载具强制使用的武器。优先级高于ForceWeapon.Units。0为主武器，1为副武器，以此类推。-1为不启用。默认-1。,0,,TechnoTypes
+ForceAAWeapon.Aircraft,String,-1,ForceAAWeapon.Aircraft,对空中战机强制使用的武器。优先级高于ForceWeapon.Aircraft。0为主武器，1为副武器，以此类推。-1为不启用。默认-1。,0,,TechnoTypes
+MultiWeapon.IsSecondary,String,-1,MultiWeapon.IsSecondary,定义哪些武器被视为副武器，用于触发步兵的SecondaryFire。未设置时默认Weapon1为副武器。,0,,TechnoTypes
+MultiWeapon.SelectCount,String,-1,MultiWeapon.SelectCount,定义进入常规武器选择的武器数量，从Weapon1开始按数字递增直到武器数量等于定义数量。若多个在常规武器选择内的武器同时满足目标，优先使用索引小的武器。不在常规武器选择内的武器仍可通过指定武器索引的逻辑（如ForceWeapon，DeployFireWeapon）调用。例如一个单位有Weapon1-6，MultiWeapon.SelectCount为3。那该单位只会主动使用Weapon1-3，Weapon4-6只能使用特殊调用如ForceWeapon来开火。常规武器选择内的武器过多会影响性能。,0,,TechnoTypes
+RateDown.Delay,String,-1,RateDown.Delay,定义单位丢失目标停火后，在进入RateDown减少盖特计数值之前的延迟帧数，即单位停火后需要经过这么多帧才进入RateDown流程。默认0。,0,,TechnoTypes
+RateDown.Cover.Value,String,-1,RateDown.Cover.Value,定义单位低弹药状态的RateDown覆盖值。默认0。当单位的弹药数低于RateDown.Cover.AmmoBelow的设定值时，RateDown.Cover.Value会覆盖单位的RateDown值来执行盖特计数值降档计算。,0,,TechnoTypes
+RateDown.Cover.AmmoBelow,String,-1,RateDown.Cover.AmmoBelow,定义单位低弹药阈值。，默认-2。,0,,TechnoTypes
+PassengerDeletion.Rate,String,-1,PassengerDeletion.Rate,删除乘客的间隔。,0,,TechnoTypes
+PassengerDeletion.CostMultiplier,String,-1,PassengerDeletion.CostMultiplier,基于Cost的时间间隔倍数。默认1.0。,0,,TechnoTypes
+PassengerDeletion.CostRateCap,String,-1,PassengerDeletion.CostRateCap,基于Cost的时间间隔上限。不设定则无上限。默认无上限。 [TechnoType]►PassengerDeletion.AllowedHouses=  (enum none|owner/self|allies/ally|team|enemies/enemy|all) 哪个阵营的单位会受自动删除乘客的影响。默认all。,0,,TechnoTypes
+PassengerDeletion.SoylentAllowedHouses,String,-1,PassengerDeletion.SoylentAllowedHouses,哪个阵营的乘客在被删除时才会获得资金。默认enemies。,0,,TechnoTypes
+PassengerDeletion.DisplaySoylentToHouses,String,-1,PassengerDeletion.DisplaySoylentToHouses,哪个阵营可以看到删除乘客显示的资金变化数。默认all。,0,,TechnoTypes
+PassengerDeletion.DisplaySoylentOffset,String,-1,PassengerDeletion.DisplaySoylentOffset,"调整显示的资金变化数的绘制偏移。负数左／上，正数右／下。默认0,0。",0,,TechnoTypes
+OpenTopped.RangeBonus,String,-1,OpenTopped.RangeBonus,乘客对外攻击范围的加成。,0,,TechnoTypes
+OpenTopped.DamageMultiplier,String,-1,OpenTopped.DamageMultiplier,乘客对外攻击伤害倍数的加成。,0,,TechnoTypes
+OpenTopped.WarpDistance,String,-1,OpenTopped.WarpDistance,超时空武器乘客对外攻击的最大范围。,0,,TechnoTypes
+Ammo.Shared.Group,String,-1,Ammo.Shared.Group,共享弹药的编号，只有相同编号的载具和载员才会共享，载具设置为-1时会共享给所有可共享的乘客，无视组别设置。默认-1。,0,,TechnoTypes
+InitialStrength,String,-1,InitialStrength,单位的初始生命值。克隆单位初始生命值,0,,TechnoTypes
+InitialStrength.Cloning,String,-1,InitialStrength.Cloning,该建筑克隆出的单位初始生命值的百分比，可以设置1或2个值。如果设置2个值则初始生命值的百分比会在两个值之间的范围内随机选择。,0,,BuildingTypes
+Tint.Color,String,-1,Tint.Color,定义该单位染的颜色。,0,ColorEdit,TechnoTypes
+Tint.Intensity,String,-1,Tint.Intensity,调整该单位受到的光照强度修正系数。0.0为标准光照。默认0.0。,0,,TechnoTypes
+Tint.VisibleToHouses,String,-1,Tint.VisibleToHouses,定义该染色可以被哪些所属看见。默认all。单位染色在单位转换后无法正常更新，在最新开发版中已修复 [TechnoType]►BuildLimitGroup.Types=（list of TechnoType Names） 定义由哪些单位共享该建造上限组。注意，该语句不提供任何限制，你必须手动添加建造上限，即BuildLimitGroup.Nums。 [TechnoType]►BuildLimitGroup.Nums=（Integer） 定义该上限组的上限数量。可以写多个数字与BuildLimitGroup.Types里的单位数量相对应。默认情况下，当BuildLimitGroup.Types里的所有单位达到BuildLimitGroup.Nums的值时则禁止建造这些单位。 [TechnoType]►BuildLimitGroup.Factor=（Integer） 定义单位占上限时实际会占用的值。（人话：枪兵1人口，狂热者2人口）,0,,TechnoTypes
+MindControlRangeLimit,String,-1,MindControlRangeLimit,心灵控制的最大控制距离，被心控单位离开范围会解控。大于0将激活此逻辑。默认-1.0。,0,,TechnoTypes
+MindControlLink.VisibleToHouse,String,-1,MindControlLink.VisibleToHouse,哪些所属方可以看到心控线。默认all。,0,,TechnoTypes
+MindControl.Anim,String,-1,MindControl.Anim,心灵控制的单位头上的动画。默认[General]►ControlledAnimationType。,0,,Warheads
+Overload.Count,String,-1,Overload.Count,单独定义该单位达到每级过载等级需要多少心控单位数，需一一对应。默认继承[CombatDamage]►OverloadCount。,0,,TechnoTypes
+Overload.Damage,String,-1,Overload.Damage,单独定义该单位每级过载等级会受到多少过载伤害，需一一对应。默认继承[CombatDamage]►OverloadDamage。,0,,TechnoTypes
+Overload.Frames,String,-1,Overload.Frames,单独定义该单位每级过载等级每隔多少帧受到一次过载伤害，需一一对应。默认继承[CombatDamage►OverloadFrames。,0,,TechnoTypes
+Overload.ParticleSysCount,String,-1,Overload.ParticleSysCount,单独定义单位心控过载时产生的粒子系统数量。默认5。,0,,TechnoTypes
+,,,,,,,
+PrimaryFireFLH.Burst1,String,-1,PrimaryFireFLH.Burst1,单独指定武器第N发Burst的开火坐标，用于主武器。,0,,TechnoTypes
+ElitePrimaryFireFLH.Burst1,String,-1,ElitePrimaryFireFLH.Burst1,同上，用于精英级主武器。,0,,TechnoTypes
+SecondaryFireFLH.Burst1,String,-1,SecondaryFireFLH.Burst1,同上，用于副武器。,0,,TechnoTypes
+EliteSecondaryFireFLH.Burst1,String,-1,EliteSecondaryFireFLH.Burst1,同上，用于精英级副武器。,0,,TechnoTypes
+WeaponXFLH.Burst1,String,-1,WeaponXFLH.Burst1,第X个武器Burst第N发的开火坐标，用于盖特，IFV，充能炮塔等逻辑。,0,,TechnoTypes
+EliteWeaponXFLH.Burst1,String,-1,EliteWeaponXFLH.Burst1,同上，用于精英级武器。 [TechnoType]►VoiceCreated=（Sound） 定义单位出厂时播放的声音，定义后不会播放EVA_UnitReady,0,,TechnoTypes
+TiberiumEater.TransDelay,String,-1,TiberiumEater.TransDelay,定义两次矿石原地精炼之间的间隔帧数。0为每帧进行一次精炼，-1为禁用原地精炼。默认-1。,0,,TechnoTypes
+TiberiumEater.CellN,String,-1,TiberiumEater.CellN,定义发生原地精炼矿石的格子偏移坐标，可设置多个(N为从0开始的索引)，单位为格。未设置时仅精炼自身所在格的矿石。,0,,TechnoTypes
+TiberiumEater.CashMultiplier,String,-1,TiberiumEater.CashMultiplier,定义原地精炼矿石获取的资金相对所炼矿石价值的修正系数。默认1.0即与所炼矿石价值相同。,0,,TechnoTypes
+TiberiumEater.AmountPerCell,String,-1,TiberiumEater.AmountPerCell,定义当前精炼格内每次精炼可进行精炼的矿石量。小于等于0的值为无限制。默认0。,0,,TechnoTypes
+TiberiumEater.Display.Houses,String,-1,TiberiumEater.Display.Houses,定义哪些所属方可以看到精炼资金值显示。默认all。,0,,TechnoTypes
+PronePrimaryFireFLH,String,-1,PronePrimaryFireFLH,定义步兵匍匐／爬行时主武器的开火坐标。,0,,InfantryTypes
+ProneSecondaryFireFLH,String,-1,ProneSecondaryFireFLH,定义步兵匍匐／爬行时副武器的开火坐标。,0,,InfantryTypes
+DeployedPrimaryFireFLH,String,-1,DeployedPrimaryFireFLH,定义步兵部署时主武器的开火坐标。,0,,InfantryTypes
+DeployedSecondaryFireFLH,String,-1,DeployedSecondaryFireFLH,定义步兵部署时副武器的开火坐标。,0,,InfantryTypes
+Slaved.OwnerWhenMasterKilled,String,-1,Slaved.OwnerWhenMasterKilled,奴隶被解放时的效果。suicide为直接死亡；master为归为原本所属；killer为归为击杀者所属；neutral为变为中立所属。默认killer。,0,,InfantryTypes
+Ammo.AutoDeployMinimumAmount,String,-1,Ammo.AutoDeployMinimumAmount,定义载具自动部署所需要的最小弹药数，默认-1,0,,VehicleTypes
+Ammo.AutoDeployMaximumAmount,String,-1,Ammo.AutoDeployMaximumAmount,定义载具若想自动部署则不能超过这个范围，默认-1,0,,VehicleTypes
+Ammo.DeployUnlockMinimumAmount,String,-1,Ammo.DeployUnlockMinimumAmount,定义载具解除部署限制所需要的最小弹药数，默认-1,0,,VehicleTypes
+Ammo.DeployUnlockMaximumAmount,String,-1,Ammo.DeployUnlockMaximumAmount,定义载具若想解除部署限制则弹药不能超过这个范围，默认-1,0,,VehicleTypes
+Ammo.AddOnDeploy,String,-1,Ammo.AddOnDeploy,定义该载具在部署或收起时弹药量的增减值。弹药量不会低于0或超过该载具的最大弹药量（若部署发生变形，则按变形后的单位数据计算）。默认0。,0,,VehicleTypes
+JumpjetTilt.ForwardAccelFactor,String,-1,JumpjetTilt.ForwardAccelFactor,定义当前加速度值影响前倾幅度的修正系数。默认1.0。,0,,VehicleTypes
+JumpjetTilt.ForwardSpeedFactor,String,-1,JumpjetTilt.ForwardSpeedFactor,定义当前速度值影响前倾幅度的修正系数。默认1.0。侧倾幅度与转向角度和当前速度相关。两者相乘，可通过系数调整细节。,0,,VehicleTypes
+JumpjetTilt.SidewaysRotationFactor,String,-1,JumpjetTilt.SidewaysRotationFactor,定义转向角度影响侧倾幅度的修正系数。默认1.0。,0,,VehicleTypes
+JumpjetTilt.SidewaysSpeedFactor,String,-1,JumpjetTilt.SidewaysSpeedFactor,定义当前速度影响侧倾幅度的修正系数。默认1.0。,0,,VehicleTypes
+Spawner.ExtraLimitRange,String,-1,Spawner.ExtraLimitRange,子机的额外追击距离。默认0。,0,,TechnoTypes
+Spawner.DelayFrames,String,-1,Spawner.DelayFrames,设置子机每次发射之间的最小帧数。默认情况下，导弹9帧，其他20帧。,0,,TechnoTypes
+Spawner.RecycleRange,String,-1,Spawner.RecycleRange,定义子机的回收距离，子机返航时与母舰回收位置距离小于该值直接收回子机。单位为格。默认-1。,0,,TechnoTypes
+Spawner.RecycleCoord,String,-1,Spawner.RecycleCoord,"定义子机回收位置相对于母舰的偏移坐标，类似武器开火坐标的FLH。默认0,0,0。设置回收坐标时，建议同时设置至少0.5的回收范围，否则母舰可能无法正常回收子机。",0,,TechnoTypes
+InitialSpawnsNumber,String,-1,InitialSpawnsNumber,母舰初始携带的子机数量，大于SpawnsNumber的值无效。,0,,TechnoTypes
+EngineerRepairAmount,String,-1,EngineerRepairAmount,工程师单次维修该建筑的最大回血量（0为修复至满血）。默认0。负值表示百分比，例如EngineerRepairAmount=-50表示每次最多修复建筑50%的生命值。若建筑和工程师均设置EngineerRepairAmount，实际修复量取两者中的最小值。,0,,BuildingTypes
+EngineerRepairAmount,String,-1,EngineerRepairAmount,该工程师单次维修建筑的最大回血量（0为修复至满血）。默认0。负值表示百分比，例如EngineerRepairAmount=-50表示每次最多修复建筑50%的生命值。若建筑和工程师均设置EngineerRepairAmount，实际回血量取两者中的最小值。,0,,InfantryTypes
+PowersUp.Owner,String,-1,PowersUp.Owner,建筑加载物可以放置的对象。默认Self。,0,,BuildingTypes
+PowerPlantEnhancer.Amount,String,-1,PowerPlantEnhancer.Amount,增幅的值，即令增幅的建筑的电力增加这个值。默认0。,0,,BuildingTypes
+PowerPlantEnhancer.Factor,String,-1,PowerPlantEnhancer.Factor,增幅的倍数，即令增幅的建筑的电力乘这个值。默认1.0。,0,,BuildingTypes
+CanTarget,String,-1,CanTarget,武器能够瞄准的对象。需要all或empty以使武器能向没有单位的格子开火。默认all。注意这里的land、water是指区域内的实体，而不是单元格，也就是说一个仅可攻击land的武器只有攻击陆上单位上时会使用单签武器，攻击包括空旷地面在内的其他对象会尝试切换其他武器（如果有）,0,,WeaponTypes
+CanTargetHouses,String,-1,CanTargetHouses,武器能够瞄准的所属。默认all。,0,,WeaponTypes
+CanTarget.MaxHealth,String,-1,CanTarget.MaxHealth,武器能够瞄准的目标的最大血量百分比，只有血量百分比小于等于该值的目标能被瞄准。默认1.0。,0,,WeaponTypes
+CanTarget.MinHealth,String,-1,CanTarget.MinHealth,武器能够瞄准的目标的最小血量百分比，只有血量百分比大于等于该值的目标能被瞄准。默认0.0。只对血量不为0的科技类型目标进行血量检查,0,,WeaponTypes
+ExtraWarheads.DamageOverrides,String,-1,ExtraWarheads.DamageOverrides,额外弹头的伤害值，和上一条语句中的弹头一一对应。如果不设置则按照原武器的伤害值。,0,,WeaponTypes
+ExtraWarheads.DetonationChances,String,-1,ExtraWarheads.DetonationChances,定义额外弹头的触发概率，可和上条语句一一对应。,0,,WeaponTypes
+AreaFire.Target,String,-1,AreaFire.Target,设置了AreaFire的武器的目标。如果设置为self则会遵循一般瞄准规则对开火者自身开火。如果设置为random则会攻击武器攻击范围内的随机某格，会遵循武器的CanTarget和CanTargetHouses以忽略无法攻击或包含无法攻击的对象的单元格。默认base，即开火者所在单元格。,0,,WeaponTypes
+Burst.Delays,String,-1,Burst.Delays,设定Burst的武器的开火间隔，如果没有设置对应的间隔，那么就会使用最后设置的间隔。使用-1来取消此逻辑，应用原始的BurstDelay0-3。默认-1。（例如Burst=3且Burst.Delays=10时，三发均使用10帧延迟）。,0,,WeaponTypes
+DelayedFire.Duration,String,-1,DelayedFire.Duration,设置武器开火前的延迟时间。可以设置单个延迟帧数或两个逗号分隔的值之间的范围，实际延迟值会在范围内随机选择。飞行器类单位因攻击模式不同，不会等待延迟结束而会直接尝试开火，若延迟过长则不会发射。,0,,WeaponTypes
+DelayedFire.AnimOffset,String,-1,DelayedFire.AnimOffset,开火延迟动画的位置相对于武器当前开火坐标的偏移坐标值。DelayedFire.CenterAnimOnFirer=true时则为相对于开火者中心的偏移坐标值。,0,,WeaponTypes
+Strafing.Shots,String,-1,Strafing.Shots,单轮扫射中武器发射的次数。Ammo仅在一轮扫射结束后扣除，无论一轮开火几次。默认5。Buiild#45开始可以超过5,0,,WeaponTypes
+Strafing.EndDelay,String,-1,Strafing.EndDelay,覆盖定义一轮扫射中最后一发发射后与下轮扫射或返航间的延迟值。默认值= (武器射程\*256+1024)/飞行器速度。对可多轮扫射的飞行器使用过短延迟可能导致异常行为（如盘旋或朝向异常），飞行器的ROT或移动速度也有影响。由Type=SpyPlane超武生成的侦察机在执行SpyPlane Approach/SpyPlane Overfly任务时，其主武器的Strafing.Shots（若设置）将决定地图揭示效果的最大触发次数（不受其他因素影响）。,0,,WeaponTypes
+KeepRange,String,-1,KeepRange,设置单位在武器冷却期间与目标保持的距离（读取绝对值）。正值时单位会保持在此距离外（类似开火后获得特殊最小射程），负值时单位会尽量与目标保持在此距离内（类似开火后覆盖为特定射程值）。若有效射程区间过小，则视为无法开火。建议有效射程设为1.0（步兵建议2.0）。0为不启用保持距离功能。默认0。例如单位武器射程10，最小射程2，KeepRange为6，有效射程区间为10-6=4。KeepRange为-5时有效射程区间为5-2=3。,0,,WeaponTypes
+KeepRange.EarlyStopFrame,String,-1,KeepRange.EarlyStopFrame,距离武器发射下一发的间隔时间小于KeepRange.EarlyStopFrame定义的游戏内帧数值时不执行保持距离。用于BurstDelay等多发连射的单位在连射期间不进行保持距离行为。默认0。,0,,WeaponTypes
+Interceptor.Weapon,String,-1,Interceptor.Weapon,拦截抛射体时使用的武器索引，0为主武器，1为副武器，以此类推。默认0。拦截武器的抛射体需要设置AG以拦截低空抛射体，设置AA以拦截高空抛射体，设置不满足条件则无法拦截。,0,,TechnoTypes
+Interceptor.CanTargetHouses,String,-1,Interceptor.CanTargetHouses,拦截抛射体时能够拦截哪个所属的抛射体。默认enemies。,0,,TechnoTypes
+Interceptor.GuardRange,String,-1,Interceptor.GuardRange,单位拦截抛射体的最大范围。拦截武器射程也会影响拦截范围。默认0.0。,0,,TechnoTypes
+Interceptor.VeteranGuardRange,String,-1,Interceptor.VeteranGuardRange,同上，用于老兵级时。,0,,TechnoTypes
+Interceptor.EliteGuardRange,String,-1,Interceptor.EliteGuardRange,同上，用于精英级时。,0,,TechnoTypes
+Interceptor.MinimumGuardRange,String,-1,Interceptor.MinimumGuardRange,单位拦截抛射体的最小范围。单位不会拦截在此范围内的抛射体。默认0.0。,0,,TechnoTypes
+Interceptor.VeteranMinimumGuardRange,String,-1,Interceptor.VeteranMinimumGuardRange,同上，用于老兵级时。,0,,TechnoTypes
+Interceptor.EliteMinimumGuardRange,String,-1,Interceptor.EliteMinimumGuardRange,同上，用于精英级时。,0,,TechnoTypes
+Strength,String,-1,Strength,抛射体的耐久度。拦截后若抛射体耐久小于等于0则视为抛射体被拦截并触发拦截后效果，无论抛射体耐久是否发生减少。默认0。,0,,ProjectileTypes
+Armor,String,-1,Armor,抛射体的护甲类型。无法攻击该抛射体护甲的武器不会进行拦截。拦截武器对抛射体造成的伤害会计算弹头对抛射体护甲的修正比。,0,,ProjectileTypes
+Trajectory,String,-1,Trajectory,抛射体的轨迹类型。Straight为直线射击的轨迹；Bombard为轰击弹道，类似直线弹道，但是攻击目标上方的坐标点。当抛射体接近坐标点后会自由落体，并在接触到地面或目标后爆炸。Parabola为抛物线弹道，类似Arcing弹道但经过完全重置并且新增了大量功能。,0,,ProjectileTypes
+Trajectory.Speed,String,-1,Trajectory.Speed,设定了Trajectory的抛射体的初始速度。,0,,ProjectileTypes
+Trajectory.Straight.DetonationDistance,String,-1,Trajectory.Straight.DetonationDistance,定义该抛射体距离预定目标多少距离时会直接引爆的最大距离，默认为0.4（若设置=0则可能导致抛射体“飞越”目标）。,0,,ProjectileTypes
+Trajectory.Straight.TargetSnapDistance,String,-1,Trajectory.Straight.TargetSnapDistance,定义该抛射体爆炸时会“瞬移”到原定目标上的最大距离，默认为0.5。,0,,ProjectileTypes
+Trajectory.Straight.PassDetonateDamage,String,-1,Trajectory.Straight.PassDetonateDamage,穿透伤害撞击伤害的数值,0,,ProjectileTypes
+Trajectory.Straight.PassDetonateDelay,String,-1,Trajectory.Straight.PassDetonateDelay,穿透伤害造成伤害的间隔，单位为帧，需要≥1。默认1。,0,,ProjectileTypes
+Trajectory.Straight.PassDetonateInitialDelay,String,-1,Trajectory.Straight.PassDetonateInitialDelay,穿透伤害在抛体发射后多少帧第一次触发，即穿透伤害触发的初始延迟。默认0.,0,,ProjectileTypes
+Trajectory.Straight.OffsetCoord,String,-1,Trajectory.Straight.OffsetCoord,"抛体会瞄准目标的这个相对坐标进行攻击，支持与Inaccurate=yes和计算提前量联用。需要填写完整的FLH坐标。默认0,0,0。",0,,ProjectileTypes
+Trajectory.Straight.RotateCoord,String,-1,Trajectory.Straight.RotateCoord,是否按照武器的Burst在以Trajectory.Straight.OffsetCoord为角平分线的角度内旋转抛体发射方向，=0代表禁用该逻辑（负值会反转旋转方向）。默认0。,0,,ProjectileTypes
+Trajectory.Straight.AxisOfRotation,String,-1,Trajectory.Straight.AxisOfRotation,"计算Trajectory.Straight.RotateCoord时的旋转轴向量坐标，旋转轴会随单位朝向或目标位置到发射位置的向量旋转，长度不重要，只看方向（相反的向量也会反转旋转方向）。默认0,0,1。",0,,ProjectileTypes
+Trajectory.Straight.ProximityImpact,String,-1,Trajectory.Straight.ProximityImpact,撞击伤害次数，即抛体在检测到周围有单位时在单位所在的位置【额外】引爆一个弹头，=0代表不启用该逻辑，负数视为无限，最后一次触发是在其位置【额外】引爆一个弹头的同时引爆【本身】（撞击伤害也会对抛体本身的目标造成伤害）。默认0。,0,,ProjectileTypes
+Trajectory.Straight.ProximityDamage,String,-1,Trajectory.Straight.ProximityDamage,撞击伤害的伤害数值，默认0。,0,,ProjectileTypes
+Trajectory.Straight.ProximityRadius,String,-1,Trajectory.Straight.ProximityRadius,撞击伤害触发的范围，不支持负数（不建议设置太大）。默认0.7。,0,,ProjectileTypes
+Trajectory.Straight.ConfineAtHeight,String,-1,Trajectory.Straight.ConfineAtHeight,抛体会尽可能在离当前地面高度多高处飞行，≤0代表不启用该逻辑，当抛射体速度＞256时失效（若SubjectToCliffs为yes，则其在悬崖高处都不会往下移动）。默认0。,0,,ProjectileTypes
+Trajectory.Straight.EdgeAttenuation,String,-1,Trajectory.Straight.EdgeAttenuation,"射程边缘修正比，抛体飞行到最大射程造成的伤害与距离一格内造成伤害的【比例】，一格外到射程内的变化是线性的，不支持负数（包括自身伤害,Trajectory.Straight.PassDetonateDamage和Trajectory.Straight.ProximityDamage）。默认1.0。",0,,ProjectileTypes
+Trajectory.Straight.CountAttenuation,String,-1,Trajectory.Straight.CountAttenuation,伤害次数衰减率，即每次造成伤害后下一次造成伤害会是本次伤害的多少倍，不支持负数（包括自身伤害，Trajectory.Straight.PassDetonateDamage和Trajectory.Straight.ProximityDamage）。默认1.0。该抛射体轨迹支持联用Inaccurate，BallisticScatter.Min与BallisticScatter.Max。,0,,ProjectileTypes
+Trajectory.Bombard.Height,String,-1,Trajectory.Bombard.Height,Trajectory设定为Bombard时，抛体转向位置相对于目标的垂直高度，即弹道转折点的高度。默认0.0。 [Projectile]►Trajectory.Bombard.FallPercent= （double） 抛体转向位置占发射位置与目标位置间水平距离的百分比，即弹道转折点在总弹道轨迹的位置百分比。为0时转向位置是在发射位置上方，为1时转向位置是在目标位置上方。默认1.0。,0,,ProjectileTypes
+Trajectory.Bombard.FallPercentShift,String,-1,Trajectory.Bombard.FallPercentShift,抛体转向位置的最大随机距离间偏移量，即弹道转折点相对原位置随机偏移的最大偏移距离。随机值会与Trajectory.Bombard.FallPercent相加得到最终转向位置的水平距离百分比。为0时禁用功能。默认0.0。,0,,ProjectileTypes
+Trajectory.Bombard.FallScatter.Max,String,-1,Trajectory.Bombard.FallScatter.Max,抛体转向位置将以Trajectory.Bombard.FallPercent和随机Trajectory.Bombard.FallPercentShift相加得到的位置为圆心，随机散布在以该值为半径的大圆内。为0时禁用功能。默认0.0。,0,,ProjectileTypes
+Trajectory.Bombard.FallScatter.Min,String,-1,Trajectory.Bombard.FallScatter.Min,抛体转向位置将以Trajectory.Bombard.FallPercent和随机Trajectory.Bombard.FallPercentShift相加得到的位置为圆心，随机散布在以该值为半径的小圆外，不会大于Trajectory.Bombard.FallScatter.Max。默认0.0。,0,,ProjectileTypes
+Trajectory.Bombard.FallSpeed,String,-1,Trajectory.Bombard.FallSpeed,抛体在经过转向位置后的初始速度，如果为0会使用Trajectory.Speed，不能和Trajectory.Bombard.FreeFallOnTarget同时使用。默认0.0。,0,,ProjectileTypes
+Trajectory.Bombard.DetonationDistance,String,-1,Trajectory.Bombard.DetonationDistance,抛体在距离目标多远距离处就会引爆。默认0.4。,0,,ProjectileTypes
+Trajectory.Bombard.DetonationHeight,String,-1,Trajectory.Bombard.DetonationHeight,抛体位于什么高度时提前引爆，需要与Trajectory.Bombard.EarlyDetonation组合使用，为负数时不生效。默认-1。,0,,ProjectileTypes
+Trajectory.Bombard.TargetSnapDistance,String,-1,Trajectory.Bombard.TargetSnapDistance,抛体引爆时，当前目标在多近的距离内弹头会吸附过去。默认0.5。,0,,ProjectileTypes
+Trajectory.Bombard.OffsetCoord,String,-1,Trajectory.Bombard.OffsetCoord,"抛体会瞄准目标的这个相对坐标进行攻击，支持在此基础上启用随机散布Inaccurate与提前量计算,需要填写完整的FLH坐标。",0,,ProjectileTypes
+Trajectory.Bombard.RotateCoord,String,-1,Trajectory.Bombard.RotateCoord,是否按照武器的Burst在以Trajectory.Bombard.OffsetCoord为角平分线的角度内旋转抛体发射方向，为0代表不启用该逻辑（负值会反转旋转方向）。默认0。,0,,ProjectileTypes
+Trajectory.Bombard.AxisOfRotation,String,-1,Trajectory.Bombard.AxisOfRotation,"计算Trajectory.Bombard.RotateCoord时的旋转轴，旋转轴会随单位朝向或目标位置到发射位置的向量旋转，长度不重要，只看方向（相反的向量也会反转旋转方向）。需要填写完整的向量坐标。默认0,0,1。",0,,ProjectileTypes
+Trajectory.Parabola.DetonationDistance,String,-1,Trajectory.Parabola.DetonationDistance,若为正数，代表抛体在距离目标多远距离内就会引爆，若为负数，代表若抛体目标可以移动则会将目标直接丢失转为攻击其所在位置的地面格子，若为零则关闭功能。默认0.4。,0,,ProjectileTypes
+Trajectory.Parabola.TargetSnapDistance,String,-1,Trajectory.Parabola.TargetSnapDistance,抛体引爆时，当前目标在多近的距离内弹头会吸附过去。默认0.5。,0,,ProjectileTypes
+Trajectory.Parabola.OpenFireMode,String,-1,Trajectory.Parabola.OpenFireMode,抛体的发射模式。默认Speed。,0,,ProjectileTypes
+Trajectory.Parabola.ThrowHeight,String,-1,Trajectory.Parabola.ThrowHeight,抛体的抛射高度，抛体的水平速度将因距离发生改变，具体的高度将由发射位置的高度和目标位置的高度取较大值并增加该值，不支持非正数。默认600。,0,,ProjectileTypes
+Trajectory.Parabola.LaunchAngle,String,-1,Trajectory.Parabola.LaunchAngle,"抛体的发射角度，抛体的水平速度和最高高度将因距离发生改变，使用模式2或模式5时支持(-90.0,90.0)，使用模式4时支持(0.0,90.0)。默认30。",0,,ProjectileTypes
+Trajectory.Parabola.DetonationAngle,String,-1,Trajectory.Parabola.DetonationAngle,"抛体在当前速度方向与水平面之间的夹角小于该值时会提前引爆，当该值处在(-90.0,90.0)时生效，该值为零时（即需要抛体在最高点时引爆）会简化判断节约性能。默认-90.0。",0,,ProjectileTypes
+Trajectory.Parabola.DetonationHeight,String,-1,Trajectory.Parabola.DetonationHeight,抛体在处于下降状态且低于发射位置高度加上该值时会提前引爆，非负数时生效。默认-1。,0,,ProjectileTypes
+Trajectory.Parabola.BounceTimes,String,-1,Trajectory.Parabola.BounceTimes,抛体的弹跳次数。默认0。,0,,ProjectileTypes
+Trajectory.Parabola.BounceAttenuation,String,-1,Trajectory.Parabola.BounceAttenuation,抛体弹跳伤害的衰减系数，即每次弹跳后下一次弹跳造成伤害会是本次伤害的多少倍。默认0.8。,0,,ProjectileTypes
+Trajectory.Parabola.BounceCoefficient,String,-1,Trajectory.Parabola.BounceCoefficient,抛体弹跳的弹性系数，即每次弹跳后的速度是弹跳前速度的多少倍。默认0.8。,0,,ProjectileTypes
+Trajectory.Parabola.OffsetCoord,String,-1,Trajectory.Parabola.OffsetCoord,"抛体会瞄准目标的这个相对坐标进行攻击，支持在此基础上启用随机散布Inaccurate,需要填写完整的FLH坐标。默认0,0,0。",0,,ProjectileTypes
+Trajectory.Parabola.RotateCoord,String,-1,Trajectory.Parabola.RotateCoord,是否按照武器的Burst在以Trajectory.Parabola.OffsetCoord为角平分线的角度内旋转抛体发射方向，为0代表不启用该逻辑（负值会反转旋转方向）。默认0。,0,,ProjectileTypes
+Trajectory.Parabola.AxisOfRotation,String,-1,Trajectory.Parabola.AxisOfRotation,"计算Trajectory.Parabola.RotateCoord时的旋转轴，旋转轴会随单位朝向或目标位置到发射位置的向量旋转，长度不重要，只看方向（相反的向量也会反转旋转方向）。需要填写完整的向量坐标。默认0,0,1。该抛射体轨迹支持联用Inaccurate，BallisticScatter.Min，BallisticScatter.Max与Gravity。",0,,ProjectileTypes
+Parachuted.FallRate,String,-1,Parachuted.FallRate,定义空投炸弹的下落速度,0,,ProjectileTypes
+Parachuted.MaxFallRate,String,-1,Parachuted.MaxFallRate,定义空投炸弹的下落速度上限。默认继承[General]►ParachuteMaxFallRate。,0,,ProjectileTypes
+TransactMoney,String,-1,TransactMoney,弹头爆炸时所属方获得的资金值，负数为扣除资金。默认0。,0,,Warheads
+TransactMoney.Display.Houses,String,-1,TransactMoney.Display.Houses,显示的资金变化数可以被哪些阵营看到。默认all。,0,,Warheads
+TransactMoney.Display.Offset,String,-1,TransactMoney.Display.Offset,"调整显示的资金变化数的绘制偏移。负数左／上，正数右／下。默认0,0。",0,,Warheads
+Reveal,String,-1,Reveal,弹头爆炸时是否为发射弹头的所属方揭露以该值为半径的范围的地图视野，负数值为揭露全地图视野。默认0。,0,,Warheads
+CreateGap,String,-1,CreateGap,弹头爆炸时是否对发射弹头的所属方的敌对所属方生成以该值为半径的范围的黑幕，负数值为黑幕覆盖全地图。默认0。,0,,Warheads
+Crit.Chance,String,-1,Crit.Chance,弹头暴击的概率，有效值为0.0到1.0之间。默认0.0。,0,,Warheads
+Crit.ExtraDamage,String,-1,Crit.ExtraDamage,弹头暴击后造成的额外伤害。默认0。,0,,Warheads
+Crit.Affects,String,-1,Crit.Affects,何种目标可以被暴击。默认all。不能对地形对象与覆盖物和仅包含这些的格子与空格子暴击。,0,,Warheads
+Crit.AffectsHouses,String,-1,Crit.AffectsHouses,哪个所属方的单位可以被暴击。默认all。,0,,Warheads
+Crit.AffectBelowPercent,String,-1,Crit.AffectBelowPercent,低于等于多少百分比血量的目标会被暴击。默认1.0。0血目标不进行检查。,0,,Warheads
+Crit.AffectsAbovePercent,String,-1,Crit.AffectsAbovePercent,高于等于多少百分比血量的目标会被暴击。默认0.0。0血目标不进行检查。,0,,Warheads
+AnimList.CreationInterval,String,-1,AnimList.CreationInterval,若大于0，则AnimList里的动画会在弹头爆炸过对应的次数后才会再一次播放。,0,,Warheads
+AnimList.ScatterMin,String,-1,AnimList.ScatterMin,弹头的动画的最小散布范围。,0,,Warheads
+AnimList.ScatterMax,String,-1,AnimList.ScatterMax,弹头的动画的最大散布范围。,0,,Warheads
+NotHuman.DeathSequence,String,-1,NotHuman.DeathSequence,弹头触发NotHuman=yes的步兵的哪一个死亡序列。范围1-5，代表Die1到Die5。,0,,Warheads
+LaunchSW.DisplayMoney.Offset,String,-1,LaunchSW.DisplayMoney.Offset,"调整显示的资金变化数的绘制偏移。负数左／上，正数右／下。单位为像素。默认0,0。",0,,Warheads
+DetonateOnAllMapObjects.AffectTargets,String,-1,DetonateOnAllMapObjects.AffectTargets,弹头能够作用的目标类型。默认all。Build#33及以后（包括releasev0.3）默认none,0,,Warheads
+DetonateOnAllMapObjects.AffectHouses,String,-1,DetonateOnAllMapObjects.AffectHouses,弹头能够作用的目标所属。默认all。Build#33及以后（包括releasev0.3）默认none,0,,Warheads
+ConvertN.AffectedHouses,String,-1,ConvertN.AffectedHouses,哪些所属方会被转换弹头影响，默认team。,0,,Warheads
+DamageOwnerMultiplier,String,-1,DamageOwnerMultiplier,微观定义对己方伤害的额外修正比，默认为全局定义值。,0,,Warheads
+DamageAlliesMultiplier,String,-1,DamageAlliesMultiplier,微观定义对友方伤害的额外修正比不包含己方，默认为全局定义值。,0,,Warheads
+DamageEnemiesMultiplier,String,-1,DamageEnemiesMultiplier,微观定义对敌方伤害的额外修正比，默认为全局定义值。,0,,Warheads
+DamageSourceHealthMultiplier,String,-1,DamageSourceHealthMultiplier,开火者的血量百分比影响弹头伤害的额外修正比。默认0.0。,0,,Warheads
+DamageTargetHealthMultiplier,String,-1,DamageTargetHealthMultiplier,被命中的目标的血量百分比影响弹头伤害的额外修正比。默认0.0。计算方式：伤害倍率+（开火者生命值百分比 × DamageSourceHealthMultiplier）+（目标生命值百分比 × DamageTargetHealthMultiplier）\=总伤害倍率,0,,Warheads
+SpawnsCrateN.Type,String,-1,SpawnsCrateN.Type,定义弹头生成的工具箱种类，N可以不写，或者写整数1，2，3......,0,,Warheads
+SpawnsCrateN.Weight,String,-1,SpawnsCrateN.Weight,定义弹头生成的工具箱的权重列表。数字越大权重越高，生成概率越高。默认1。,0,,Warheads
+KillWeapon.AffectsHouses,String,-1,KillWeapon.AffectsHouses,KillWeapon能对哪些所属方生效。默认all。,0,,Warheads
+KillWeapon.OnFirer.AffectsHouses,String,-1,KillWeapon.OnFirer.AffectsHouses,KillWeapon.OnFirer能对哪些所属方生效。默认all。,0,,Warheads
+KillWeapon.Affects,String,-1,KillWeapon.Affects,KillWeapon能对哪些类型的目标生效。默认all。,0,,Warheads
+KillWeapon.OnFirer.Affects,String,-1,KillWeapon.OnFirer.Affects,KillWeapon.OnFirer能对哪些类型的目标生效。默认all。,0,,Warheads
+LimboDelivery.IDs,String,-1,LimboDelivery.IDs,虚拟投放建筑绑定的ID列表，和LimboDelivery.Types一一对应。要使虚拟击杀生效就必须设置。,0,,WeaponTypes
+LimboDelivery.RollChances,String,-1,LimboDelivery.RollChances,"指定虚拟投放的概率列表，有几项就进行几次虚拟投放概率判定。默认100%即单次投放,必定成功。该列表作用是决定每次投放成功的概率，第一次投放成功概率值是列表第一项，以此类推，需要要发动几次投放就写几项。有效值为0%(必定失败)到100%(必定成功)。例如LimboDelivery.RollChances=80%,60%,40% 则有80%的概率进行一次投放，有60%的概率进行第二次投放有40%的概率进行第三次投放。每次概率判定结果独立，不影响其他次判定。",0,,WeaponTypes
+LimboDelivery.RandomWeights1,String,-1,LimboDelivery.RandomWeights1,指定虚拟投放的权重列表，和LimboDelivery.Types一一对应。每个建筑对应一个权重。RandomWeights相当于RandomWeights0。每次虚拟投放时都会给对应的建筑赋予这些权重进入抽选，，权重越高被选中的概率越大，0则为不会被选中。,0,,WeaponTypes
+LimboKill.Affected,String,-1,LimboKill.Affected,哪些所属方会被移除(虚拟击杀)功能影响，默认Self。,0,,WeaponTypes
+LimboKill.IDs,String,-1,LimboKill.IDs,超武生效后会被移除(虚拟击杀)的虚拟投放建筑的ID列表。虚拟投放的建筑并不实际存在，一切与其实际交互的机制比如工厂，克隆，维修厂，直升机平台等都不能正常生效。同时也不会被任何地图内威胁影响到。所以此建筑必须要么设置KeepAlive=no，要么可以被虚拟击杀，否则游戏将无法结束。,0,,WeaponTypes
+SW.Next.RollChances,String,-1,SW.Next.RollChances,"指定连续释放的概率列表，有几项就进行几次释放概率判定。默认100%即单次释放,必定成功。该列表作用是决定每次释放成功的概率，第一次释放成功概率值是列表第一项，以此类推，需要要发动几次释放就写几项。有效值为0%(必定失败)到100%(必定成功)。SW.NegBuilding会在连续释放完成后结算。",0,,WeaponTypes
+SW.Link.RollChances,String,-1,SW.Link.RollChances,"指定联动超武发生联动的概率列表，有几项就进行几次联动概率判定。默认100%即单次联动,必定成功。该列表作用是决定每次联动成功的概率，第一次联动成功概率值是列表第一项，以此类推，需要要发动几次联动就写几项。有效值为0%(必定失败)到100%(必定成功)。",0,,WeaponTypes
+SW.Link.RandomWeights1,String,-1,SW.Link.RandomWeights1,同时指定每次联动的权重列表，每次的权重表和SW.Link一一对应，每个超武对应一个权重。,0,,WeaponTypes
+Message.LinkedSWAcquired,String,-1,Message.LinkedSWAcquired,至少一个联动超武被给予或设置倒计时后向发射所属方播放的文字信息。,0,,WeaponTypes
+Detonate.Damage,String,-1,Detonate.Damage,对超武的目标单元造成的伤害。如果设定了Detonate.Weapon不设定本条语句，则默认为指定武器的伤害；如果设定了Detonate.Warhead不设定本条语句，则默认0。,0,,WeaponTypes
+ConvertN.AffectedHouses,String,-1,ConvertN.AffectedHouses,哪些所属方会被转换超武影响，默认team。,0,,WeaponTypes
+TabIndex,String,-1,TabIndex,定义超武栏的位置，默认1,0,,WeaponTypes
+EMPulse.WeaponIndex,String,-1,EMPulse.WeaponIndex,该EMP炮超武使用的武器序号，0为主武器，1为副武器。默认0。,0,,WeaponTypes
+CreateUnit.Owner,String,-1,CreateUnit.Owner,动画生成单位的所属。默认Victim。,0,,Animations
+CreateUnit.Mission,String,-1,CreateUnit.Mission,动画生成单位的动作。默认Guard。,0,,Animations
+CreateUnit.AIMission,String,-1,CreateUnit.AIMission,动画生成单位的动作。但是AI专用，会覆盖CreateUnit.Mission。默认Guard。,0,,Animations
+CreateUnit.Facing,String,-1,CreateUnit.Facing,动画生成单位的方向，范围0-255。默认0。,0,,Animations
+VisibleTo,String,-1,VisibleTo,定义哪些所属方可以看到动画。默认all。,0,,Animations
+InfoType,String,-1,InfoType,数值显示的内容，如果没有相应的内容即使设置也不会显示。血量／护盾血量／弹药／心控数／子机／乘客／矿石／经验／驻军／盖特阶段／攻击间隔／弹药装填／子机重生／盖特计时／提供资金／删除乘客／自毁／超武／铁幕超时空冻结／工厂生产进度,0,,DigitalDisplayTypes
+InfoIndex,String,-1,InfoIndex,定义特定数值显示内容的额外设置。Spawns：0=存活子机，1=收纳状态的子机，2=发射中的子机；Tiberium：0=全部，1=第一种矿石，2=第二种矿石...；SpawnTimer：0=重生最快的子机，1=第一个子机，2=第二个子机...；SuperWeapon：0=所有超武中第一个，1=建筑的SuperWeapon定义的超武，2=建筑的SuperWeapon2定义的超武，3=建筑的SuperWeapons定义的第一个超武...；FactoryProcess：0=生产中的第一个工厂，1=主工厂，2=副工厂,0,,DigitalDisplayTypes
+Offset,String,-1,Offset,"调整数值显示的位置。正数左／上，负数右／下。默认0,0。",0,,DigitalDisplayTypes
+Offset.ShieldDelta,String,-1,Offset.ShieldDelta,"调整数值显示在有护盾时显示的位置。InfoType=Shield时默认0,-10，其他默认0,0。",0,,DigitalDisplayTypes
+Align,String,-1,Align,生命值数值的对齐方式。默认right。左对齐／右对齐／居中对齐,0,,DigitalDisplayTypes
+Anchor.Horizontal,String,-1,Anchor.Horizontal,生命值数值绘制位置在血条上水平位置的锚点。默认right。,0,,DigitalDisplayTypes
+Anchor.Vertical,String,-1,Anchor.Vertical,生命值数值绘制位置在血条上竖直位置的锚点。默认top。,0,,DigitalDisplayTypes
+Anchor.Building,String,-1,Anchor.Building,建筑生命值数值绘制位置在血条上位置的锚点。默认top。,0,,DigitalDisplayTypes
+VisibleToHouses,String,-1,VisibleToHouses,数显的可见所属方，默认owner,0,,DigitalDisplayTypes
+ValueScaleDivisor,String,-1,ValueScaleDivisor,设置数值显示的倍率系数，当前值和最大值均会除以倍率系数后进行显示。默认1，ValueAsTimer=yes时默认15。10000血，倍率20那么数显上就会显示500血,0,,DigitalDisplayTypes
+ShowType,String,-1,ShowType,"数显在单位处于什么状态下显示。鼠标指针悬浮在单位上／被选中／常驻显示／以上全部。idle条件需要结合HealthBar.Permanent=yes才能生效。默认cursorhover,selected",0,,DigitalDisplayTypes
+Text.Color,String,-1,Text.Color,"数值显示在百分比高于ConditionYellow时显示的颜色。默认0,255,0。",0,ColorEdit,DigitalDisplayTypes
+Text.Color.ConditionYellow,String,-1,Text.Color.ConditionYellow,"数值显示在百分比低于ConditionYellow但高于ConditionRed时显示的颜色。默认255,255,0。",0,ColorEdit,DigitalDisplayTypes
+Text.Color.ConditionRed,String,-1,Text.Color.ConditionRed,"数值显示在百分比低于ConditionRed时显示的颜色。默认255,0,0。",0,ColorEdit,DigitalDisplayTypes
+Shape,String,-1,Shape,shp数值显示使用的文件。0-9帧绿血条 10-19帧黄血条 20-29帧红血条 30-31帧/符号 32-33帧%符号 34-35帧:符号(ValueAsTimer=yes时),0,,DigitalDisplayTypes
+Palette,String,-1,Palette,shp数值显示使用的色盘。默认palette.pal。,0,,DigitalDisplayTypes,The palette used to draw an image particle of this type. Defaults to ANIM.PAL.
+Shape.Spacing,String,-1,Shape.Spacing,shp数值显示的字符水平和竖直间隔，单位为像素。,0,,DigitalDisplayTypes
+Shape,String,-1,Shape,选择框使用的SHP文件。默认select.shp 。,0,,SelectBoxTypes
+Palette,String,-1,Palette,选择框使用的色盘。默认palette.pal。,0,,SelectBoxTypes,The palette used to draw an image particle of this type. Defaults to ANIM.PAL.
+Frames,String,-1,Frames,"逗号分隔的三个帧数，分别为单位绿血，黄血，红血时显示的选择框文件帧。步兵默认1,1,1 载具默认0,0,0。血量阈值由[AudioVisual]►ConditionYellow/ConditionRed决定",0,,SelectBoxTypes
+Offset,String,-1,Offset,"选择框的水平和垂直偏移距离。单位为像素。默认0,0。",0,,SelectBoxTypes
+Translucency,String,-1,Translucency,选择框的透明度，可填0/25/50/75。默认0。,0,,SelectBoxTypes
+VisibleToHouses,String,-1,VisibleToHouses,哪些所属方选中拥有选择框的单位时可看见选择框。默认all。,0,,SelectBoxTypes
+GroundShape,String,-1,GroundShape,选择框在单位下方的地面绘制的SHP图像，用于指示空中单位在地面的位置。,0,,SelectBoxTypes
+GroundPalette,String,-1,GroundPalette,选择框的地面图像使用的色盘。默认palette.pal。,0,,SelectBoxTypes
+GroundFrames,String,-1,GroundFrames,"逗号分隔的三个帧数，分别为单位绿血，黄血，红血时显示的选择框地面图像文件帧。步兵默认1,1,1 载具和飞行器默认0,0,0。血量阈值由[AudioVisual]►ConditionYellow/ConditionRed决定",0,,SelectBoxTypes
+GroundOffset,String,-1,GroundOffset,"选择框地面图像的水平和垂直偏移值。默认0,0。",0,,SelectBoxTypes
+GroundLineColor,String,-1,GroundLineColor,"设置地面指示线的RGB颜色。默认0,255,0。",0,ColorEdit,SelectBoxTypes
+GroundLineColor.ConditionYellow,String,-1,GroundLineColor.ConditionYellow,设置单位黄血状态下的地面指示线RGB颜色。,0,ColorEdit,SelectBoxTypes
+GroundLineColor.ConditionRed,String,-1,GroundLineColor.ConditionRed,设置单位红血状态下的地面指示线RGB颜色。,0,ColorEdit,SelectBoxTypes
+DisplayIncome,String,-1,DisplayIncome,那个阵容可以看到该建筑的资金收入数值。默认all。,0,,BuildingTypes
+DisplayIncome.Offset,String,-1,DisplayIncome.Offset,"调整该建筑显示的资金收入数的绘制偏移。负数左／上，正数右／下。默认0,0。",0,,BuildingTypes
+PlacementPreview.Shape,String,-1,PlacementPreview.Shape,建筑放置预览显示的内容。默认该建筑建造动画的最后一帧。如果建筑没有建造动画则会使用建筑本体SHP文件的第一帧。,0,,BuildingTypes
+PlacementPreview.ShapeFrame,String,-1,PlacementPreview.ShapeFrame,建筑放置预览显示第几帧。帧序号从0开始,0,,BuildingTypes
+PlacementPreview.Offset,String,-1,PlacementPreview.Offset,"建筑放置预览显示的位置。默认0,-15,1。",0,,BuildingTypes
+PlacementPreview.Palette,String,-1,PlacementPreview.Palette,建筑放置预览使用的色盘，如果上一个标签启用则这个标签无效。,0,,BuildingTypes
+PlacementPreview.Translucency,String,-1,PlacementPreview.Translucency,微观设置建筑放置预览的透明度，可填值：0、25、50、75。,0,,BuildingTypes
+ShowTimer.Priority,String,-1,ShowTimer.Priority,设置超级武器计时器的优先级，数值越大优先级越高，位置越偏下。默认0。,0,,WeaponTypes
+CameoPriority,String,-1,CameoPriority,图标的优先级。默认0。默认优先级排序规则：超武-RechargeTime较小的排在前面 若相同则比较UIName值的首字母顺序 顺序靠前的在前面；单位--AIBasePlanningSide和玩家阵营一致时优先--陆地单位>飞行器单位ConsideredAircraft>海军单位Naval--科技等级TechLevel低的在前面--造价Cost低的在前面-UIName值的首字母顺序靠前的在前面,0,,TechnoTypes
+SuperWeaponSidebar.PriorityHouses,String,-1,SuperWeaponSidebar.PriorityHouses,该超武在哪些阵营拥有时优先在超武左侧边栏显示。,0,,WeaponTypes
+SuperWeaponSidebar.RequiredHouses,String,-1,SuperWeaponSidebar.RequiredHouses,该超武只在哪些阵营拥有时能在超武左侧边栏显示,0,,WeaponTypes
+SuperWeaponSidebar.Significance,String,-1,SuperWeaponSidebar.Significance,定义该超武的显示层级，只有小于等于用户定义的显示层级的超武才能显示在超武左侧边栏。默认0。,0,,WeaponTypes
+UIDescription,String,-1,UIDescription,描述信息的内容。,0,,TechnoTypes
+VoicePickup,SoundList,1,VoicePickup,飞行器拾起要吊运的载具时播放的声音。,00999a,,AircraftTypes
+BunkerWallsUpSound,SoundList,1,BunkerWallsUpSound,自定义坦克碉堡的进入音效，默认继承[AudioVisual]►BunkerWallsUpSound。,00999a,,BuildingTypes
+BunkerWallsDownSound,SoundList,1,BunkerWallsDownSound,自定义坦克碉堡的离开音效，默认继承[AudioVisual]►BunkerWallsDownSound。,00999a,,BuildingTypes
+DestroySound,SoundList,1,DestroySound,地形对象被摧毁时播放的音效。,00999a,,TerrainType
+CrumblingSound,SoundList,1,CrumblingSound,地形对象倒塌时播放的音效。,00999a,,TerrainType
+DetachedReport,SoundList,1,DetachedReport,令动画独立播放未经音频事件处理程序的声音。,00999a,,Animations
+VoiceWeapon1Attack,SoundList,1,VoiceWeapon1Attack,定义使用Weapon1时的攻击语音。N为武器索引值。,00999a,,TechnoTypes
+VoiceEliteWeapon1Attack,SoundList,1,VoiceEliteWeapon1Attack,定义使用EliteWeapon1时的攻击语音。默认继承VoiceWeapon1Attack。由于某些原因 这个词条在build48中无法正确解析导致功能无效，在最新开发版中已修复。,00999a,,TechnoTypes
+PassengerDeletion.ReportSound,SoundList,1,PassengerDeletion.ReportSound,删除乘客时的音效。,00999a,,TechnoTypes
+Overload.DeathSound,SoundList,1,Overload.DeathSound,单独定义单位心控数量超过InfiniteMindControl=yes的武器Damage=设定的心控数量时触发的音效。默认继承[AudioVisual]►MasterMindOverloadDeathSound。,00999a,,TechnoTypes
+SellSound,SoundList,1,SellSound,微观定义单位变卖时的音效。默认[AudioVisual]►SellSound。,00999a,,TechnoTypes
+SlavesFreeSound,SoundList,1,SlavesFreeSound,现在可以单独给每个奴隶自定义奴隶的解放声音。,00999a,,InfantryTypes
+BuildingRepairedSound,SoundList,1,BuildingRepairedSound,单独定义该建筑被维修的音效。默认继承[AudioVisual]►BuildingRepairedSound。,00999a,,BuildingTypes
+ShieldType,ShieldTypes,-1,ShieldType,该单位自带的护盾类型,0000ff,,TechnoTypes
+Shield.AffectTypes,ShieldTypes,-1,Shield.AffectTypes,哪些护盾会被上述效果影响。如果不设置，所有的护盾都会被影响。,0000ff,,Warheads
+Shield.Penetrate.Types,ShieldTypes,-1,Shield.Penetrate.Types,弹头会无视哪些护盾直接造成伤害。,0000ff,,Warheads
+Shield.Break.Types,ShieldTypes,-1,Shield.Break.Types,弹头在伤害结算前一击击碎哪些护盾。,0000ff,,Warheads
+Shield.Respawn.Types,ShieldTypes,-1,Shield.Respawn.Types,哪些护盾的Respawn被此弹头击中时会被覆盖。,0000ff,,Warheads
+Shield.SelfHealing.Types,ShieldTypes,-1,Shield.SelfHealing.Types,哪些护盾的SelfHealing被此弹头击中时会被覆盖。,0000ff,,Warheads
+Shield.AttachTypes,ShieldTypes,-1,Shield.AttachTypes,被此弹头影响的单位附加的护盾列表。通常只有第一个被应用。,0000ff,,Warheads
+Shield.RemoveTypes,ShieldTypes,-1,Shield.RemoveTypes,被此弹头影响的单位移除的护盾列表。,0000ff,,Warheads
+SelectBox,SelectBoxTypes,-1,SelectBox,单独定义单位使用的选择框类型。,ffffff,,TechnoTypes
+RadType,RadiationTypes,-1,RadType,武器的辐射类型，默认Radiation。默认情况下会使用[Radiation]中的RadApplicationDelay 而不是自定义辐射中的。,ccffcc,,WeaponTypes
+Animation.HideIfAttachedWith,PhobosAE,-1,Animation.HideIfAttachedWith,定义这些AE若重复附着在同一单位上时影响动画,9933ff,,PhobosAE
+AttachEffect.AttachTypes,PhobosAE,-1,AttachEffect.AttachTypes,定义该单位附着哪些AE。,9933ff,,TechnoTypes
+AttachEffect.DurationOverrides,PhobosAE,-1,AttachEffect.DurationOverrides,定义是否用该Duration覆盖单位附着的AE。若写多个值则需要和单位附着的一一对应。否则使用最后一个Duration。,9933ff,,TechnoTypes
+AttachEffect.RequiredTypes,PhobosAE,-1,AttachEffect.RequiredTypes,定义该武器只能对持有这些AE的单位开火。若写多个则这些AE必须全部存在才能开火。,9933ff,,WeaponTypes
+AttachEffect.DisallowedTypes,PhobosAE,-1,AttachEffect.DisallowedTypes,定义该武器不能对持有这些AE的单位开火。若写多个则这些AE存在任意一个就不能开火。,9933ff,,WeaponTypes
+AttachEffect.AttachTypes,PhobosAE,-1,AttachEffect.AttachTypes,定义该弹头引爆时给目标附着的AE。,9933ff,,Warheads
+AttachEffect.RemoveTypes,PhobosAE,-1,AttachEffect.RemoveTypes,定义该弹头引爆时令目标移除的AE。,9933ff,,Warheads
+Overload.ParticleSys,ParticleSystems,1,Overload.ParticleSys,单独定义单位心控过载时产生的粒子系统类型。默认继承[CombatDamage]►DefaultSparkSystem。,106699,,TechnoTypes
+AttachedSystem,ParticleSystems,1,AttachedSystem,动画附加的粒子系统。,106699,,Animations,The type of the particle system to attach to this projectile. Only particle systems with BehavesLike=smoke are supported.
+LaserTrail.Types,LaserTrailTypes,1,LaserTrail.Types,该抛射体使用的激光尾迹类型列表,ffccff,,ProjectileTypes
+LaserTrailN.Type,LaserTrailTypes,1,LaserTrailN.Type,该单位使用的第N个激光尾迹的种类。,ffccff,,TechnoTypes
+LaserTrail.Types,LaserTrailTypes,1,LaserTrail.Types,该 Voxel 碎片使用的激光尾迹类型列表,ffccff,,VoxelAnims
+InsigniaType,InsigniaTypes,-1,InsigniaType,指定单位使用的军衔类型。,ffffff,,TechnoTypes
+InsigniaType.Weapon1,InsigniaTypes,-1,InsigniaType.Weapon1,指定单位使用第N个炮塔时使用的军衔类型。N从0开始。,ffffff,,TechnoTypes
+InsigniaType.Passengers1,InsigniaTypes,-1,InsigniaType.Passengers1,指定单位搭载N个载员时使用的军衔类型。N从0开始。,ffffff,,TechnoTypes
+DefaultDisguise,InfantryTypes,-1,DefaultDisguise,可伪装步兵的默认伪装对象。 [InfantryType]►UseDisguiseMovementSpeed=  (boolean) 单位伪装后，速度是否改为伪装目标的速度。即便伪装被识破，效果也依旧存在。此效果只会在伪装效果被移除时失效。,00ff00,,InfantryTypes,Default InfantryType that disguisable infantry will be disguised as when first created.
+DigitalDisplayTypes,DigitalDisplayTypes,-1,DigitalDisplayTypes,微观设定单位使用的数值显示类型。,ffffff,,TechnoTypes
+EVA.Sold,DialogList,1,EVA.Sold,微观定义单位变卖时的EVA语音。建筑默认EVA_StructureSold，载具默认EVA_UnitSold。原版游戏中载具的SellSound为全局播放，现已改为与建筑一致的行为。,00999a,,TechnoTypes
+EVA.LinkedSWAcquired,DialogList,1,EVA.LinkedSWAcquired,至少一个联动超武被给予或设置倒计时后向发射所属方播放的EVA语音。,00999a,,WeaponTypes
+SelfHealing.EnabledBy,BuildingTypes,-1,SelfHealing.EnabledBy,定义护盾需要至少拥有哪些建筑中的一个存在才能自愈或重生。默认不需要。,00ff00,,ShieldTypes
+Adjacent.Allowed,BuildingTypes,-1,Adjacent.Allowed,定义哪些建筑类型可以在该建筑的Adjacent提供的建造范围内建造。如果该列表为空，则所有不在该建筑Adjacent.Disallowed列表内的建筑都可以在该建筑提供的建造范围内建造。,00ff00,,BuildingTypes
+Adjacent.Disallowed,BuildingTypes,-1,Adjacent.Disallowed,定义哪些建筑类型不可以在该建筑的Adjacent提供的建造范围内建造。若该列表为空则所有在该建筑Adjacent.Allowed列表上的建筑都可以在该建筑提供的建造范围内建造。两个列表均为空即允许所有建筑。,00ff00,,BuildingTypes
+PowersUp.Buildings,BuildingTypes,-1,PowersUp.Buildings,建筑加载物可以放置在哪些建筑上。,00ff00,,BuildingTypes
+PowerPlantEnhancer.PowerPlants,BuildingTypes,-1,PowerPlantEnhancer.PowerPlants,增幅哪些建筑。,00ff00,,BuildingTypes
+LimboDelivery.Types,BuildingTypes,-1,LimboDelivery.Types,超武生效后创建的建筑列表。超武类型和发射位置并不重要。,00ff00,,WeaponTypes
+AllowAirstrike,bool,-1,AllowAirstrike,是否可以成为空袭目标。建筑默认继承CanC4=的设置，非建筑单位默认true。 [Warhead]►AirstrikeTargets=（enum none|infantry|units|buildings|all） 允许Airstrike=true弹头对哪些目标发起空袭，默认buildings。,0,,TechnoTypes
+AlternateFLH.OnTurret,bool,-1,AlternateFLH.OnTurret,当单位存在炮塔时，用于载员对外开火开火坐标、多重心灵控制链接偏移等功能的AlternateFLHN坐标，是否基于单位炮塔（而非车身）。,0,,TechnoTypes
+Insignia.ShowEnemy,bool,-1,Insignia.ShowEnemy,单独控制该单位的军衔是否对敌军显示，默认继承EnemyInsignia的设置。,0,,TechnoTypes,Whether insignia for a unit of this type will be shown for enemy players. Defaults to [General]►EnemyInsignia.
+ShowSpawnsPips,bool,-1,ShowSpawnsPips,决定是否显示单位的子机格，独立于PipScale，默认是。,0,,TechnoTypes
+Explodes.KillPassengers,bool,-1,Explodes.KillPassengers,单位爆炸时是否会杀死其中的乘客。默认true。,0,,TechnoTypes
+Explodes.DuringBuildup,bool,-1,Explodes.DuringBuildup,建筑在建造和售卖时是否会发生爆炸。默认true。若设置为false，建筑在建造或售卖过程中被摧毁会表现的和设置了Explodes=no一样。,0,,BuildingTypes
+JumpjetRotateOnCrash,bool,-1,JumpjetRotateOnCrash,控制该jumpjet单位坠毁时是否发生不可控旋转。默认true。,0,,TechnoTypes
+JumpjetAllowLayerDeviation,bool,-1,JumpjetAllowLayerDeviation,Jumpjet是否会根据当前高度和JumpjetHeight或[JumpjetControls]►CruiseHeight的关系在air图层和top图层之间切换。如果设置为no则锁定在air图层。默认[JumpjetControls]►AllowLayerDeviation。,0,,TechnoTypes
+InfantryAutoDeploy,bool,-1,InfantryAutoDeploy,单独定义该单位是否会在接敌时自动部署，默认继承[General]►InfantryAutoDeploy。,0,,InfantryTypes
+Harvester.CanGuardArea,bool,-1,Harvester.CanGuardArea,是否允许该矿车执行区域警戒任务。默认false。,0,,VehicleTypes
+HarvesterScanAfterUnload,bool,-1,HarvesterScanAfterUnload,单独定义矿车是否倒矿后重新寻找矿区而非返回上一轮采矿位置。默认继承全局值。开启该功能有概率使造出来的矿车无视重工集结点,0,,VehicleTypes
+BunkerableAnyway,bool,-1,BunkerableAnyway,是否取消进入坦克碉堡的硬编码限制，需要与Bunkerable=yes一起使用。默认false。仅跳过静态检查，即对单位类型的检查。动态检查（不能被寄生）保持不变。Locomotor为Hover(4A582742-9839-11d1-B709-00A024DDAFD1)或被寄生的单位仍然不能进入坦克碉堡。不具有全向开火能力的无炮塔载具在坦克碉堡内开火时将会在坦克碉堡内转向。,0,,VehicleTypes
+TiltsWhenCrushes.Vehicles,bool,-1,TiltsWhenCrushes.Vehicles,碾压车辆时是否会倾斜。,0,,VehicleTypes
+TiltsWhenCrushes.Overlays,bool,-1,TiltsWhenCrushes.Overlays,碾压围墙等覆盖物时是否会倾斜。,0,,VehicleTypes
+SkipCrushSlowdown,bool,-1,SkipCrushSlowdown,是否跳过碾压减速使碾压时不会减速，默认false。与设置CrushSlowdownMultiplier=1.0不同。此功能主要用于修复Accelerates=true且MovementZone=CrushAll的载具有时会异常减速的问题。,0,,VehicleTypes
+DestroyAnim.Random,bool,-1,DestroyAnim.Random,摧毁动画列表是否随机选择其一播放。默认true。,0,,VehicleTypes
+DeployingAnim.AllowAnyDirection,bool,-1,DeployingAnim.AllowAnyDirection,禁用一切由DeployingAnim导致的方向限制。仅对地面单位有效。,0,,TechnoTypes
+DeployingAnim.KeepUnitVisible,bool,-1,DeployingAnim.KeepUnitVisible,部署动画播放期间是否使单位持续可见。默认no。,0,,VehicleTypes
+DeployingAnim.ReverseForUndeploy,bool,-1,DeployingAnim.ReverseForUndeploy,反部署时是否反向播放部署动画。默认yes。,0,,VehicleTypes
+DeployingAnim.UseUnitDrawer,bool,-1,DeployingAnim.UseUnitDrawer,部署动画是否使用单位色盘和所属色。默认yes。,0,,VehicleTypes
+KeepTargetOnMove,bool,-1,KeepTargetOnMove,载具在收到移动命令时是否保留其攻击目标，默认false。该功能不会检查单位是否有移动中攻击的能力。如果目标离开武器射程范围则会自动重置目标。,0,,VehicleTypes
+KeepTargetOnMove.NoMorePursuit,bool,-1,KeepTargetOnMove.NoMorePursuit,控制单位移动完毕后停下来时是否会继续追击目标。若设为false，目标超出射程时会清除目标。默认true。,0,,VehicleTypes
+NoTurret.TrackTarget,bool,-1,NoTurret.TrackTarget,微观定义无炮塔载具在武器冷却时是否会朝向目标，默认为全局定义值。Jumpjet单位使用OmniFire=yes与OmniFire.TurnToTarget=yes的武器时也会遵循该功能设置。,0,,VehicleTypes
+TurretRecoil,bool,-1,TurretRecoil,该单位是否启用炮塔与炮管后坐。默认false。,0,,VehicleTypes
+TurretRecoil.Suppress,bool,-1,TurretRecoil.Suppress,该武器开火是否不触发后坐效果。默认false。此逻辑并非通过逆向工程实现，而是重新制作达成相同效果，故可能与《泰伯利亚之日》原版行为存在细微差异。,0,,WeaponTypes
+Sinkable,bool,-1,Sinkable,该舰船被摧毁时是否沉没而不是爆炸。默认情况下当目标满足Naval=no/Underwater=yes/Organic=yes/被摧毁时不在水面上/被超时空抹除/Weight小于[General]►ShipSinkingWeight任意一个情况时都不会发生沉没。,0,,VehicleTypes
+Sinkable.SquidGrab,bool,-1,Sinkable.SquidGrab,该舰船被巨型乌贼缠绕摧毁时是否沉没。默认true。,0,,VehicleTypes
+Powered.KillSpawns,bool,-1,Powered.KillSpawns,需要供电的建筑类子机发射者是否在断电时停止瞄准敌人，而飞行中的子机将会直接坠毁。默认no。,0,,BuildingTypes
+FiringForceScatter,bool,-1,FiringForceScatter,自定义被战机攻击时是否强制散开，默认true。,0,,AircraftTypes
+ExtendedAircraftMissions.SmoothMoving,bool,-1,ExtendedAircraftMissions.SmoothMoving,飞行器在距目的地的距离小于SlowdownDistance的一半或自身的转弯半径时是否直接返回机场，默认为[General]►ExtendedAircraftMissions的设置值。,0,,AircraftTypes
+ExtendedAircraftMissions.EarlyDescend,bool,-1,ExtendedAircraftMissions.EarlyDescend,飞行器与降落点距离小于SlowdownDistance时（也适用于航母子机），是否无需飞至机场正上方即可开始下降高度，默认为[General]►ExtendedAircraftMissions的设置值。,0,,AircraftTypes
+ExtendedAircraftMissions.RearApproach,bool,-1,ExtendedAircraftMissions.RearApproach,飞行器是否从LandingDir的反方向进场着陆 ，默认为[General]►ExtendedAircraftMissions的设置值。,0,,AircraftTypes
+Refinery.UseNormalActiveAnim,bool,-1,Refinery.UseNormalActiveAnim,矿场是否和其他建筑一样可以同时使用多个运行动画，默认false。,0,,BuildingTypes
+ZShapePointMove.OnBuildup,bool,-1,ZShapePointMove.OnBuildup,是否在建筑建造过程中应用ZShapePointMove。默认false。,0,,BuildingTypes
+ConsideredVehicle,bool,-1,ConsideredVehicle,这个建筑是否被视为是载具。,0,,BuildingTypes
+Grinding.AllowAllies,bool,-1,Grinding.AllowAllies,友军单位是否也可以进入此建筑。默认no。,0,,BuildingTypes
+Grinding.AllowOwner,bool,-1,Grinding.AllowOwner,己方单位是否可以进入此建筑。默认yes。,0,,BuildingTypes
+Grinding.PlayDieSound,bool,-1,Grinding.PlayDieSound,是否在回收单位时，播放单位的死亡音效。默认yes。,0,,BuildingTypes
+Grinding.Sound,bool,-1,Grinding.Sound,定义回收音效，默认为[AudioVisual]►EnterGrinderSound。,0,,BuildingTypes
+DisableDamageSound,bool,-1,DisableDamageSound,该建筑是否在受损时不播放DamageSound，默认false。,0,,BuildingTypes
+Units.UseRepairCost,bool,-1,Units.UseRepairCost,定义是否应用维修成本，步兵默认没有维修成本，其他单位默认有。,0,,BuildingTypes
+ExcludeFromMultipleFactoryBonus,bool,-1,ExcludeFromMultipleFactoryBonus,定义该建筑是否不提供多工厂加成，默认false。,0,,BuildingTypes
+IsAnimDelayedBurst,bool,-1,IsAnimDelayedBurst,建筑连续攻击时是否在攻击前播放充能动画，默认true。,0,,BuildingTypes
+ChronoTrigger,bool,-1,ChronoTrigger,超时空移动的冷却是否和距离相关。如果为否则冷却时间为一个常量。,0,,TechnoTypes
+IronCurtain.KeptOnDeploy,bool,-1,IronCurtain.KeptOnDeploy,微观设定载具是否在部署为建筑和从建筑反部署时继承铁幕效果。默认继承全局值。,0,,TechnoTypes
+ForceShield.KeptOnDeploy,bool,-1,ForceShield.KeptOnDeploy,微观设定载具是否在部署为建筑和从建筑反部署时继承立场护盾效果。默认继承全局值。,0,,TechnoTypes
+IsPassable,bool,-1,IsPassable,地形对象是否可以通行。默认no。,0,,TerrainType
+CanBeBuiltOn,bool,-1,CanBeBuiltOn,地形对象上是否可建造建筑。当建筑建造于地形上时地形会自动消失。默认no。,0,,TerrainType
+HasDamagedFrames,bool,-1,HasDamagedFrames,地形对象是否拥有损伤帧。,0,,TerrainType
+HasCrumblingFrames,bool,-1,HasCrumblingFrames,地形对象是否拥有倒塌帧。,0,,TerrainType
+ForbidParallelAIQueues,bool,-1,ForbidParallelAIQueues,是否允许AI克隆该单位，默认false。 [TechnoType]►TargetZoneScanType=（enum same|any|inrange） 单位执行小队脚本攻击任务时的索敌模式，默认same。,0,,TechnoTypes
+DistributeTargetingFrame,bool,-1,DistributeTargetingFrame,单独定义单位是否使用不同帧分散索敌。默认继承全局设置值。,0,,TechnoTypes
+TurretShadow,bool,-1,TurretShadow,微观定义，该单位是否绘制VXL炮塔阴影。覆盖 [AudioVisual]►DrawTurretShadow=。,0,,TechnoTypes
+DebrisTypes.Limit,bool,-1,DebrisTypes.Limit,是否启用VXL碎片动画限制。DebrisMaximums大于1时默认true，否则false。,0,,TechnoTypes
+ExplodeOnWater,bool,-1,ExplodeOnWater,动画是否会在接触水面时触发爆炸，来播放ExpireAnim以及释放动画弹头，以造成伤害或产生闪光。默认no。,0,,VoxelAnims
+Warhead.Detonate,bool,-1,Warhead.Detonate,拥有Bright=true的动画弹头是否完整释放，而不是简单的造成伤害或造成闪光。默认no。,0,,VoxelAnims
+SplashAnims.PickRandom,bool,-1,SplashAnims.PickRandom,如果设置了上个语句，是否随机播放其中的动画。设置为no则只会播放列表的最后一个动画。默认no。,0,,VoxelAnims
+ExtraShadow,bool,-1,ExtraShadow,是否显示地面阴影，默认true。,0,,VoxelAnims
+AdjustTargetCoordsOnRotation,bool,-1,AdjustTargetCoordsOnRotation,火焰粒子系统是否会改变它们的目标坐标。,0,,ParticleSystems
+DropPod.Trailer.Attached,bool,-1,DropPod.Trailer.Attached,空降仓是否附加尾迹。默认no。,0,,TechnoTypes
+DropPod.Weapon.HitLandOnly,bool,-1,DropPod.Weapon.HitLandOnly,空降仓武器是否仅在硬着陆时发射，默认no。,0,,TechnoTypes
+Weeder,bool,-1,Weeder,该单位是否可以采集泰伯利亚藤蔓。,0,,VehicleTypes
+Weeder,bool,-1,Weeder,该建筑物是否可以用来存储泰伯利亚藤蔓。,0,,BuildingTypes
+UseWeeds,bool,-1,UseWeeds,该超级武器是否可以利用泰伯利亚藤蔓进行充能。默认no。,0,,WeaponTypes
+UseWeeds.StorageTimer,bool,-1,UseWeeds.StorageTimer,是否在侧边栏的计时器显示泰伯利亚藤蔓的存储百分比。默认no。,0,,WeaponTypes
+IsSingleColor,bool,-1,IsSingleColor,激光是否为单色激光。默认no。,0,,WeaponTypes
+Bolt.Disable1,bool,-1,Bolt.Disable1,是否不显示第 1 条电流。默认no。,0,,WeaponTypes
+Bolt.Disable2,bool,-1,Bolt.Disable2,是否不显示第 2 条电流。默认no。,0,,WeaponTypes
+Bolt.Disable3,bool,-1,Bolt.Disable3,是否不显示第 3 条电流。默认no。,0,,WeaponTypes
+AmbientDamage.IgnoreTarget,bool,-1,AmbientDamage.IgnoreTarget,穿透伤害是否会影响到武器的主目标。 默认false。,0,,WeaponTypes
+FireOnce.ResetSequence,bool,-1,FireOnce.ResetSequence,是否在开火后重置开火序列，默认是,0,,WeaponTypes
+KickOutPassengers,bool,-1,KickOutPassengers,自定义使用该武器的Aircraft开火时是否踢出自身载员，默认是。,0,,WeaponTypes
+Bolt.Disable1,bool,-1,Bolt.Disable1,是否禁用第一条电弧。默认false。,0,,WeaponTypes
+Bolt.Disable2,bool,-1,Bolt.Disable2,是否禁用第二条电弧。默认false。,0,,WeaponTypes
+Bolt.Disable3,bool,-1,Bolt.Disable3,是否禁用第三条电弧。默认false。,0,,WeaponTypes
+Bolt.FollowFLH,bool,-1,Bolt.FollowFLH,电弧起始点是否每帧更新以跟随单位开火位置。载具默认true，其他单位默认false。,0,,WeaponTypes
+Splits,bool,-1,Splits,是否启用分裂逻辑，产生的分裂抛射体数量由Cluster定义。默认no。,0,,ProjectileTypes,Whether the projectile will split into a number of other projectiles defined by Cluster and AirburstWeapon. Can be combined with Airburst. Defaults to no.
+RetargetSelf,bool,-1,RetargetSelf,产生的分裂抛射体是否可以将原始抛射体的发射者作为目标。默认true。,0,,ProjectileTypes,"Whether the firing unit itself can become the target when retargeting. If no, the firer will be exempt, though could still be hit by a retargeted projectile that hits the cell the firer is on. Defaults to yes."
+Splits.UseWeaponTargeting,bool,-1,Splits.UseWeaponTargeting,是否在分裂上应用武器瞄准筛选，若启用则会在分裂抛射体寻找目标时应用武器瞄准筛选，目标的护甲以及LegalTarget设置，弹头比例，空爆瞄准筛选以及AttachEffect瞄准筛选会被检查。默认false。启用后会覆盖弹头的Affects[Allies/Owner/Enemies]设置，但可以在空爆武器上设置CanTargetHouses来达到相同的效果。,0,,ProjectileTypes
+Airburst.UseCluster,bool,-1,Airburst.UseCluster,是否只影响在空爆影响区域内的Cluster指定的单元格数而不是全部格，默认false。,0,,ProjectileTypes
+Airburst.RandomClusters,bool,-1,Airburst.RandomClusters,是否随机选取受影响的单元格而不是均匀分布选取（从被影响区域的中心到边缘计算）。需要通过启用上一条语句来生效，默认false。,0,,ProjectileTypes
+AroundTarget,bool,-1,AroundTarget,决定空爆或分裂的散布原点，yes以原始抛射体的目标作为原点，no以原始抛射体爆炸处作为原点。默认为Splits的设置值。,0,,ProjectileTypes,"Whether a projectile with Splits=yes or Airburst=yes should use the area around the original target to look for new targets for each cluster. If enabled, the clusters will continue their way to the originally intended target. Otherwise, the clusters will search for new targets in the area where the projectile split up. Defaults to Splits."
+AirburstWeapon.ApplyFirepowerMult,bool,-1,AirburstWeapon.ApplyFirepowerMult,是否使得空爆武器能应用原始抛射体上的Firepower加成系数。默认false。,0,,ProjectileTypes
+Shrapnel.AffectsGround,bool,-1,Shrapnel.AffectsGround,溅射是否被地面触发。默认no。,0,,ProjectileTypes
+Shrapnel.AffectsBuildings,bool,-1,Shrapnel.AffectsBuildings,溅射是否被建筑上触发。默认no。,0,,ProjectileTypes
+Shrapnel.UseWeaponTargeting,bool,-1,Shrapnel.UseWeaponTargeting,溅射子武器是否遵循LegalTarget，Verses以及武器目标筛选及AttachEffect目标筛选的索敌设置，默认no。,0,,ProjectileTypes
+AllowDamageOnSelf,bool,-1,AllowDamageOnSelf,是否允许弹头伤害发射者。默认no。,0,,Warheads
+CLIsBlack,bool,-1,CLIsBlack,闪光是否呈现为黑色（类似命中铁幕单位的效果），并忽略其他颜色设置。默认false。,0,,Warheads
+DecloakDamagedTargets,bool,-1,DecloakDamagedTargets,被此弹头伤害的单位是否会解除隐形状态。默认yes。,0,,Warheads
+ShakeIsLocal,bool,-1,ShakeIsLocal,弹头是否仅在当前视野内爆炸时才震动屏幕（ShakeX/Ylo/hi）。默认no。,0,,Warheads
+AnimList.PickRandom,bool,-1,AnimList.PickRandom,是否从AnimList中随机选取动画播放。效果类似EMEffect=true，但无副作用（EMEffect=true会阻止Inviso=true的抛射体锁定目标，导致其无法命中移动目标）。默认false。,0,,Warheads
+AnimList.CreateAll,bool,-1,AnimList.CreateAll,是否播放AnimList中的所有动画而不是基于伤害值选取单个动画或随机选取一个动画。默认false。,0,,Warheads
+SplashList.PickRandom,bool,-1,SplashList.PickRandom,是否从SplashList中随机选取动画播放。默认false。,0,,Warheads
+SplashList.CreateAll,bool,-1,SplashList.CreateAll,是否播放SplashList中的所有动画而不是基于伤害值选取单个动画或随机选取一个动画。默认false。,0,,Warheads
+CreateAnimsOnZeroDamage,bool,-1,CreateAnimsOnZeroDamage,武器伤害为0时是否也会创建AnimList或SplashList动画。默认false。,0,,Warheads
+Conventional.IgnoreUnits,bool,-1,Conventional.IgnoreUnits,弹头是否将水面上的非Underwater单位视为水面格子进行爆炸（而非视为陆地），由此决定命中水面舰艇时使用AnimList还是SplashList。默认false。,0,,Warheads
+DebrisTypes.Limit,bool,-1,DebrisTypes.Limit,是否启用VXL碎片动画限制。DebrisMaximums大于1时默认true，否则false。,0,,Warheads
+AffectsNeutral,bool,-1,AffectsNeutral,弹头是否能伤害或影响属于中立阵营的目标。默认true。,0,,Warheads
+EffectsRequireVerses,bool,-1,EffectsRequireVerses,Phobos的弹头效果是否在弹头无法作用于目标护甲时不触发。默认false。 [Warhead]►Parasite.CullingTarget= (enum none|aircraft|infantry|units|all） 定义寄生攻击对哪些类型的单位造成秒杀。默认infantry。,0,,Warheads,"Whether Verses needs to be greater than 0% for the warhead to apply effects. Can be used to distinguish between 0% and greater verses that potentially nullify damage, between immunity and vulnerability. If no, effects are applied to any unit or structure regardless of verses. Defaults to yes."
+Nonprovocative,bool,-1,Nonprovocative,是否定义弹头完全友好。默认no。,0,,Warheads
+Damage.DealtByInvoker,bool,-1,Damage.DealtByInvoker,如果设置为true，则任何动画造成的伤害被认为是来自动画的调用者(例如弹头的 AnimList/SplashList被视为来自武器的发射者，DestroyAnim被视为来自被摧毁的单位等)。这不影响弹头造成的伤害作用于哪个所属。默认为no。,0,,Animations
+Damage.ApplyOncePerLoop,bool,-1,Damage.ApplyOncePerLoop,如果设置为true，则每个动画循环中只造成一次伤害，而不是一帧一次或由Damage.Delay定义的间隔。,0,,Animations
+Damage.ApplyFirepowerMult,bool,-1,Damage.ApplyFirepowerMult,是否应用动画调用者的火力加成系数（若存在）来计算动画造成的伤害。默认false。,0,,Animations
+Layer.UseObjectLayer,bool,-1,Layer.UseObjectLayer,动画是否使用被附加的单位的图层。如果不设置则使用ground图层。,0,,Animations
+ConstrainFireAnimsToCellSpots,bool,-1,ConstrainFireAnimsToCellSpots,定义生成的动画是否限定到单元格点(就像步兵也被限定在特定的单元格点)，默认true。,0,,Animations
+AttachFireAnimsToParent,bool,-1,AttachFireAnimsToParent,定义生成的子动画所属是否继承到母动画的所属(如果子动画也附加)，Scorch=true的动画默认true，其他默认false,0,,Animations
+ExplodeOnWater,bool,-1,ExplodeOnWater,动画是否会在接触水面时触发爆炸，来播放ExpireAnim以及释放动画弹头，以造成伤害或产生闪光。默认no。,0,,Animations
+Warhead.Detonate,bool,-1,Warhead.Detonate,Bright=true的动画弹头是否完整释放，而不是简单的造成伤害或造成闪光。默认no。,0,,Animations
+SplashAnims.PickRandom,bool,-1,SplashAnims.PickRandom,如果设置了上个语句，是否随机播放其中的动画。设置为no则只会播放列表的最后一个动画。默认no。,0,,Animations
+ExtraShadow,bool,-1,ExtraShadow,是否显示地面阴影，默认true。,0,,Animations
+Crater.DestroyTiberium,bool,-1,Crater.DestroyTiberium,Crater=yes的动画是否会清除所在格子的矿石，默认继承[General]►AnimCraterDestroyTiberium设置。,0,,Animations
+InheritArmorFromTechno,bool,-1,InheritArmorFromTechno,护盾的护甲类型是否继承自单位。默认no,0,,ShieldTypes
+Powered,bool,-1,Powered,护盾是否在单位无电力支持或被EMP时失效。注意，如果单位本身Powered=false，那么护盾也不会因断电而失效。默认no。,0,,ShieldTypes
+AbsorbOverDamage,bool,-1,AbsorbOverDamage,护盾被击碎时是否会吸收最后一次攻击的超量伤害。默认no。,0,,ShieldTypes
+SelfHealing.RestartInCombat,bool,-1,SelfHealing.RestartInCombat,护盾是否在受击时重置自愈计时器。默认是。,0,,ShieldTypes
+Respawn.RestartInCombat,bool,-1,Respawn.RestartInCombat,护盾是否在受击时重置重生计时器。默认是。,0,,ShieldTypes
+Pips.HideIfNoStrength,bool,-1,Pips.HideIfNoStrength,护盾耐久为0时是否不显示护盾血条。默认false。,0,,ShieldTypes
+HitFlash,bool,-1,HitFlash,护盾被攻击时是否会闪烁，默认false。,0,,ShieldTypes
+HitFlash.Red,bool,-1,HitFlash.Red,护盾被攻击时是否闪烁闪光中的红色，默认true。 填false相当于弹头中的CLDisableRed的效果。,0,,ShieldTypes
+HitFlash.Green,bool,-1,HitFlash.Green,护盾被攻击时是否闪烁闪光中的绿色，默认true。 填false相当于弹头中的CLDisableGreen的效果。,0,,ShieldTypes
+HitFlash.Blue,bool,-1,HitFlash.Blue,护盾被攻击时是否闪烁闪光中的蓝色，默认true。 填false相当于弹头中的CLDisableBlue的效果。,0,,ShieldTypes
+HitFlash.Black,bool,-1,HitFlash.Black,护盾被攻击时是否闪烁变为类似攻击铁幕单位的黑色闪光并覆盖以上三种颜色的设置。默认false。,0,,ShieldTypes
+AllowTransfer,bool,-1,AllowTransfer,单位通过部署、变形等方式变换后护盾是否继承。通过Shield.AttachTypes附加的护盾默认yes，其他情况下默认no。,0,,ShieldTypes
+ImmuneToBerserk,bool,-1,ImmuneToBerserk,护盾是否免疫狂暴，即神经突击车的攻击效果。,0,,ShieldTypes
+ImmuneToCrit,bool,-1,ImmuneToCrit,护盾是否免疫暴击,0,,ShieldTypes
+Shield.Penetrate,bool,-1,Shield.Penetrate,弹头是否无视护盾直接造成伤害。默认no。,0,,Warheads
+Shield.Break,bool,-1,Shield.Break,弹头是否在伤害结算前一击击碎护盾。默认no。,0,,Warheads
+Shield.SkipHitAnim,bool,-1,Shield.SkipHitAnim,此弹头击中护盾是否不播放HitAnim。默认no。,0,,Warheads
+Shield.HitFlash,bool,-1,Shield.HitFlash,此弹头击中护盾是否播放击中的闪光效果。默认yes。,0,,Warheads
+Shield.Respawn.RestartInCombat,bool,-1,Shield.Respawn.RestartInCombat,覆盖被此弹头击中的护盾的Respawn.RestartInCombat。,0,,Warheads
+Shield.Respawn.RestartTimer,bool,-1,Shield.Respawn.RestartTimer,当前护盾的重生时间是否会被重置。设置为no则按照新的时间进行比例缩放。如果覆盖效果在重生完成前结束了，剩余时间会按照护盾本身的Respawn.Rate进行缩放。弹头重新造成效果会将重生时间重置为Shield.Respawn.Duration值。默认no。,0,,Warheads
+Shield.SelfHealing.RestartTimer,bool,-1,Shield.SelfHealing.RestartTimer,当前护盾的自愈时间是否会被重置。设置为no则按照新的时间进行比例缩放。如果覆盖效果在一次自愈完成前结束了，剩余时间会按照护盾本身的SelfHealing.Rate进行缩放。弹头重新造成效果会将自愈时间重置为Shield.SelfHealing.Duration值。默认no。,0,,Warheads
+Shield.SelfHealing.RestartInCombat,bool,-1,Shield.SelfHealing.RestartInCombat,覆盖被此弹头击中的护盾的SelfHealing.RestartInCombat。,0,,Warheads
+Shield.RemoveAll,bool,-1,Shield.RemoveAll,如果设置 Shield.RemoveAll 则移除所影响目标上的所有护盾，即使这些护盾没有列在 Shield.RemoveTypes 中。如果设置了 Shield.ReplaceOnly 则 Shield.AttachTypes 中的第一项将用于替换那些被移除但未列在 Shield.RemoveTypes 中的护盾类型。默认no。,0,,Warheads
+Shield.ReplaceOnly,bool,-1,Shield.ReplaceOnly,如果设置 Shield.ReplaceOnly 则 Shield.AttachTypes 中的所有护盾只会应用于同时移除了护盾的目标，并与 Shield.RemoveTypes 列表中的顺序对应。如果 Shield.AttachTypes 中的项少于 Shield.RemoveTypes 则使用前者的最后一项来替换任何剩余的被移除护盾类型。默认no。,0,,Warheads
+Shield.ReplaceNonRespawning,bool,-1,Shield.ReplaceNonRespawning,Shield.AttachTypes中的护盾是否会替换已被击碎且不可再生的护盾。默认no。,0,,Warheads
+Shield.InheritStateOnReplace,bool,-1,Shield.InheritStateOnReplace,替换护盾后诸如血量，是否被击破等属性是否会继承。自我恢复和重生时间不会继承，总是重设。默认no。,0,,Warheads
+AutoDeath.OnAmmoDepletion,bool,-1,AutoDeath.OnAmmoDepletion,是否当弹药数为0后自动死亡，取代了旧版中的Death.NoAmmo。默认no。,0,,TechnoTypes
+AutoDeath.TechnosDontExist.Any,bool,-1,AutoDeath.TechnosDontExist.Any,是否当上一个词条指定的科技类型有一个不存在时就自毁。默认no，即全部不存在时才自毁。,0,,TechnoTypes
+AutoDeath.TechnosDontExist.AllowLimboed,bool,-1,AutoDeath.TechnosDontExist.AllowLimboed,在判断科技类型不存在时，是否包括地图外(可见范围外)或虚拟的单位／建筑。默认no。,0,,TechnoTypes
+AutoDeath.TechnosExist.Any,bool,-1,AutoDeath.TechnosExist.Any,是否当上一条语句指定的科技类型有一个存在时就自毁。默认yes，即有一个存在就自毁。,0,,TechnoTypes
+AutoDeath.TechnosExist.AllowLimboed,bool,-1,AutoDeath.TechnosExist.AllowLimboed,在判断科技类型存在时，是否包括地图外(可见范围外)或虚拟的单位／建筑。默认no。,0,,TechnoTypes
+Duration.ApplyFirepowerMult,bool,-1,Duration.ApplyFirepowerMult,AE的持续时间是否乘以发射者的火力加成系数。负加成系数不会使持续时间低于0。默认false。,0,,PhobosAE
+Duration.ApplyArmorMultOnTarget,bool,-1,Duration.ApplyArmorMultOnTarget,AE的持续时间是否除以挂载目标的防御加成系数。负加成系数不会使持续时间低于0。会计入AE自身的ArmorMultiplier，忽略ArmorMultiplier.Allow/DisallowWarheads。默认false。,0,,PhobosAE
+Cumulative,bool,-1,Cumulative,定义同种AE是否可以叠加。默认false。,0,,PhobosAE
+Powered,bool,-1,Powered,定义AE附着在失效的PoweredUnit、被EMP或者低电量时AE是否会失效。默认false。,0,,PhobosAE
+PenetratesIronCurtain,bool,-1,PenetratesIronCurtain,定义AE是否可以附着在处于铁幕中的物体。默认false。,0,,PhobosAE
+PenetratesForceShield,bool,-1,PenetratesForceShield,定义AE是否可以附着在处于力场护盾中的物体。默认继承PenetratesIronCurtain。,0,,PhobosAE
+Animation.ResetOnReapply,bool,-1,Animation.ResetOnReapply,当Cumulative=false时，每次附着的时候是否重新播放动画。,0,,PhobosAE
+Animation.UseInvokerAsOwner,bool,-1,Animation.UseInvokerAsOwner,定义AE动画的所属由发射者决定而不是附着的物体决定。默认false,0,,PhobosAE
+CumulativeAnimations.RestartOnChange,bool,-1,CumulativeAnimations.RestartOnChange,"定义动画类型发生更改时是否重新从头播放,如果设置为false，则在相对动画长度的相同位置的帧处恢复播放。默认true。",0,,PhobosAE
+ExpireWeapon.CumulativeOnlyOnce,bool,-1,ExpireWeapon.CumulativeOnlyOnce,若设置为true，则当Cumulative=true时每个AE期间只会发射一次武器。若TriggerOn设置为none或expire时只会在最后一个AE失效或移除时发射武器。,0,,PhobosAE
+ExpireWeapon.UseInvokerAsOwner,bool,-1,ExpireWeapon.UseInvokerAsOwner,定义AE的ExpireWeapon的所属由发射者决定而不是被挂载者决定。默认false。,0,,PhobosAE
+ROFMultiplier.ApplyOnCurrentTimer,bool,-1,ROFMultiplier.ApplyOnCurrentTimer,定义AE的攻速加成是否会直接作用在攻速上，哪怕当前正在冷却也会缩短或增加。,0,,PhobosAE
+Cloakable,bool,-1,Cloakable,定义AE生效期间物体是否隐形。,0,,PhobosAE
+ForceDecloak,bool,-1,ForceDecloak,定义AE生效期间物体是否强制显形。,0,,PhobosAE
+RevengeWeapon.UseInvokerAsOwner,bool,-1,RevengeWeapon.UseInvokerAsOwner,定义AE的RevengeWeapon的所属由发射者决定而不是被挂载者决定。默认false。,0,,PhobosAE
+ReflectDamage,bool,-1,ReflectDamage,定义AE生效期间物体可以反弹任意正数伤害给伤害来源。,0,,PhobosAE
+ReflectDamage.Warhead.Detonate,bool,-1,ReflectDamage.Warhead.Detonate,定义反弹伤害弹头是否像完整武器中的弹头那样引爆而不是只造成伤害，默认false。,0,,PhobosAE
+ReflectDamage.UseInvokerAsOwner,bool,-1,ReflectDamage.UseInvokerAsOwner,反弹伤害是否所属由AE发射者决定而不是被挂载者决定。默认false。,0,,PhobosAE
+DisableWeapons,bool,-1,DisableWeapons,定义AE生效期间附着的单位是否无法发射任何武器。,0,,PhobosAE
+Unkillable,bool,-1,Unkillable,AE持续时间内是否被挂载者的生命值不会低于1(不免疫机制杀)。 [AttachEffectType]►LaserTrail.Type= （lasertrail type) AE持续时间内在被挂载者上绘制的激光尾迹类型。,0,,PhobosAE
+OpenTopped.UseTransportRangeModifiers,bool,-1,OpenTopped.UseTransportRangeModifiers,定义OpenTopped=true载具在接受射程加成AE时是否可以将加成传递给乘客。默认false。,0,,VehicleTypes
+OpenTopped.CheckTransportDisableWeapons,bool,-1,OpenTopped.CheckTransportDisableWeapons,定义OpenTopped=true载具持有DisableWeapons类AE时是否会禁止乘客的开火，默认false。,0,,VehicleTypes
+AttachEffect.IgnoreFromSameSource,bool,-1,AttachEffect.IgnoreFromSameSource,当AE来源是自己时无视上述条件。默认false。,0,,WeaponTypes
+AttachEffect.CheckOnFirer,bool,-1,AttachEffect.CheckOnFirer,上述需要或禁止特定AE的条件是否检查开火者自身挂载的AE而不是目标挂载的AE。默认false。,0,,WeaponTypes
+AttachEffect.CumulativeRefreshAll,bool,-1,AttachEffect.CumulativeRefreshAll,定义是否在向已经达到Cumulative.MaxCount定义的叠加次数的目标再次施加Cumulative=true效果时，刷新所有同类AE效果的持续时间而不是只刷新剩余持续时间最短的AE效果的持续时间。默认false。,0,,Warheads
+AttachEffect.CumulativeRefreshAll.OnAttach,bool,-1,AttachEffect.CumulativeRefreshAll.OnAttach,定义是否在目标并未达到Cumulative.MaxCount定义的叠加次数时再次施加Cumulative=true效果也生效刷新持续时间效果。默认false。,0,,Warheads
+AttachEffect.CumulativeRefreshSameSourceOnly,bool,-1,AttachEffect.CumulativeRefreshSameSourceOnly,定义是否只有来自同一开火者的相同弹头施加的同类AE的Cumulative=true效果才能生效刷新持续时间效果。默认true。,0,,Warheads
+Suppress.ReflectDamage,bool,-1,Suppress.ReflectDamage,定义该弹头是否不触发反弹伤害效果，若不指定特定AE类型或类型组则不触发所有AE的反弹伤害效果。默认false。 [WarheadType]►Suppress.ReflectDamage.Type= （List of AttachEffectTypes) 定义该弹头是否不触发指定的AE类型的反弹伤害效果。,0,,Warheads
+IgnoreVertical,bool,-1,IgnoreVertical,是否在垂直移动时不绘制激光尾迹。默认no。,0,,LaserTrailTypes
+CloakVisible,bool,-1,CloakVisible,当单位隐身时，激光尾迹是否可见。默认no。,0,,LaserTrailTypes
+CloakVisible.DetectedOnly,bool,-1,CloakVisible.DetectedOnly,当单位隐身时，激光尾迹只对探测到该单位的所属方可见，默认false。,0,,LaserTrailTypes
+IsHouseColor,bool,-1,IsHouseColor,激光尾迹是否为所属色。,0,,LaserTrailTypes
+IsIntense,bool,-1,IsIntense,激光是否可以被支持（类似光棱塔的递光）。默认no。,0,,LaserTrailTypes
+IsAlternateColor,bool,-1,IsAlternateColor,电弧是否为磁暴兵给线圈充能那种的黄白交替颜色。默认false。,0,,LaserTrailTypes
+Bolt.Disable1,bool,-1,Bolt.Disable1,是否不绘制第一条电弧。默认false。,0,,LaserTrailTypes
+Bolt.Disable2,bool,-1,Bolt.Disable2,是否不绘制第二条电弧。默认false。,0,,LaserTrailTypes
+Bolt.Disable3,bool,-1,Bolt.Disable3,是否不绘制第三条电弧。默认false。,0,,LaserTrailTypes
+LaserTrailN.IsOnTurret,bool,-1,LaserTrailN.IsOnTurret,第N个激光尾迹是否绘制在炮塔上。默认no。,0,,TechnoTypes
+UseGlobalRadApplicationDelay,bool,-1,UseGlobalRadApplicationDelay,是否使用全局定义的RadApplicationDelay。默认yes。,0,,RadiationTypes
+RadSiteWarhead.Detonate,bool,-1,RadSiteWarhead.Detonate,是否在受到辐射伤害的单位上引爆辐射所用弹头而不是仅用弹头造成伤害，以此可以实现大部分弹头效果。默认no。,0,,RadiationTypes
+RadSiteWarhead.Detonate.Full,bool,-1,RadSiteWarhead.Detonate.Full,是否应用大部分通用弹头效果，否则仅应用范围伤害和Phobos弹头效果。默认yes。,0,,RadiationTypes
+RadHasOwner,bool,-1,RadHasOwner,辐射伤害是否视为发射者所属造成的，如果设定为yes则会读取辐射弹头上的AffectsAllies等标签，辐射的击杀数也会正常计算。默认no。,0,,RadiationTypes
+RadHasInvoker,bool,-1,RadHasInvoker,辐射伤害是否视为发射者造成的，如果设定为yes则除了RadHasOwner的效果之外，发射者还可以正常获取被辐射杀死的单位的经验。默认no。,0,,RadiationTypes
+AutoFire,bool,-1,AutoFire,单位是否使用强制攻击的武器向脚下自动发射武器。默认no。,0,,TechnoTypes
+AutoFire.TargetSelf,bool,-1,AutoFire.TargetSelf,单位自动发射武器时是否目标改为自身并根据武器选择规则选择对单位自身有效的武器。默认no。,0,,TechnoTypes
+SuppressRevengeWeapons,bool,-1,SuppressRevengeWeapons,该弹头击杀目标时是否不触发目标的复仇武器。默认false。,0,,Warheads
+ForceWeapon.InRange.ApplyRangeModifiers,bool,-1,ForceWeapon.InRange.ApplyRangeModifiers,按射程强制使用武器的射程判定是否考虑AE等造成的射程加成系数影响。默认false。,0,,TechnoTypes
+ForceWeapon.InRange.TechnoOnly,bool,-1,ForceWeapon.InRange.TechnoOnly,按射程强制使用武器的判定是否仅对于攻击科技类型目标时生效。默认true。例如攻击地板和地形对象／覆盖物时是否不应用射程内强制使用武器。,0,,TechnoTypes
+ForceAAWeapon.InRange.ApplyRangeModifiers,bool,-1,ForceAAWeapon.InRange.ApplyRangeModifiers,按射程强制使用武器对空的射程判定是否考虑AE等造成的射程加成系数影响。默认false。,0,,TechnoTypes
+MultiWeapon,bool,-1,MultiWeapon,是否启用多武器系统。启用多武器系统需要设置对应的WeaponCount。默认false。启用多武器系统可以使IsChargeTurret=yes的单位正常使用多个武器。,0,,TechnoTypes
+WarpInWeapon.UseDistanceAsDamage,bool,-1,WarpInWeapon.UseDistanceAsDamage,是否用传送穿过的单元格数替代传送到达时开火的武器的伤害。默认no。,0,,TechnoTypes
+RateDown.Reset,bool,-1,RateDown.Reset,定义单位是否在切换或丢失目标时直接重置盖特计数值，默认false。,0,,TechnoTypes
+PassengerDeletion.Rate.SizeMultiply,bool,-1,PassengerDeletion.Rate.SizeMultiply,删除乘客的间隔是否受乘客大小影响，乘客大小越大删除间隔越长。默认yes。,0,,TechnoTypes
+PassengerDeletion.UseCostAsRate,bool,-1,PassengerDeletion.UseCostAsRate,删除乘客的间隔是否由乘客的Cost决定，Cost值越大删除间隔越长。默认no。,0,,TechnoTypes
+PassengerDeletion.DontScore,bool,-1,PassengerDeletion.DontScore,被删除的乘客是否不被认为是被杀死的。设置为yes则被删除的乘客将不计入分数和被击杀数。默认no。,0,,TechnoTypes
+PassengerDeletion.Soylent,bool,-1,PassengerDeletion.Soylent,删除乘客时是否获得相当于乘客的回收价格的资金。默认no。,0,,TechnoTypes
+PassengerDeletion.SoylentMultiplier,bool,-1,PassengerDeletion.SoylentMultiplier,删除乘客得到回收资金的倍数。默认1.0。,0,,TechnoTypes
+PassengerDeletion.DisplaySoylent,bool,-1,PassengerDeletion.DisplaySoylent,是否在删除乘客获得资金时在目标位置显示资金变化数。,0,,TechnoTypes
+PassengerDeletion.UnderEMP,bool,-1,PassengerDeletion.UnderEMP,删除乘客是否在容器被EMP或失去控制中心失效的时候仍然继续。默认false。,0,,TechnoTypes
+OpenTopped.IgnoreRangefinding,bool,-1,OpenTopped.IgnoreRangefinding,载具索敌时是否根据自身武器的范围确定距离而不是乘客的。默认no。,0,,TechnoTypes
+OpenTopped.AllowFiringIfDeactivated,bool,-1,OpenTopped.AllowFiringIfDeactivated,载具因EMP等原因失效时，乘客是否仍然可以对外开火。默认yes。,0,,TechnoTypes
+OpenTopped.ShareTransportTarget,bool,-1,OpenTopped.ShareTransportTarget,载具是否会把攻击目标同步给乘客。默认yes。,0,,TechnoTypes
+Ammo.Shared,bool,-1,Ammo.Shared,是否共享弹药，载员和载具同时设置才会共享，设置为no的载员不会共享。默认no。,0,,TechnoTypes
+Passengers.SyncOwner,bool,-1,Passengers.SyncOwner,乘客的所属是否跟随载具变化。默认no。,0,,TechnoTypes
+Passengers.SyncOwner.RevertOnExit,bool,-1,Passengers.SyncOwner.RevertOnExit,乘客的所属是否在乘客离开载具时变会原本的所属。默认yes。,0,,TechnoTypes
+ReloadInTransport,bool,-1,ReloadInTransport,定义该单位是否可以在载具内回复弹药，使用单位自己的Reload和EmptyReload，默认false。,0,,TechnoTypes
+BuildLimitGroup.ContentIfAnyMatch,bool,-1,BuildLimitGroup.ContentIfAnyMatch,定义是否建造上限组内的任一单位达到了BuildLimitGroup.Nums的上限后全体单位皆达到上限，默认false。,0,,TechnoTypes
+BuildLimitGroup.NotBuildableIfQueueMatch,bool,-1,BuildLimitGroup.NotBuildableIfQueueMatch,若设置为true，则实际存活单位和订单里的单位数量相加后，达到了上限后，生产会立刻停止。false则只会考虑实际存活单位。默认false [TechnoType]►BuildLimitGroup.ExtraLimit.Types=（list of TechnoType Names） 当拥有该列表里的任一单位时，用BuildLimitGroup.ExtraLimit.Nums的数值拓展BuildLimitGroup.Nums的值。（人话：你需要建造更多的补给站） [TechnoType]►BuildLimitGroup.ExtraLimit.Nums=（integer） 如上，定义一次拓展多少建造上限。也可写多个数字与列表里一一对应。 [TechnoType]►BuildLimitGroup.ExtraLimit.MaxCount=（integer） 定义最多可读取多少BuildLimitGroup.ExtraLimit.Types里的单位。 [TechnoType]►BuildLimitGroup.ExtraLimit.MaxNum=（integer） 定义最多可以提升多少建造上限。当前版本在生产拥有建造上限组条件的单位时对应类型工厂数量变化有可能导致生产进度异常重置。,0,,TechnoTypes
+MultiMindControl.ReleaseVictim,bool,-1,MultiMindControl.ReleaseVictim,多重心控单位是否可以在过载前释放被控制的单位。默认no。,0,,TechnoTypes
+Convert.ResetMindControl,bool,-1,Convert.ResetMindControl,设置该单位变形后是否重置心控。默认false。,0,,TechnoTypes
+NoManualMove,bool,-1,NoManualMove,是否不能手动移动，单位将无视移动指令。默认no。对有UndeploysInto=的建筑设置时可以使该建筑设置集结点的时候不收起而是正常设置集结点。可以配合BuildingUndeploy=yes的弹头做可设置集结点的移动工厂。,0,,TechnoTypes
+AttackMove.Aggressive,bool,-1,AttackMove.Aggressive,微观定义单位移动攻击时是否会主动攻击无武器并且ThreatPosed=0的建筑。默认继承全局值。,0,,TechnoTypes
+AttackMove.UpdateTarget,bool,-1,AttackMove.UpdateTarget,微观定义单位移动攻击时是否会自动切换目标并选择更高威胁的目标。默认继承全局值。发现敌人时停止可以避免单位移动攻击时过于接近敌人造成损失,0,,TechnoTypes
+AttackMove.StopWhenTargetAcquired,bool,-1,AttackMove.StopWhenTargetAcquired,微观定义单位移动攻击时是否在发现敌人时停止移动。默认继承全局值，若全局值未定义则OpportunityFire=yes的单位默认no，OpportunityFire=no的单位默认yes。,0,,TechnoTypes
+AttackMove.PursuitTarget,bool,-1,AttackMove.PursuitTarget,单位是否在发现敌人后持续追击敌人，适用于手短单位例如基洛夫。原版中许多单位在移动攻击时发现敌人已会停止，此行为与AttackMove.StopWhenTargetAcquired无关。部分单位（如飞行兵）在原版移动攻击指令下无法正确开火（具体原因不明），此特性可修复该问题。设置AttackMove.StopWhenTargetAcquired=true的飞行兵会立即原地停止而不是先进行分散。,0,,TechnoTypes
+AttackMove.Follow,bool,-1,AttackMove.Follow,定义单位在执行移动攻击指令时是否跟随周边单位（跟随行为等同于Ctrl+Alt跟随指令）。默认false。,0,,TechnoTypes
+AttackMove.Follow.IncludeAir,bool,-1,AttackMove.Follow.IncludeAir,自动跟随时单位是否能将空中单位作为跟随对象。默认false。,0,,TechnoTypes
+AttackMove.Follow.IfMindControlIsFull,bool,-1,AttackMove.Follow.IfMindControlIsFull,心灵控制单位达到心灵控制上限后是否仍然继续跟随。默认false。,0,,TechnoTypes
+NoRearm.UnderEMP,bool,-1,NoRearm.UnderEMP,微观定义单位处在EMP或失效状态下时，是否不更新武器冷却计时器，默认为全局定义值。,0,,TechnoTypes
+NoRearm.Temporal,bool,-1,NoRearm.Temporal,微观定义单位在被超时空武器冻结时，是否不更新武器冷却计时器，默认为全局定义值。,0,,TechnoTypes
+NoReload.UnderEMP,bool,-1,NoReload.UnderEMP,微观定义单位处在EMP或失效状态下时，是否不更新弹药装填（不支持飞机弹药）计时器，默认为全局定义值。,0,,TechnoTypes
+NoReload.Temporal,bool,-1,NoReload.Temporal,微观定义单位在被超时空武器冻结时，是否不更新弹药装填（不支持飞机弹药）计时器，默认为全局定义值。,0,,TechnoTypes
+NoSecondaryWeaponFallback,bool,-1,NoSecondaryWeaponFallback,是否关闭副武器自动推算。默认no。,0,,TechnoTypes
+NoSecondaryWeaponFallback.AllowAA,bool,-1,NoSecondaryWeaponFallback.AllowAA,当抛射体AA=yes且目标在空中时，是否关闭副武器自动推算。默认no。,0,,TechnoTypes
+CombatAlert,bool,-1,CombatAlert,该类型在受到攻击时是否发出警报，需要[AudioVisual]►CombatAlert=true才能生效。,0,,TechnoTypes
+CombatAlert.NotBuilding,bool,-1,CombatAlert.NotBuilding,判断是否发出警报时，是否将该类型视作非建筑，默认自动判断该建筑是否可以变成载具，不能变成载具的建筑默认false。,0,,TechnoTypes
+CombatAlert.UseFeedbackVoice,bool,-1,CombatAlert.UseFeedbackVoice,微观定义是否最优先使用VoiceFeedback作为声音提示，默认为全局定义值。,0,,TechnoTypes
+CombatAlert.UseAttackVoice,bool,-1,CombatAlert.UseAttackVoice,微观定义如果没有VoiceFeedback ，是否次优先使用VoiceAttack作为声音提示，默认为全局定义值。,0,,TechnoTypes
+CombatAlert.UseEVA,bool,-1,CombatAlert.UseEVA,微观定义如果没有VoiceAttack，是否最后使用单位自身的CombatAlert.EVA作为声音提示，默认为全局定义值。 [TechnoType]►CombatAlert.EVA=（EVA） 该类型使用的EVA警报条目，默认EVA_UnitsInCombat。,0,,TechnoTypes
+CombatAlert.Suppress,bool,-1,CombatAlert.Suppress,使用该弹头攻击是否不会触发警报，默认 Nonprovocative=yes 或 Malicious=no]的弹头为true，其他弹头为false。,0,,Warheads
+RecountBurst,bool,-1,RecountBurst,微观定义单位在更换使用的武器时，或保持无目标状态一段时间（30帧和上一次发射的武器的ROF取较大值）后，是否重置当前的Burst计数。默认为全局定义值,0,,TechnoTypes
+TiberiumEater.Display,bool,-1,TiberiumEater.Display,是否在单位上悬浮显示精炼获取的资金值。默认true。,0,,TechnoTypes
+TiberiumEater.AnimMove,bool,-1,TiberiumEater.AnimMove,精炼动画是否跟随单位移动播放。默认true。,0,,TechnoTypes
+OnlyUseLandSequences,bool,-1,OnlyUseLandSequences,是否仅显示陆地上的常规动作序列，即使步兵在水中。默认false。,0,,InfantryTypes
+NotHuman.RandomDeathSequence,bool,-1,NotHuman.RandomDeathSequence,是否能够随机播放死亡动画序列。默认yes。,0,,InfantryTypes
+AmphibiousEnter,bool,-1,AmphibiousEnter,微观定义该载具是否能两栖装载。默认继承[General]►AmphibiousEnter。,0,,VehicleTypes
+AmphibiousUnload,bool,-1,AmphibiousUnload,微观定义该载具是否能两栖卸载。默认继承[General]►AmphibiousUnload。,0,,VehicleTypes
+NoQueueUpToEnter,bool,-1,NoQueueUpToEnter,微观定义该载具是否能免排队进入。默认继承[General]►NoQueueUpToEnter。,0,,VehicleTypes
+NoQueueUpToUnload,bool,-1,NoQueueUpToUnload,微观定义该载具是否能免排队离开。默认继承[General]►NoQueueUpToUnload。,0,,VehicleTypes
+JumpjetTilt,bool,-1,JumpjetTilt,该单位是否启用Jumpjet移动倾斜，启用后使单位在前进时前倾、转向时侧倾，最大倾斜角度不超过90度。默认false。前倾幅度与当前加速度和速度相关，两者相乘，可通过系数调整细节。,0,,VehicleTypes
+TurretResponse,bool,-1,TurretResponse,该载具失去目标时是否复位炮塔。若Speed=0或单位因MovementRestrictedTo限制无法移动时默认false，其他情况默认true。,0,,VehicleTypes
+FireUp.ResetInRetarget,bool,-1,FireUp.ResetInRetarget,单位播放FireUp帧过程中变更目标是否重新播放开火动作帧，若无可用目标则强制重新播放。默认true。,0,,VehicleTypes
+Spawner.LimitRange,bool,-1,Spawner.LimitRange,子机现在是否停止追击超出攻击距离的敌人。默认no。,0,,TechnoTypes
+Spawner.AttackImmediately,bool,-1,Spawner.AttackImmediately,设置子机不会再等待所有子机生成后再执行任务，而是立刻执行攻击任务。默认no。,0,,TechnoTypes
+Spawner.UseTurretFacing,bool,-1,Spawner.UseTurretFacing,子机生成时朝向是否继承母舰炮塔朝向。默认no。,0,,TechnoTypes
+Spawner.RecycleOnTurret,bool,-1,Spawner.RecycleOnTurret,定义子机回收位置是否跟随母舰的炮塔移动。默认no,0,,TechnoTypes
+Promote.IncludeSpawns,bool,-1,Promote.IncludeSpawns,子机是否以发射者的等级出现。默认no。,0,,TechnoTypes
+NoBuildAreaOnBuildup,bool,-1,NoBuildAreaOnBuildup,定义该建筑是否在播放建造动画时不提供建造范围。默认false。,0,,BuildingTypes
+IsDestroyableObstacle,bool,-1,IsDestroyableObstacle,定义该建筑是否为可摧毁的寻路障碍物。默认false。如果单位具有合适的MovementZone却没有摧毁障碍物的能力（比如缺少能开火并对障碍物造成伤害的武器），该单位在尝试穿越障碍物时会被卡住而不是绕开障碍物。,0,,BuildingTypes
+SpyEffect.Custom,bool,-1,SpyEffect.Custom,该建筑是否应用ARES渗透逻辑来替代YR原有的渗透逻辑。需要设置true来使得Ares与Phobos的渗透相关功能生效。,0,,BuildingTypes,Whether or not to use the Ares spy infiltration logic instead of the original Yuri’s Revenge logic.
+ExtraWarheads.FullDetonation,bool,-1,ExtraWarheads.FullDetonation,用于决定每个独立的弹头是否像完整武器中的弹头那样引爆并触发大部分弹头效果，否则只造成范围伤害并触发Phobos弹头效果。,0,,WeaponTypes
+Burst.FireWithinSequence,bool,-1,Burst.FireWithinSequence,是否允许步兵或SHP载具在单次开火动作序列内发射多发Burst。默认false。第一发Burst始终在模型中设定的开火序列帧（FireUp等）时开火，后续开火按Burst.Delays间隔（最小1帧，未定义时使用3-5帧随机延迟）进行。若距离下一发开火的延迟超出剩余攻击序列帧长度，Burst计数将重置并且武器进入冷却／开始重新装弹。若在Burst连发过程中停止开火，Burst计数器不会立即重置，但每发的开火帧位置不受影响（即未重新装弹时恢复开火会重新播放攻击序列帧，但需播放到上次开火之后下一发的对应开火帧位置帧才会实际开火）。,0,,WeaponTypes
+Burst.NoDelay,bool,-1,Burst.NoDelay,该武器是否没有Burst延迟，在一帧内发射所有Burst。默认false。,0,,WeaponTypes
+DelayedFire.SkipInTransport,bool,-1,DelayedFire.SkipInTransport,定义单位在载具内开火是否跳过开火延迟直接开火。默认false。,0,,WeaponTypes
+DelayedFire.AnimIsAttached,bool,-1,DelayedFire.AnimIsAttached,开火延迟动画是否附加在开火单位上。默认true。,0,,WeaponTypes
+DelayedFire.AnimOnTurret,bool,-1,DelayedFire.AnimOnTurret,开火延迟动画位置是否跟随开火单位的炮塔(如果有)，否则跟随车体。默认true。,0,,WeaponTypes
+DelayedFire.CenterAnimOnFirer,bool,-1,DelayedFire.CenterAnimOnFirer,开火延迟动画位置是否在开火者中心而不是武器当前开火坐标处。默认false。,0,,WeaponTypes
+DelayedFire.RemoveAnimOnNoDelay,bool,-1,DelayedFire.RemoveAnimOnNoDelay,是否在延迟时间结束或者开火被中断时立即移除开火延迟动画，即使动画没有播放完毕。默认false。动画在延迟时间结束前播放完毕会重新播放。,0,,WeaponTypes
+DelayedFire.PauseFiringSequence,bool,-1,DelayedFire.PauseFiringSequence,延迟期间是否将步兵的开火序列帧播放暂停在开火帧位置处。默认false。,0,,WeaponTypes
+DelayedFire.OnlyOnInitialBurst,bool,-1,DelayedFire.OnlyOnInitialBurst,多Burst武器连发时是否只在第一发Burst发射前应用延迟，后续Burst不再进行延迟。默认false。ARES使多Burst开火中途中断或目标丢失时不重置Burst计数，会导致启用DelayedFire.OnlyOnInitialBurst时多Burst连发中断过后继续开火的Burst不会再进行延迟。若启用RecountBurst重置Burst计数则中断后继续开火的第一发会应用延迟效果。,0,,WeaponTypes
+Strafing,bool,-1,Strafing,飞机开火时是否使用扫射，对于抛射体ROT小于2并且Inviso=false以及没有使用Trajectory的武器默认true，其他默认false。,0,,WeaponTypes
+Strafing.SimulateBurst,bool,-1,Strafing.SimulateBurst,扫射中武器是否模拟Burst的表现，允许交替偏移开火坐标。仅当Burst=1或未指定时生效。默认no。,0,,WeaponTypes
+Strafing.UseAmmoPerShot,bool,-1,Strafing.UseAmmoPerShot,扫射中武器是否每一发都会消耗弹药，覆盖默认的Ammo仅在一轮扫射结束后扣除的特性，默认no。,0,,WeaponTypes
+Strafing.TargetCell,bool,-1,Strafing.TargetCell,扫射中是否在发射第一发后将本轮扫射目标切换至地面。默认no。用于在目标死亡或丢失后继续发射完本轮全部扫射次数而不是因此中断。,0,,WeaponTypes
+OmniFire.TurnToTarget,bool,-1,OmniFire.TurnToTarget,单位在使用该武器(OmniFire=yes)攻击目标时是否尝试转向目标。,0,,WeaponTypes
+KeepRange.AllowAI,bool,-1,KeepRange.AllowAI,使用该武器的单位在AI控制下是否启用保持距离行为。默认false。,0,,WeaponTypes
+KeepRange.AllowPlayer,bool,-1,KeepRange.AllowPlayer,使用该武器的单位在玩家控制下是否启用保持距离行为。默认false。,0,,WeaponTypes
+VisualScatter,bool,-1,VisualScatter,该武器是否启用散射视觉效果。默认false。,0,,WeaponTypes
+Interceptor,bool,-1,Interceptor,该单位能否拦截抛射体。拦截单位在射程内没有其他常规目标时会尝试发射拦截武器拦截抛射体。,0,,TechnoTypes
+Interceptor.ApplyFirepowerMult,bool,-1,Interceptor.ApplyFirepowerMult,拦截武器的伤害是否受到单位的火力加成系数影响。默认yes。,0,,TechnoTypes
+Interceptor.DeleteOnIntercept,bool,-1,Interceptor.DeleteOnIntercept,拦截抛射体时被拦截的抛射体是否直接消失而不是爆炸，覆盖抛射体的Interceptable.DeleteOnIntercept。默认no。,0,,TechnoTypes
+Interceptor.WeaponReplaceProjectile,bool,-1,Interceptor.WeaponReplaceProjectile,上一条生效时是否同时替换被拦截抛射体的抛射体属性，Image和速度。不能替换附加的粒子系统。默认no。,0,,TechnoTypes
+Interceptor.WeaponCumulativeDamage,bool,-1,Interceptor.WeaponCumulativeDamage,在Interceptor.WeaponOverride生效时是否将伤害叠加在原来的抛射体上而不是替换。默认no。,0,,TechnoTypes
+Interceptor.KeepIntact,bool,-1,Interceptor.KeepIntact,拦截抛射体时被拦截的抛射体是否会像没有被拦截时一样继续移动，但Interceptor.WeaponOverride的效果依然生效。默认no。,0,,TechnoTypes
+Interceptable,bool,-1,Interceptable,抛射体是否可被拦截。默认no。,0,,ProjectileTypes
+Interceptable.DeleteOnIntercept,bool,-1,Interceptable.DeleteOnIntercept,抛射体被拦截时是否直接消失而不是爆炸。默认no。,0,,ProjectileTypes
+Trajectory.Straight.ApplyRangeModifiers,bool,-1,Trajectory.Straight.ApplyRangeModifiers,抛射体Trajectory.Straight.DetonationDistance和 Trajectory.Straight.EdgeAttenuation的计算是否会受到射程AE的影响。默认false。,0,,ProjectileTypes
+Trajectory.Straight.PassThrough,bool,-1,Trajectory.Straight.PassThrough,设置为true时，若 Trajectory.Straight.DetonationDistance＞0则抛体在距离【发射者】这个值的距离的位置引爆，＜0则抛体在穿过【目标点】这个值的绝对值的位置引爆，=0视为无穷远。默认false。,0,,ProjectileTypes
+Trajectory.Straight.PassDetonate,bool,-1,Trajectory.Straight.PassDetonate,是否启用穿透伤害，即抛体每隔一段时间在抛体所在的位置引爆一个弹头，默认false,0,,ProjectileTypes
+Trajectory.Straight.PassDetonateLocal,bool,-1,Trajectory.Straight.PassDetonateLocal,穿透伤害引爆的弹头和最终引爆本体的弹头是否位于【地面】高度，默认false。开启后会导致在使用Trajectory.Straight.ConfineAtHeight时抛体的垂直方向速度将不受限制（如果需要在桥上引爆，可以改用Trajectory.Straight.ConfineAtHeight并将其设置为1）,0,,ProjectileTypes
+Trajectory.Straight.LeadTimeCalculate,bool,-1,Trajectory.Straight.LeadTimeCalculate,抛体在瞄准时是否计算目标的提前量，计算目标的提前量会在开火时延迟1帧发射且增加性能消耗，若抛体的速度过低，则会无法生效。这不会影响炮塔朝向。默认false。,0,,ProjectileTypes
+Trajectory.Straight.MirrorCoord,bool,-1,Trajectory.Straight.MirrorCoord,是否启用镜像坐标 即抛体在瞄准目标相对坐标进行攻击前，如果发射者开火时当前武器的Burst数为偶数，则Trajectory.Straight.OffsetCoord中的L坐标会镜像翻转，同时Trajectory.Straight.RotateCoord计算的旋转方向也会反转，每一侧的每个相邻抛体之间的旋转角度不因此改变。默认true。,0,,ProjectileTypes
+Trajectory.Straight.UseDisperseBurst,bool,-1,Trajectory.Straight.UseDisperseBurst,计算 Trajectory.Straight.RotateCoord时是否按照扩散它的上级扩散抛体的Trajectory.Disperse.WeaponBurst的值而非武器本身的 Burst。默认false。若该值填写不正确将导致异常的视觉表现。默认false。（Disperse抛射体从b46到现在还并未合并，该句暂无效果）,0,,ProjectileTypes
+Trajectory.Straight.ProximityDirect,bool,-1,Trajectory.Straight.ProximityDirect,撞击伤害是否不引爆弹头而直接对目标造成伤害（不影响本体弹头引爆）。默认false。,0,,ProjectileTypes
+Trajectory.Straight.ProximityMedial,bool,-1,Trajectory.Straight.ProximityMedial,撞击伤害是否不在目标位置引爆，而是直接在抛体位置引爆，若Trajectory.Straight.ProximityDirect为true，则该项只会影响Trajectory.Straight.EdgeAttenuation对伤害的计算。默认false。,0,,ProjectileTypes
+Trajectory.Straight.ProximityAllies,bool,-1,Trajectory.Straight.ProximityAllies,撞击伤害是否对盟友生效，默认false。,0,,ProjectileTypes
+Trajectory.Straight.ProximityFlight,bool,-1,Trajectory.Straight.ProximityFlight,撞击伤害对空中单位是否生效，默认false。,0,,ProjectileTypes
+Trajectory.Straight.ThroughVehicles,bool,-1,Trajectory.Straight.ThroughVehicles,抛体是否不会被单位（车辆或飞机）阻挡，如果为否并且仍有剩余的撞击伤害次数，即在检测到单位（车辆或飞机）时会在其位置【额外】引爆一个弹头并同时引爆【本身】，若撞击伤害次数已耗尽则仅引爆【本身】，且此时Trajectory.Straight.ProximityImpact不会对除障碍物以外任何单位（车辆或飞机）生效，默认true。,0,,ProjectileTypes
+Trajectory.Straight.ThroughBuilding,bool,-1,Trajectory.Straight.ThroughBuilding,抛体是否不会被建筑阻挡，如果为否并且仍有剩余的撞击伤害次数，即在检测到建筑时会在其位置【额外】引爆一个弹头并同时引爆【本身】，若撞击伤害次数已耗尽则仅引爆【本身】，且此时Trajectory.Straight.ProximityImpact不会对除障碍物以外任何建筑生效。若当前还有剩余的撞击伤害次数，则也会在障碍物处引爆一次撞击伤害弹头。默认true。,0,,ProjectileTypes
+Trajectory.Straight.SubjectToGround,bool,-1,Trajectory.Straight.SubjectToGround,抛体低于地面高度时是否立刻引爆，默认false。,0,,ProjectileTypes
+Trajectory.Bombard.FallScatter.Linear,bool,-1,Trajectory.Bombard.FallScatter.Linear,抛体转向位置的随机范围是否仅限于垂直于发射位置与目标位置之间连线的直线上。默认false。,0,,ProjectileTypes
+Trajectory.Bombard.FreeFallOnTarget,bool,-1,Trajectory.Bombard.FreeFallOnTarget,抛体是在转向位置重新发射并自由落体还是正常从转向位置行进到预定目标，为true即前者，为false则后者。默认true。,0,,ProjectileTypes
+Trajectory.Bombard.NoLaunch,bool,-1,Trajectory.Bombard.NoLaunch,抛体是否跳过前往转向位置的过程直接从转向位置落下。默认false。,0,,ProjectileTypes
+Trajectory.Bombard.EarlyDetonation,bool,-1,Trajectory.Bombard.EarlyDetonation,抛体在Trajectory.Bombard.DetonationHeight启用时，是否在上升段高于该高度时引爆，否则在下降段低于该高度时引爆。默认false。,0,,ProjectileTypes
+Trajectory.Bombard.LeadTimeCalculate,bool,-1,Trajectory.Bombard.LeadTimeCalculate,抛体在瞄准时是否计算目标的提前量。默认false。,0,,ProjectileTypes
+Trajectory.Bombard.MirrorCoord,bool,-1,Trajectory.Bombard.MirrorCoord,抛体在瞄准目标相对坐标进行攻击前，如果发射者开火时当前武器的Burst数为偶数，则Trajectory.Bombard.OffsetCoord中的L坐标(第二个坐标值)会镜像翻转，同时Trajectory.Bombard.RotateCoord计算的旋转方向也会反转，每一侧的每个相邻抛体之间的旋转角度不因此改变。默认true。,0,,ProjectileTypes
+Trajectory.Bombard.UseDisperseBurst,bool,-1,Trajectory.Bombard.UseDisperseBurst,计算Trajectory.Bombard.RotateCoord时是否按照扩散它的上级扩散抛体的Trajectory.Disperse.WeaponBurst的值而非武器的Burst。默认false。（Disperse抛射体轨迹并未合并，该句暂无效果）,0,,ProjectileTypes
+Trajectory.Bombard.SubjectToGround,bool,-1,Trajectory.Bombard.SubjectToGround,抛体低于地面高度时是否立刻引爆（抛体处于下降段时必定会低于地面引爆，此处定义的是上升段时是否立刻引爆）。默认false。该抛射体轨迹支持联用Inaccurate，BallisticScatter.Min，BallisticScatter.Max与Gravity。,0,,ProjectileTypes
+Trajectory.Parabola.LeadTimeCalculate,bool,-1,Trajectory.Parabola.LeadTimeCalculate,抛体在瞄准时是否计算目标的提前量，计算目标的提前量会在开火时延迟1帧发射，同时若抛体的速度过低，则会无法生效。默认no。,0,,ProjectileTypes
+Trajectory.Parabola.BounceOnWater,bool,-1,Trajectory.Parabola.BounceOnWater,抛体是否可以在水面上发生弹跳。默认no。,0,,ProjectileTypes
+Trajectory.Parabola.BounceDetonate,bool,-1,Trajectory.Parabola.BounceDetonate,抛体是否可以在每次弹跳时额外引爆一次弹头。默认no。,0,,ProjectileTypes
+Trajectory.Parabola.MirrorCoord,bool,-1,Trajectory.Parabola.MirrorCoord,抛体在瞄准目标相对坐标进行攻击前，如果发射者开火时当前武器的Burst数为偶数，则Trajectory.Parabola.OffsetCoord中的L会镜像翻转，同时Trajectory.Parabola.RotateCoord计算的旋转方向也会反转，每一侧的每个相邻抛体之间的旋转角度不因此改变。默认yes。,0,,ProjectileTypes
+Trajectory.Parabola.UseDisperseBurst,bool,-1,Trajectory.Parabola.UseDisperseBurst,计算Trajectory.Parabola.RotateCoord时是否按照扩散它的上级扩散抛体的Trajectory.Disperse.WeaponBurst的值而非武器的Burst。默认no。（Disperse抛射体轨迹并未合并，该句暂无效果）,0,,ProjectileTypes
+Shrapnel.AffectsGround,bool,-1,Shrapnel.AffectsGround,溅射是否被地面上触发。默认no。,0,,ProjectileTypes
+Shrapnel.AffectsBuildings,bool,-1,Shrapnel.AffectsBuildings,溅射是否被建筑上触发。默认no。,0,,ProjectileTypes
+Shrapnel.UseWeaponTargeting,bool,-1,Shrapnel.UseWeaponTargeting,溅射子武器是否遵循LegalTarget，Verses或者主武器的索敌设置，默认no。,0,,ProjectileTypes
+SubjectToLand,bool,-1,SubjectToLand,抛射体是否会被陆地阻拦。,0,,ProjectileTypes
+SubjectToLand.Detonate,bool,-1,SubjectToLand.Detonate,抛射体被陆地阻拦时是否会直接爆炸。默认yes。,0,,ProjectileTypes
+SubjectToWater,bool,-1,SubjectToWater,抛射体是否会被水域阻拦。,0,,ProjectileTypes
+SubjectToWater.Detonate,bool,-1,SubjectToWater.Detonate,抛射体被水域阻拦时是否会直接爆炸。默认yes。,0,,ProjectileTypes
+SubjectToGround,bool,-1,SubjectToGround,开火前是否预测高度。将预测从抛射体源坐标到目标坐标连线的垂直高度。若预测高度低于目标位置的地面高度，发射者会将目标视为超出射程并尝试重新定位。,0,,ProjectileTypes
+Parachuted,bool,-1,Parachuted,设置该抛射体是否为空投炸弹，为避免出现异常不建议与其他抛射体逻辑混用（如ROT>0或Vertical=true）。默认false。,0,,ProjectileTypes
+TransactMoney.Display,bool,-1,TransactMoney.Display,是否在目标位置显示资金变化数，增加资金为绿色，扣除资金为红色，如果找不到开火者则在目标位置显示。默认no。,0,,Warheads
+TransactMoney.Display.AtFirer,bool,-1,TransactMoney.Display.AtFirer,是否在开火者位置显示资金变化数而不是目标位置。默认no。,0,,Warheads
+SpySat,bool,-1,SpySat,弹头爆炸时是否为所属方揭露全地图视野。默认no。,0,,Warheads
+BigGap,bool,-1,BigGap,弹头爆炸时是否覆盖所属方的敌对方的视野。默认no。,0,,Warheads
+RemoveDisguise,bool,-1,RemoveDisguise,弹头命中目标时是否移除目标的伪装，此逻辑也会生效在通过PermaDisguise获得的默认伪装上。默认no。,0,,Warheads
+RemoveMindControl,bool,-1,RemoveMindControl,弹头命中目标时是否切断目标的心灵控制，对永久控制无效。默认no。,0,,Warheads
+Crit.ApplyChancePerTarget,bool,-1,Crit.ApplyChancePerTarget,是否对每个命中的目标单独决定是否暴击而不是所有目标统一判定暴击概率。默认no。,0,,Warheads
+Crit.ExtraDamage.ApplyFirepowerMult,bool,-1,Crit.ExtraDamage.ApplyFirepowerMult,弹头暴击造成的额外伤害是否受到发射源的火力加成系数影响。默认no。,0,,Warheads
+Crit.Warhead.FullDetonation,bool,-1,Crit.Warhead.FullDetonation,Crit.Warhead是否像武器中的弹头那样引爆，应用大多数弹头效果。否则只造成范围伤害并触发Phobos弹头效果。默认yes。,0,,Warheads
+Crit.AnimList.PickRandom,bool,-1,Crit.AnimList.PickRandom,暴击时是否随机播放Crit.AnimList中的动画。默认与AnimList.PickRandom相同。,0,,Warheads
+Crit.AnimList.CreateAll,bool,-1,Crit.AnimList.CreateAll,暴击时是否播放所有Crit.AnimList中的动画，默认与AnimList.CreateAll相同。,0,,Warheads
+Crit.AnimOnAffectedTargets,bool,-1,Crit.AnimOnAffectedTargets,暴击动画是否不替代原本的动画而是给每一个被暴击目标播放。默认no。,0,,Warheads
+Crit.SuppressWhenIntercepted,bool,-1,Crit.SuppressWhenIntercepted,当弹头是从被拦截抛射体的武器上引爆时，暴击不会触发。默认no。,0,,Warheads
+ImmuneToCrit,bool,-1,ImmuneToCrit,单位或护盾类型是否免疫暴击。默认no。,0,,TechnoTypes
+AnimList.PickRandom,bool,-1,AnimList.PickRandom,是否会从AnimList里随机选择动画播放，和EMEffect相似但不会有对应的副作用。默认false。,0,,Warheads
+AnimList.CreateAll,bool,-1,AnimList.CreateAll,是否会生成所有的AnimList动画，默认false。,0,,Warheads
+SplashList.PickRandom,bool,-1,SplashList.PickRandom,弹头的水花动画是否从SplashList的列表中随机选取。默认no。,0,,Warheads
+SplashList.ScatterMin,bool,-1,SplashList.ScatterMin,同AnimList。,0,,Warheads
+SplashList.ScatterMax,bool,-1,SplashList.ScatterMax,同AnimList。,0,,Warheads
+LaunchSW.RealLaunch,bool,-1,LaunchSW.RealLaunch,发射的超级武器是否必须为所属方目前拥有并就绪的超武，否则进行无源发射。默认yes。,0,,Warheads
+LaunchSW.IgnoreInhibitors,bool,-1,LaunchSW.IgnoreInhibitors,发射的超级武器是否忽略抑制者。默认no。,0,,Warheads
+LaunchSW.IgnoreDesignators,bool,-1,LaunchSW.IgnoreDesignators,发射的超级武器是否忽略指示者。默认yes。,0,,Warheads
+LaunchSW.DisplayMoney,bool,-1,LaunchSW.DisplayMoney,是否显示发射的超级武器造成的资金变化数，增加资金为绿色，扣除资金为红色。默认no。 [Warhead]►LaunchSW.DisplayMoney.Houses=（enum none|owner/self|allies/ally|team|enemies/enemy|all） 显示的资金变化数可以被哪些所属方看到。默认all。,0,,Warheads
+DetonateOnAllMapObjects,bool,-1,DetonateOnAllMapObjects,弹头是否作用于地图上的每个目标，空爆和溅射等效果会在每个目标上触发。默认no。,0,,Warheads
+DetonateOnAllMapObjects.Full,bool,-1,DetonateOnAllMapObjects.Full,弹头是否像武器中的弹头那样引爆并生效大部分弹头效果，否则只是造成范围伤害与触发Phobos弹头效果。默认yes。,0,,Warheads
+DetonateOnAllMapObjects.RequireVerses,bool,-1,DetonateOnAllMapObjects.RequireVerses,弹头作用目标时是否读取弹头比，只有非0弹头比的目标才能被作用。默认no。虽然此功能可以提供比设置极大的CellSpread更好的效果，但它仍然有可能减慢游戏速度，尤其是当与动画、alpha灯光等同时使用时。建议限制作用对象来减小影响。,0,,Warheads
+BuildingSell,bool,-1,BuildingSell,被命中的拥有建造动画的建筑是否会被卖掉。默认false。,0,,Warheads
+BuildingSell.IgnoreUnsellable,bool,-1,BuildingSell.IgnoreUnsellable,弹头是否无视Unsellable等禁止售卖的约束强制卖掉建筑，不能卖掉没有建造动画的建筑。默认false。,0,,Warheads
+BuildingUndeploy,bool,-1,BuildingUndeploy,被命中的拥有UndeploysInto的建筑是否会收起成单位状态。默认false。,0,,Warheads
+BuildingUndeploy.Leave,bool,-1,BuildingUndeploy.Leave,在BuildingUndeploy生效后是否会让目标前往周围威胁度低的空地。默认false。无武器建筑或友军建筑不视为威胁。,0,,Warheads
+PenetratesIronCurtain,bool,-1,PenetratesIronCurtain,该弹头是否无视铁幕造成伤害。默认no。,0,,Warheads
+PenetratesForceShield,bool,-1,PenetratesForceShield,该弹头是否无视力场护盾造成伤害。默认继承PenetratesIronCurtain的设置。,0,,Warheads
+ReverseEngineer,bool,-1,ReverseEngineer,被该弹头命中的科技类型是否被逆向工程。默认no。,0,,Warheads
+CanKill,bool,-1,CanKill,该弹头是否能击杀目标，否则该弹头攻击目标时无法将目标血量削减到1以下，即目标会至少保留1血量。默认yes。,0,,Warheads
+UnlimboDetonate,bool,-1,UnlimboDetonate,该弹头爆炸是否会使发射了LimboLaunch=yes武器的单位重新出现。默认no。,0,,Warheads
+UnlimboDetonate.ForceLocation,bool,-1,UnlimboDetonate.ForceLocation,单位重新出现时是否强制生成在弹头爆炸所在格(可能造成重叠或被摧毁)，否则会寻找周围的可用格出现。默认no。,0,,Warheads
+UnlimboDetonate.KeepTarget,bool,-1,UnlimboDetonate.KeepTarget,单位重新出现时是否会保留原先的攻击目标。默认no。,0,,Warheads
+UnlimboDetonate.KeepSelected,bool,-1,UnlimboDetonate.KeepSelected,单位重新出现时是否会保留之前的选中状态。默认no。,0,,Warheads
+SuppressKillWeapons,bool,-1,SuppressKillWeapons,该科技类型被击杀是否不会触发击杀武器。,0,,TechnoTypes
+RemoveParasite,bool,-1,RemoveParasite,定义该弹头是否能移除寄生单位。负伤害武器的弹头默认yes，其他默认no。,0,,Warheads
+SW.Next.RealLaunch,bool,-1,SW.Next.RealLaunch,连续释放的超武是否使否必须为 所属方拥有的超武 且 拥有足够的资金，否则无法发射。默认yes 。,0,,WeaponTypes
+SW.Next.IgnoreInhibitors,bool,-1,SW.Next.IgnoreInhibitors,连续释放的超武是否无视超武的抑制者。默认no。,0,,WeaponTypes
+SW.Next.IgnoreDesignators,bool,-1,SW.Next.IgnoreDesignators,连续释放的超武是否无视超武的指示者。默认yes。,0,,WeaponTypes
+SW.Next.RandomWeights1,bool,-1,SW.Next.RandomWeights1,同时指定连续释放的权重列表，每次的权重表和SW.Next一一对应。每个超武对应一个权重。,0,,WeaponTypes
+SW.Link.Grant,bool,-1,SW.Link.Grant,超武发射时是否将联动超武列表内的发射所属方当前未拥有的超武给予一次性使用权，否则只联动当前拥有的超武。默认no。,0,,WeaponTypes
+SW.Link.Ready,bool,-1,SW.Link.Ready,超武发射时联动的超武是否立即就绪。给予的一次性超武默认继承SW.InitialReady的设置，当前拥有的超武默认no。,0,,WeaponTypes
+SW.Link.Reset,bool,-1,SW.Link.Reset,超武发射时联动的超武是否重置倒计时至初始状态。会覆盖上一条的设置。默认no。,0,,WeaponTypes
+Detonate.AtFirer,bool,-1,Detonate.AtFirer,是否在超武发射者所在的位置释放武器／弹头，而不是在超级武器的目标单元。如果没有发射者，则不会释放武器／弹头。默认no。Detonate.Weapon和Detonate.Warhead均视为由发射超武的建筑触发，遵循SW.RangeMinimum/Maximum等控制（类似Ares的GenericWarhead超武机制）。若找不到发射建筑，仍使用超武所属阵营进行伤害结算和应用Phobos弹头效果。,0,,WeaponTypes
+EMPulse.SuspendOthers,bool,-1,EMPulse.SuspendOthers,是否在EMP炮超武发射时暂时禁用其他所有可以和所发射的超武一样从同类建筑发出的EMP炮超武，直到发射的超武发射完成。默认false。,0,,WeaponTypes
+DestroyAnim.Random,bool,-1,DestroyAnim.Random,单位的爆炸动画是否从DestroyAnim的列表中随机选取。默认yes。,0,,VehicleTypes
+CreateUnit.RequireOwner,bool,-1,CreateUnit.RequireOwner,动画没有所属时是否不执行生成单位。默认no。,0,,Animations
+CreateUnit.RemapAnim,bool,-1,CreateUnit.RemapAnim,动画是否有所属色。默认no。,0,,Animations
+CreateUnit.RandomFacing,bool,-1,CreateUnit.RandomFacing,动画生成单位的方向是否随机。默认yes。,0,,Animations
+CreateUnit.InheritFacings,bool,-1,CreateUnit.InheritFacings,动画生成单位的方向是否继承自被摧毁单位的方向。默认no。,0,,Animations
+CreateUnit.InheritTurretFacings,bool,-1,CreateUnit.InheritTurretFacings,动画生成单位的方向是否继承自被摧毁单位炮塔的方向。默认no。,0,,Animations
+CreateUnit.AlwaysSpawnOnGround,bool,-1,CreateUnit.AlwaysSpawnOnGround,如果动画在空中播放，也会在地面刷出单位。为yes时会覆盖CreateUnit.SpawnHeight的设置。默认no。为no时jumpjet单位在地面上刷出后会立即起飞。,0,,Animations
+CreateUnit.SpawnParachutedInAir,bool,-1,CreateUnit.SpawnParachutedInAir,在空中刷出的单位是否进行类似空投的伞降。CreateUnit.AlwaysSpawnOnGround=yes时该句无效。默认no。,0,,Animations
+CreateUnit.ConsiderPathfinding,bool,-1,CreateUnit.ConsiderPathfinding,如果动画所在格子不能刷出单位，则会在附近寻找合适的格子中刷出。默认no。 [Animation]►CreateUnit.SpawnAnim=  (List of Animations) 在动画生成单位的位置处播放另一个动画，在CreateUnit播放后播放。此动画具有与CreateUnit相同的owner和invoker。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。 [Animation]►CreateUnit.SpawnHeight=  (integer) 若指定为正数值，则可以覆盖生成动画的高度，指定在某一高度生成单位。默认-1。,0,,Animations
+VisibleTo.ConsiderInvokerAsOwner,bool,-1,VisibleTo.ConsiderInvokerAsOwner,使动画的发射者所属方被视为VisibleTo的动画所有者，而不是动画所附着的科技类型的所属方或动画的当前所属方。在大多数动画中，它们是相同的，但对于某些动画来说可能会有所不同。默认false。,0,,Animations
+RestrictVisibilityIfCloaked,bool,-1,RestrictVisibilityIfCloaked,定义隐形状态下物体的附着动画或飞机Trailer=的动画（由于技术原因，目前不包括子机导弹的Trailer动画）是否仅对观察者或侦测到隐形物体的所属方可见。默认false。,0,,Animations
+DetachOnCloak,bool,-1,DetachOnCloak,"定义物体隐形时是否移除所附着的动画,默认true。",0,,Animations
+Percentage,bool,-1,Percentage,是否显示生命值的百分比而不是具体数值。默认no。,0,,DigitalDisplayTypes
+HideMaxValue,bool,-1,HideMaxValue,是否隐藏最大值只显示当前值。步兵默认yes，其他默认no。,0,,DigitalDisplayTypes
+VisibleToHouses.Observer,bool,-1,VisibleToHouses.Observer,数显是否观察者可见，默认yes,0,,DigitalDisplayTypes
+VisibleInSpecialState,bool,-1,VisibleInSpecialState,数显是否在特殊情况下保持显示，如被超时空冻结或被施加铁幕等。默认是。,0,,DigitalDisplayTypes
+ValueAsTimer,bool,-1,ValueAsTimer,是否以时间格式显示数值，例如0:30或1:00:00。默认否。,0,,DigitalDisplayTypes
+Text.Background,bool,-1,Text.Background,数值显示后是否有黑色背景。默认否。,0,,DigitalDisplayTypes
+Shape.PercentageFrame,bool,-1,Shape.PercentageFrame,是否覆盖原有的SHP帧分区规则，只根据当前数值百分比播放SHP文件中对应百分比位置的帧。默认否。,0,,DigitalDisplayTypes
+DigitalDisplay.Disable,bool,-1,DigitalDisplay.Disable,单位是否禁用数值显示。默认no。,0,,TechnoTypes
+DigitalDisplay.Health.FakeAtDisguise,bool,-1,DigitalDisplay.Health.FakeAtDisguise,间谍伪装状态下是否显示伪装对象的数值，最大生命值会变为伪装对象的最大生命值，当前生命值会等比例同步调整。默认yes。,0,,TechnoTypes
+LowSelectionPriority,bool,-1,LowSelectionPriority,是否为低选择权重。默认no。,0,,TechnoTypes
+HealthBar.Hide,bool,-1,HealthBar.Hide,是否关闭血条显示。默认no。,0,,TechnoTypes
+HealthBar.HidePips,bool,-1,HealthBar.HidePips,是否仅关闭血条本身显示不影响其他显示(数显等)。默认no。,0,,TechnoTypes
+HealthBar.Permanent,bool,-1,HealthBar.Permanent,是否常驻显示血条，默认no。,0,,TechnoTypes
+HealthBar.Permanent.PipScale,bool,-1,HealthBar.Permanent.PipScale,是否常驻显示pip格和编队序号。默认no。,0,,TechnoTypes
+VisibleToHouses.Observer,bool,-1,VisibleToHouses.Observer,观战者是否能看见选择框。默认yes。,0,,SelectBoxTypes
+DrawAboveTechno,bool,-1,DrawAboveTechno,单位的选择框是否优先于单位绘制。为no时选择框会被单位遮挡且忽略PixelSelectionBracketDelta。默认yes。,0,,SelectBoxTypes
+Ground.AlwaysDraw,bool,-1,Ground.AlwaysDraw,选择框的地面图像和地面指示线是否总是绘制，否则只在单位位于空中时才绘制。默认yes。,0,,SelectBoxTypes
+GroundLine,bool,-1,GroundLine,是否显示地面指示线，为单位到地面投影位置的垂直连线。默认no。,0,,SelectBoxTypes
+GroundLine.Dashed,bool,-1,GroundLine.Dashed,单位地面指示线是否为虚线，否则为实线。默认no。,0,,SelectBoxTypes
+HideSelectBox,bool,-1,HideSelectBox,该单位是否不显示选择框，默认no。,0,,TechnoTypes
+DisplayIncome,bool,-1,DisplayIncome,是否显示该建筑的资金收入数值。默认no。,0,,BuildingTypes
+PlacementPreview,bool,-1,PlacementPreview,该建筑是否显示建筑放置预览。默认yes但需要结合[AudioVisual]►PlacementPreview=yes和,0,,BuildingTypes
+PlacementPreview.Remap,bool,-1,PlacementPreview.Remap,建筑放置预览是否显示所属色。默认yes。,0,,BuildingTypes
+Particle.AlphaImageIsLightFlash,bool,-1,Particle.AlphaImageIsLightFlash,微观定义是否将该弹头Paticle=所生产粒子系统／粒子上的AlphaImage图像视为闪光效果。默认为上一条的设置值。,0,,Warheads
+ShowDesignatorRange,bool,-1,ShowDesignatorRange,单独定义该超武手动瞄准时是否显示指示者和抑制者范围。默认yes。用户可以自由指定是否启用这个逻辑。,0,,WeaponTypes
+SuperWeaponSidebar.Allow,bool,-1,SuperWeaponSidebar.Allow,单独定义该超武是否显示在左侧边栏。,0,,WeaponTypes
+Wake,Animations,1,Wake,自定义单位的水上尾迹动画，默认为[General]►Wake。,33ccff,,TechnoTypes
+Wake.Grapple,Animations,1,Wake.Grapple,自定义单位在水域上被寄生的动画，默认为[General]►Wake。,33ccff,,TechnoTypes
+Wake.Sinking,Animations,1,Wake.Sinking,自定义单位在水域上沉没的动画，默认为[General]►Wake。,33ccff,,TechnoTypes
+DestroyAnim,Animations,1,DestroyAnim,定义该载具被摧毁后播放的动画列表。,33ccff,,VehicleTypes
+DeployingAnims,Animations,1,DeployingAnims,覆盖原有的DeployingAnim，可定义多个方向的部署动画。动画实际使用数量按不大于动画总数X的2<sup>X</sup>数计算，动画总数小于8则只播放列表第一个动画。例如20个动画>2<sup>4</sup>\=16，实际使用16向部署动画，40个动画>2<sup>5</sup>\=32，实际使用32向部署动画。,33ccff,,VehicleTypes
+WarpOut,Animations,1,WarpOut,超时空移动走的动画。默认[General]►WarpOut。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,TechnoTypes
+WarpIn,Animations,1,WarpIn,超时空移动来的动画。默认[General]►WarpIn。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,TechnoTypes
+Chronoshift.WarpOut,Animations,1,Chronoshift.WarpOut,被超时空传送走的动画，默认继承WarpOut的设置，设置有多个动画时随机选取其一播放。,33ccff,,TechnoTypes
+Chronoshift.WarpIn,Animations,1,Chronoshift.WarpIn,被超时空传送来的动画，默认继承WarpIn的设置，设置有多个动画时随机选取其一播放。,33ccff,,TechnoTypes
+WarpAway,Animations,1,WarpAway,被超时空武器抹除的动画。默认[General]►WarpAway。会覆盖Ares在弹头上通过[Warhead]►Temporal.WarpAway=定义的动画，设置有多个动画时随机选取其一播放。,33ccff,,TechnoTypes
+DestroyAnim,Animations,1,DestroyAnim,地形对象被摧毁时播放的动画。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,TerrainType
+OreGathering.Anims,Animations,1,OreGathering.Anims,矿车采矿的动画。,33ccff,,TechnoTypes
+WakeAnim,Animations,1,WakeAnim,未设置ExplodeOnWater时动画接触水面时播放的尾流动画。，默认使用[General]►Wake动画，IsMeteor为true时不播放动画。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,VoxelAnims
+SplashAnims,Animations,1,SplashAnims,如果未设置ExplodeOnWater，设定水中爆炸的水花动画。默认[CombatDamage]►SplashList=。,33ccff,,VoxelAnims
+DropPod.AtmosphereEntry,Animations,1,DropPod.AtmosphereEntry,空降仓动画，默认[AudioVisual]►AtmosphereEntry= 。,33ccff,,TechnoTypes
+DropPod.GroundAnim,Animations,1,DropPod.GroundAnim,空降仓落地时的动画，默认[General]►DropPod= 。,33ccff,,TechnoTypes
+DropPod.Puff,Animations,1,DropPod.Puff,空降仓烟雾，默认[AudioVisual]►DropPodPuff= 。,33ccff,,TechnoTypes
+DropPod.Trailer,Animations,1,DropPod.Trailer,空降仓尾迹，默认[General]►DropPodTrailer=SMOKEY。默认情况下，空降仓上步兵的激光尾迹LaserTrails将不会再绘制。,33ccff,,TechnoTypes
+SplashList,Animations,1,SplashList,定义覆盖Conventional=true的弹头命中水面时显示的动画列表。默认继承[CombatDamage]►SplashList。,33ccff,,Warheads
+DebrisAnims,Animations,1,DebrisAnims,弹头击中处产生的碎片动画列表。,33ccff,,Warheads
+Debris.Conventional,Animations,1,Debris.Conventional,是否在弹头击中非水面时才会产生碎片。默认no。,33ccff,,Warheads
+Parasite.GrappleAnim,Animations,1,Parasite.GrappleAnim,微观定义该弹头造成的乌贼缠绕动画。默认继承全局值。,33ccff,,Warheads
+SmallFireAnims,Animations,1,SmallFireAnims,微观定义SmallFire的动画列表，默认为[AudioVisual]►SmallFire(单个动画)。,33ccff,,Animations
+LargeFireAnims,Animations,1,LargeFireAnims,微观定义LargeFire的动画列表，默认为[AudioVisual]►LargeFire(单个动画)。,33ccff,,Animations
+WakeAnim,Animations,1,WakeAnim,未设置ExplodeOnWater时动画接触水面时播放的尾流动画。，默认使用[General]►Wake动画，IsMeteor为true时不播放动画。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,Animations
+SplashAnims,Animations,1,SplashAnims,如果未设置ExplodeOnWater，设定水中爆炸的水花动画。默认[CombatDamage]►SplashList=。,33ccff,,Animations
+Respawn.Anim,Animations,1,Respawn.Anim,定义护盾重生时播放的动画。填多个时随机选其一播放。,33ccff,,ShieldTypes
+BreakAnim,Animations,1,BreakAnim,护盾被击碎时播放的动画。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,ShieldTypes
+HitAnim,Animations,1,HitAnim,护盾被攻击时播放的动画。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,ShieldTypes
+Shield.BreakAnim,Animations,1,Shield.BreakAnim,覆盖被此弹头击碎的护盾本身的BreakAnim播放。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,Warheads
+Shield.HitAnim,Animations,1,Shield.HitAnim,覆盖被此弹头击中的护盾本身的HitAnim播放。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,Warheads
+Shield.Respawn.Anim,Animations,1,Shield.Respawn.Anim,覆盖被此弹头击中的护盾的Respawn.Anim列表。,33ccff,,Warheads
+AutoDeath.VanishAnimation,Animations,1,AutoDeath.VanishAnimation,当AutoDeath.Behavior=vanish时，单位被直接抹除的动画。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,TechnoTypes
+Animation,Animations,1,Animation,定义AE生效时播放的动画。,33ccff,,PhobosAE
+CumulativeAnimations,Animations,1,CumulativeAnimations,定义AE每次叠加时播放的动画。可以写很多但需要和可叠加次数相对应。若可叠加次数大于动画数量则只会播放最后一个动画。每次叠加时每一个动画都会重新播放。,33ccff,,PhobosAE
+PassengerDeletion.Anim,Animations,1,PassengerDeletion.Anim,删除乘客时的动画。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,TechnoTypes
+Promote.VeteranAnimation,Animations,1,Promote.VeteranAnimation,单独定义单位升级到老兵级时播放的升级动画。默认继承[AudioVisual]►Promote.VeteranAnimation。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,TechnoTypes
+Promote.EliteAnimation,Animations,1,Promote.EliteAnimation,单独定义单位升级到精英级时播放的升级动画。默认继承[AudioVisual]►Promote.EliteAnimation。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。 [TechnoType]►Convert.HumanToComputer=（TechnoType） 定义该单位所属方从玩家变为AI时变成的单位。 [TechnoType]►Convert.ComputerToHuman=（TechnoType） 定义该单位所属方从AI变为玩家时变成的单位。,33ccff,,TechnoTypes
+TiberiumEater.Anims,Animations,1,TiberiumEater.Anims,每次精炼时在每个精炼格处播放的动画列表，若动画列表内有8个可用动画则按单位朝向播放对应动画，若为多个但数量不为8个则随机播放其一。,33ccff,,TechnoTypes
+TiberiumEater.Anims.Tiberium0,Animations,1,TiberiumEater.Anims.Tiberium0,精炼类型一矿石时播放的动画列表。覆盖TiberiumEater.Anims。多个动画逻辑同上。,33ccff,,TechnoTypes
+TiberiumEater.Anims.Tiberium1,Animations,1,TiberiumEater.Anims.Tiberium1,精炼类型二矿石时播放的动画列表。覆盖TiberiumEater.Anims。多个动画逻辑同上。,33ccff,,TechnoTypes
+TiberiumEater.Anims.Tiberium2,Animations,1,TiberiumEater.Anims.Tiberium2,精炼类型三矿石时播放的动画列表。覆盖TiberiumEater.Anims。多个动画逻辑同上。,33ccff,,TechnoTypes
+TiberiumEater.Anims.Tiberium3,Animations,1,TiberiumEater.Anims.Tiberium3,精炼类型四矿石时播放的动画列表。覆盖TiberiumEater.Anims。多个动画逻辑同上。,33ccff,,TechnoTypes
+Spawner.RecycleAnim,Animations,1,Spawner.RecycleAnim,定义子机回收时在回收处播放的动画。从Build#48开始从只能设置单个动画改为读取动画列表，设置有多个动画时随机选取其一播放。,33ccff,,TechnoTypes
+DelayedFire.Animation,Animations,1,DelayedFire.Animation,开火延迟期间内播放的动画。延迟动画目前在多Burst开火坐标单位表现有可能异常，比如天启开火只有一边的炮管有延迟动画。目前正在进行后续优化。,33ccff,,WeaponTypes
+DelayedFire.OpenToppedAnimation,Animations,1,DelayedFire.OpenToppedAnimation,在OpenTopped载具内开火时开火延迟期间内播放的动画。,33ccff,,WeaponTypes
+Trajectory.Bombard.TurningPointAnims,Animations,1,Trajectory.Bombard.TurningPointAnims,如果设置，将在抛体到达转向位置时播放列表中的随机一个动画，如果Trajectory.Bombard.FreeFallOnTarget为true，动画将与抛体一起在目标上方生成，如果Trajectory.Bombard.NoLaunch为true，动画将在抛体落下的地方播放，无论它是否是自由落体。,33ccff,,ProjectileTypes
+BombParachute,Animations,1,BombParachute,定义空投炸弹的降落伞动画，该动画使用发射者所属方的所属色和单位色盘。默认继承[General]►BombParachute。,33ccff,,ProjectileTypes
+Crit.AnimList,Animations,1,Crit.AnimList,弹头暴击时替代弹头动画AnimList播放的的动画。,33ccff,,Warheads
+Crit.ActiveChanceAnims,Animations,1,Crit.ActiveChanceAnims,当弹头使用了暴击逻辑并有可能触发暴击时，无论是否暴击始终在弹头引爆位置处播放的动画。若设置多个动画则随机播放其一。,33ccff,,Warheads
+SplashList,Animations,1,SplashList,弹头的水花动画。,33ccff,,Warheads
+SplashList.CreateAll,Animations,1,SplashList.CreateAll,是否会生成所有的弹头的水花动画。默认false,33ccff,,Warheads
+SplashList.CreationInterval,Animations,1,SplashList.CreationInterval,同AnimList。,33ccff,,Warheads
+MindControl.Anim,Animations,1,MindControl.Anim,自定义该心控弹头的心控动画。默认[CombatDamage]►ControlledAnimationType。,33ccff,,Warheads
+DestroyAnim,Animations,1,DestroyAnim,单位的爆炸动画，不同于Explosion，这个可以保留单位的所属方和方向。,33ccff,,VehicleTypes
+Spawns.Queue,AircraftTypes,-1,Spawns.Queue,队列中所有子机类型的MissileSpawn设置必须一致（全部为true或false），混合设置会导致导弹类子机无法命中目标。,00ff00,,TechnoTypes
+PrimaryFireFLH.Burst1,String,-1,PrimaryFireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+PrimaryFireFLH.Burst2,String,-1,PrimaryFireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+ElitePrimaryFireFLH.Burst1,String,-1,ElitePrimaryFireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+ElitePrimaryFireFLH.Burst2,String,-1,ElitePrimaryFireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+PronePrimaryFireFLH.Burst1,String,-1,PronePrimaryFireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+PronePrimaryFireFLH.Burst2,String,-1,PronePrimaryFireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+DeployedPrimaryFireFLH.Burst1,String,-1,DeployedPrimaryFireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+DeployedPrimaryFireFLH.Burst2,String,-1,DeployedPrimaryFireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+SecondaryFireFLH.Burst1,String,-1,SecondaryFireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+SecondaryFireFLH.Burst2,String,-1,SecondaryFireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+EliteSecondaryFireFLH.Burst1,String,-1,EliteSecondaryFireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+EliteSecondaryFireFLH.Burst2,String,-1,EliteSecondaryFireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+ProneSecondaryFireFLH.Burst1,String,-1,ProneSecondaryFireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+ProneSecondaryFireFLH.Burst2,String,-1,ProneSecondaryFireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+DeployedSecondaryFireFLH.Burst1,String,-1,DeployedSecondaryFireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+DeployedSecondaryFireFLH.Burst2,String,-1,DeployedSecondaryFireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+Weapon1FireFLH.Burst1,String,-1,Weapon1FireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+Weapon1FireFLH.Burst2,String,-1,Weapon1FireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+EliteWeapon1FireFLH.Burst1,String,-1,EliteWeapon1FireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+EliteWeapon1FireFLH.Burst2,String,-1,EliteWeapon1FireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+ProneWeapon1FireFLH.Burst1,String,-1,ProneWeapon1FireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+ProneWeapon1FireFLH.Burst2,String,-1,ProneWeapon1FireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+DeployedWeapon1FireFLH.Burst1,String,-1,DeployedWeapon1FireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+DeployedWeapon1FireFLH.Burst2,String,-1,DeployedWeapon1FireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+Weapon2FireFLH.Burst1,String,-1,Weapon2FireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+Weapon2FireFLH.Burst2,String,-1,Weapon2FireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+EliteWeapon2FireFLH.Burst1,String,-1,EliteWeapon2FireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+EliteWeapon2FireFLH.Burst2,String,-1,EliteWeapon2FireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+ProneWeapon2FireFLH.Burst1,String,-1,ProneWeapon2FireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+ProneWeapon2FireFLH.Burst2,String,-1,ProneWeapon2FireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+DeployedWeapon2FireFLH.Burst1,String,-1,DeployedWeapon2FireFLH.Burst1,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes
+DeployedWeapon2FireFLH.Burst2,String,-1,DeployedWeapon2FireFLH.Burst2,指定单位 (精英级) (匍匐／部署开火) [主武器 副武器 第X个武器] 第N发Burst 的开火坐标,0,,ImageTypes

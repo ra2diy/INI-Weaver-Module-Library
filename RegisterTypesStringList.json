@@ -1,0 +1,9 @@
+﻿{
+    "RegisterTypes": {
+        "StringList": {
+            "FrameColor": [ 179, 179, 142 ],
+            "Name": "列表",
+            "NeedRegisterList": false
+        }
+    }
+}

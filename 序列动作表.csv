@@ -1,0 +1,44 @@
+﻿动作名,类型,说明
+Ready,8向,standing around
+Guard,8向,standing around with weapon drawn
+Prone,8向,while prone
+Walk,8向,walking [normal movement]
+FireUp,8向,firing while standing
+Down,8向,transition from standing to prone
+Crawl,8向,moving while prone
+Up,8向,transition from prone to standing
+FireProne,8向,firing while prone
+Idle1,单向带方向,idle animation sequence #1
+Idle2,单向带方向,idle animation sequence #2
+Cheer,单向带方向,cheering
+Die1,单向,death animation when hit by gunfire
+Die2,单向,death animation when exploding
+Die3,单向,death animation when exploding (alternate)
+Die4,单向,death animation by concussion explosion
+Die5,单向,death animation by fire
+Panic,8向,恐慌动作（你的清单里没有）
+Paradrop,单向,空投（你的清单里没有）
+Deploy,动态,[gi] deploying
+Undeploy,动态,[gi] undeploying
+Deployed,动态,[gi] deployed still frame
+DeployedFire,动态,[gi] fire while deployed
+DeployedIdle,8向,[gi] idle animation while deployed；游戏里没有用例，先按 8 向
+Swim,8向,游泳（你的清单里没有）
+WetAttack,8向,水中攻击（你的清单里没有）
+WetIdle1,单向带方向,水中待机1（你的清单里没有）
+WetIdle2,单向带方向,水中待机2（你的清单里没有）
+WetDie1,单向,水中死亡1（你的清单里没有）
+WetDie2,单向,水中死亡2（你的清单里没有）
+Fly,8向,[jumpjet] flying
+Hover,8向,[jumpjet] hovering
+Tumble,单向,[jumpjet] tumbling
+FireFly,8向,[jumpjet] firing while flying
+SecondaryFire,8向,special anim for firing secondary weapon
+Shovel,8向,铲土（你的清单里没有）
+Carry,8向,搬运（你的清单里没有）
+Tread,8向,履带（你的清单里没有）
+AirDeathFalling,单向,空中死亡下落（你的清单里没有）
+AirDeathFinish,单向,空中死亡落地（你的清单里没有）
+SecondaryProne,8向,你的清单里有；artmd.ini 里一处没出现，按 8 向登记
+DeployFire,8向,你的清单里这么写；artmd.ini 里实际是 DeployedFire，这条按 8 向登记
+DeployIdle,8向,你的清单里这么写；artmd.ini 里实际是 DeployedIdle，这条按 8 向登记

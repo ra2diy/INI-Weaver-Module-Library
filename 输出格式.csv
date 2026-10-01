@@ -1,0 +1,14 @@
+﻿项,ra2,generals,ra3
+行尾,CRLF,CRLF,CRLF
+段注释,;{comment},;{comment},<!--{comment}-->
+段头,[{name}],Object {name},
+段头_继承,[{name}]:[{parents}],,
+段尾,,End,
+键值,{key}={value},{key} = {value},"{key}=""{value}"""
+键值_空值,{key}={value},{key},{key}
+块头,,,<{key}{attrs}{close}>
+块尾,,End,</{key}>
+段内缩进,0,2,1
+缩进字符,,,tab
+段间空行,2,1,0
+注释行,;{text},;{text},<!--{text}-->

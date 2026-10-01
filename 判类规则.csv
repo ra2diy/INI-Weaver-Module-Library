@@ -1,0 +1,99 @@
+﻿条件类型,来源,语句,值,目标类别,说明
+,,,,,
+素材文件,art*.ini,,,,文件名匹配这个模式的文件按「素材文件」处理：里面没进注册表的块走下面的素材判类（大小写不敏感，* 通配任意段）。2026-09-18 起导入界面用「规则文件 / 美术文件」两个口直接指定哪份是哪类，这一行只剩脚本调用没指定时兜底
+块特征,,Category,Soldier,InfantryTypes,自己说自己是兵了
+块特征,,Voxel,yes,Art_Voxel,块里写了 Voxel=yes → 本块是 VXL 素材（载具 / 飞行器 / 抛射体）
+块特征,,BaseNormal,,BuildingTypes,建筑才有延伸范围
+块特征,,Facings,,Art_SHPVehicle,块里写了 Facings= （值不限）→ 本块是 SHP 车辆素材
+块特征,,Crusher,,VehicleTypes,只有车辆可以识别能不能压人
+同名,InfantryTypes,,,Art_SHPInfantry,素材文件里名字对上 [InfantryTypes] 成员的块 → 步兵素材
+块特征,,Sequence,,Art_SHPInfantry,步兵肯定有序列
+同名,VehicleTypes,,,Art_SHPVehicle,素材文件里名字对上 [VehicleTypes] 成员的块 → SHP 车辆素材（块里写着 Voxel=yes 的那种被上面的「块特征」先拦成 Art_Voxel）；用户 2026-09-18 定：载具看块里的 Voxel 定
+同名,TerrainTypes,,,Animations,
+同名,AircraftTypes,,,Art_Voxel,素材文件里名字对上 [AircraftTypes] 成员的块 → 飞行器一律 VXL（用户 2026-09-18 定）
+同名,SmudgeTypes,,,Animations,
+同名,BuildingTypes,,,Art_SHPBuilding,素材文件里名字对上 [BuildingTypes] 成员的块 → 建筑素材
+同名,OverlayTypes,,,Animations,
+同名,Animations,,,Animations,素材文件里名字对上 [Animations] 成员的块 → 还是动画（动画的素材本来就写在 art 里）
+同名,Tiberiums,,,,
+引用,,AnimList,,Animations,AnimList= 指向的块是动画（来源不限）
+,,,,,
+引用,,Explosion,,Animations,Explosion= 指向的块是动画（来源不限）
+,,,,,
+引用,,DebrisAnims,,Animations,DebrisAnims= 指向的块是动画（来源不限）
+,,,,,
+引用,InfantryTypes,Image,,Art_SHPInfantry,步兵的 Image= 指向的块是步兵素材（例：[E1] Image=GI → [GI] 判 Art_SHPInfantry）
+,,,,,
+引用,VehicleTypes,Image,,Art_SHPVehicle,载具的 Image= 指向的块是 SHP 车辆素材（例：[HTNK] Image=MTNKART → [MTNKART] 是 SHP 车辆素材）；那块自己写着 Voxel=yes 时被「块特征」先拦成 Art_Voxel
+,,,,,
+引用,AircraftTypes,Image,,Art_Voxel,飞行器的 Image= 指向的块是 VXL 素材（用户 2026-09-18 定）
+,,,,,
+引用,BuildingTypes,Image,,Art_SHPBuilding,建筑的 Image= 指向的块是建筑素材
+,,,,,
+块特征,,Rotates,yes,Animations,SHP抛射体当然也是Animation
+,,,,,
+块特征,*.ini,AnimRate,,Animations,Art 模块带 AnimRate= 的块一律算动画资产（用户 2026-09-20 定）；排在 Voxel/Facings/Rotates 之后 —— 那三条更具体、按表顺序先命中
+引用,WeaponTypes,Projectile,,ProjectileTypes,武器指向抛射体当然就是抛射体
+块特征,*.ini,Projectile,,WeaponTypes,带抛射体肯定是武器
+引用,WeaponTypes,Warhead,,Warheads,被引用肯定是弹头
+引用,*.ini,Warhead,,Warheads,被引用肯定是弹头
+块特征,*.ini,Projectile,,WeaponTypes,只有武器有抛射体
+引用,*.ini,Primary,,WeaponTypes,
+引用,*.ini,Secondary,,WeaponTypes,
+引用,*.ini,ElitePrimary,,WeaponTypes,
+引用,*.ini,EliteSecondary,,WeaponTypes,
+引用,*.ini,Weapon1,,WeaponTypes,
+引用,*.ini,EliteWeapon1,,WeaponTypes,
+块特征,*.ini,Buildable,,TerrainTypes,
+块特征,*.ini,Foundation,,Art_SHPBuilding,
+块特征,*.ini,AnimRate,,Animations,
+块特征,*.ini,Verses,,Warheads,
+块特征,*.ini,Idle1,,Art_InfantrySequence,
+块特征,*.ini,Bouncer,,Animations,
+块特征,*.ini,UseNormalLight,,Animations,
+块特征,*.ini,Translucency,,Animations,
+块特征,*.ini,IsMeteor,,Animations,
+块特征,*.ini,AA,,ProjectileTypes,
+块特征,*.ini,AG,,ProjectileTypes,
+块特征,*.ini,SubjectToCliffs,,ProjectileTypes,
+块特征,*.ini,SubjectToElevation,,ProjectileTypes,
+块特征,*.ini,SubjectToWalls,,ProjectileTypes,
+块特征,*.ini,Sounds,,SoundList,
+块名,,,MouseCursors,Register,
+块名,,,ArmorTypes,Register,
+块名,,,$include,Register,
+块特征,*.ini,CounterTrigger.*,,CounterTrigger,块里有以『CounterTrigger.』开头的语句 → AE 子类 CounterTrigger
+块特征,*.ini,DamageReaction.*,,DamageReaction,块里有以『DamageReaction.』开头的语句 → AE 子类 DamageReaction
+块特征,*.ini,OverrideWeapon.*,,OverrideWeapon,块里有以『OverrideWeapon.』开头的语句 → AE 子类 OverrideWeapon
+块特征,*.ini,DisableWeapon.*,,DisableWeapon,块里有以『DisableWeapon.』开头的语句 → AE 子类 DisableWeapon
+块特征,*.ini,NoMoneyNoTalk.*,,NoMoneyNoTalk,块里有以『NoMoneyNoTalk.』开头的语句 → AE 子类 NoMoneyNoTalk
+块特征,*.ini,AttackBeacon.*,,AttackBeacon,块里有以『AttackBeacon.』开头的语句 → AE 子类 AttackBeacon
+块特征,*.ini,DestroyAnim.*,,DestroyAnim,块里有以『DestroyAnim.』开头的语句 → AE 子类 DestroyAnim
+块特征,*.ini,DestroySelf.*,,DestroySelf,块里有以『DestroySelf.』开头的语句 → AE 子类 DestroySelf
+块特征,*.ini,AutoWeapon.*,,AutoWeapon,块里有以『AutoWeapon.』开头的语句 → AE 子类 AutoWeapon
+块特征,*.ini,DamageSelf.*,,DamageSelf,块里有以『DamageSelf.』开头的语句 → AE 子类 DamageSelf
+块特征,*.ini,BlackHole.*,,BlackHole,块里有以『BlackHole.』开头的语句 → AE 子类 BlackHole
+块特征,*.ini,Broadcast.*,,Broadcast,块里有以『Broadcast.』开头的语句 → AE 子类 Broadcast
+块特征,*.ini,ExtraFire.*,,ExtraFire,块里有以『ExtraFire.』开头的语句 → AE 子类 ExtraFire
+块特征,*.ini,Paintball.*,,Paintball,块里有以『Paintball.』开头的语句 → AE 子类 Paintball
+块特征,*.ini,Transform.*,,Transform,块里有以『Transform.』开头的语句 → AE 子类 Transform
+块特征,*.ini,NoSelect.*,,NoSelect,块里有以『NoSelect.』开头的语句 → AE 子类 NoSelect
+块特征,*.ini,Teleport.*,,Teleport,块里有以『Teleport.』开头的语句 → AE 子类 Teleport
+块特征,*.ini,Counter.*,,Counter,块里有以『Counter.』开头的语句 → AE 子类 Counter
+块特征,*.ini,GiftBox.*,,GiftBox,块里有以『GiftBox.』开头的语句 → AE 子类 GiftBox
+块特征,*.ini,Revenge.*,,Revenge,块里有以『Revenge.』开头的语句 → AE 子类 Revenge
+块特征,*.ini,Scatter.*,,Scatter,块里有以『Scatter.』开头的语句 → AE 子类 Scatter
+块特征,*.ini,Vampire.*,,Vampire,块里有以『Vampire.』开头的语句 → AE 子类 Vampire
+块特征,*.ini,Bounce.*,,Bounce,块里有以『Bounce.』开头的语句 → AE 子类 Bounce
+块特征,*.ini,Freeze.*,,Freeze,块里有以『Freeze.』开头的语句 → AE 子类 Freeze
+块特征,*.ini,Immune.*,,Immune,块里有以『Immune.』开头的语句 → AE 子类 Immune
+块特征,*.ini,Status.*,,Status,块里有以『Status.』开头的语句 → AE 子类 Status
+块特征,*.ini,Vector.*,,Vector,块里有以『Vector.』开头的语句 → AE 子类 Vector
+块特征,*.ini,Stack.*,,Stack,块里有以『Stack.』开头的语句 → AE 子类 Stack
+块特征,*.ini,Stand.*,,Stand,块里有以『Stand.』开头的语句 → AE 子类 Stand
+块特征,*.ini,Host.*,,Host,块里有以『Host.』开头的语句 → AE 子类 Host
+块特征,*.ini,Info.*,,Info,块里有以『Info.』开头的语句 → AE 子类 Info
+块特征,*.ini,Pump.*,,Pump,块里有以『Pump.』开头的语句 → AE 子类 Pump
+块特征,*.ini,ECM.*,,ECM,块里有以『ECM.』开头的语句 → AE 子类 ECM
+块特征,*.ini,Primary,,TechnoTypes,
+块特征,*.ini,Weapon1,,TechnoTypes,

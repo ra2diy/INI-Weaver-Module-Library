@@ -1,0 +1,5 @@
+﻿inputType,acceptType,nodeColor,fullArea,valueFormat,fromKey,nonEmpty,extra
+DefineArmor,ArmorType,,,{0},,,
+StringListEntry,_AnyType,255;255;180,,{0},,,
+Collector,_AnyType,255;255;180,,{0},,,
+MultipleCollector.0,_AnyType,255;255;180,true,@0(from=MultColl.1;nonEmpty),,,

@@ -1,0 +1,758 @@
+﻿{
+    "RegisterTypes": {
+        "InfantryTypes": {
+            "FrameColor": [ 54, 179, 54 ],
+            "Name": "步兵",
+            "NeedRegisterList": true
+        },
+        "VehicleTypes": {
+            "FrameColor": [ 104, 179, 104 ],
+            "Name": "车辆",
+            "NeedRegisterList": true
+        },
+        "AircraftTypes": {
+            "FrameColor": [ 104, 179, 79 ],
+            "Name": "飞行器",
+            "NeedRegisterList": true
+        },
+        "BuildingTypes": {
+            "FrameColor": [ 129, 179, 104 ],
+            "Name": "建筑",
+            "NeedRegisterList": true
+        },
+        "TunnelTypes": {
+            "FrameColor": [ 129, 179, 104 ],
+            "Name": "隧道",
+            "NeedRegisterList": true
+        },
+
+        "WeaponTypes": {
+            "FrameColor": [ 179, 179, 54 ],
+            "Name": "武器",
+            "NeedRegisterList": true,
+            "DefaultLinks": {
+                "TechnoTypes": "Primary",
+                "AutoWeapon": "AutoWeapon.Types",
+                "ExtraFire": "ExtraFire.Primary",
+                "Revenge": "Revenge.Types",
+                "ProjectileTypes": "ShrapnelWeapon"
+            }
+        },
+        "Warheads": {
+            "FrameColor": [ 179, 104, 104 ],
+            "Name": "弹头",
+            "NeedRegisterList": true,
+            "DefaultLinks": {
+                "WeaponTypes": "Warhead",
+                "Particles": "Warhead"
+            }
+        },
+        "SuperWeaponTypes": {
+            "FrameColor": [ 54, 179, 179 ],
+            "Name": "超武",
+            "NeedRegisterList": true,
+            "DefaultLinks": {
+                "BuildingTypes": "SuperWeapons"
+            }
+        },
+        "Animations": {
+            "FrameColor": [ 79, 154, 179 ],
+            "Name": "动画/抛射体图形",
+            "NeedRegisterList": true,
+            "UseRegName": true,
+			"ExportToINI": "Art",
+			"RegisterExportToINI":"Rules",
+            /* KeepNameWhenCopied —— **复制粘贴**时保不保原名（画布 Ctrl+C/Ctrl+V、右键复制）。
+               ⚠️ 只管复制；**模块库置入不算**（用户：「模块库就是放入」）—— 那条路照旧按
+               CompoundTypes 的 ImageTypes.Types 判，不读这一项。
+               不写 = 照旧（该类别在 ImageTypes.Types 里就保原名）；
+               写了 true/false 就按它 —— 名字必须等于资产文件名的那一族才该写 true。
+               Default 段里也能写，给所有类别兜底。见 js/core/regtypes.js 的 keepsNameWhenCopiedOf。 */
+            "KeepNameWhenCopied": true,
+            "DefaultLinks": {
+                "ProjectileTypes": "Image",
+                "Warheads": "AnimList",
+                "WeaponTypes": "Anim",
+                "Particles": "Image"
+            }
+        },
+        "Particles": {
+            "FrameColor": [ 79, 104, 179 ],
+            "Name": "粒子",
+            "NeedRegisterList": true,
+            "DefaultLinks": {
+                "ParticleSystems": "HoldsWhat"
+            }
+        },
+        "ParticleSystems": {
+            "FrameColor": [ 32, 82, 107 ],
+            "Name": "粒子系统",
+            "NeedRegisterList": true,
+            "DefaultLinks": {
+                "Warheads": "Particle",
+                "TrailType": "ParticleSystem",
+                "WeaponTypes": "AttachedParticleSystem",
+                "VoxelAnims": "AttachedSystem"
+            }
+        },
+        "OverlayTypes": {
+            "FrameColor": [ 143, 93, 43 ],
+            "Name": "覆盖物",
+            "NeedRegisterList": true
+        },
+
+        "ProjectileTypes": {
+            "FrameColor": [ 179, 129, 54 ],
+            "Name": "抛射体",
+            "NeedRegisterList": false,
+            "DefaultLinks": {
+                "WeaponTypes": "Projectile"
+            }
+        },
+
+        "TerrainTypes": {
+            "FrameColor": [ 151, 100, 45 ],
+            "Name": "地形",
+            "NeedRegisterList": true
+        },
+
+        "SmudgeTypes": {
+            "FrameColor": [ 157, 105, 47 ],
+            "Name": "弹坑",
+            "NeedRegisterList": true
+        },
+
+        "Countries": {
+            "FrameColor": [ 157, 96, 157 ],
+            "Name": "国家",
+            "NeedRegisterList": true
+        },
+
+        "AEAnim": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "AE",
+            "NeedRegisterList": false,
+            "DefaultLinks": {
+                "AttachEffectTypes": "Next",
+                "WeaponTypes": "Feedback.AttachEffects"
+            }
+        },
+        "Status": {
+            "FrameColor": [ 129, 79, 179 ],
+            "Name": "Status",
+            "UseOwnName": true,
+            "NeedRegisterList": false
+        },
+        "Stack": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Stack",
+            "NeedRegisterList": false
+        },
+        "Info": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Info",
+            "NeedRegisterList": false
+        },
+        "Stand": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "四蛋都怕我",
+            "NeedRegisterList": false
+        },
+        "AttackBeacon": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "AttackBeacon",
+            "NeedRegisterList": false
+        },
+        "AutoWeapon": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "AutoWeapon",
+            "NeedRegisterList": false
+        },
+        "DamageSelf": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "DamageSelf",
+            "NeedRegisterList": false
+        },
+        "Broadcast": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Broadcast",
+            "NeedRegisterList": false
+        },
+        "Host": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Host",
+            "NeedRegisterList": false
+        },
+        "Paintball": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Paintball",
+            "NeedRegisterList": false
+        },
+        "DestroySelf": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "DestroySelf",
+            "NeedRegisterList": false,
+            "DefaultLinks": {
+                "AttachEffectTypes": "Next"
+
+            }
+        },
+        "Transform": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Transform",
+            "NeedRegisterList": false
+        },
+        "BlackHole": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "BlackHole",
+            "NeedRegisterList": false
+        },
+        "GiftBox": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "GiftBox",
+            "NeedRegisterList": false
+        },
+        "Immune": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Immune",
+            "NeedRegisterList": false
+        },
+        "Vector": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Vector",
+            "NeedRegisterList": true,
+            "RegisterListName": "AttachEffectTypes",
+            "DefaultLinks": {
+                "Vector": "Next"
+            }
+        },
+        "Revenge": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Revenge",
+            "NeedRegisterList": false
+        },
+        "Vampire": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Vampire",
+            "NeedRegisterList": false
+        },
+        "ExtraFire": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "ExtraFire",
+            "NeedRegisterList": false
+        },
+        "FireSuperWeapon": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "FireSuperWeapon",
+            "NeedRegisterList": false
+        },
+        "NoMoneyNoTalk": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "NoMoneyNoTalk",
+            "NeedRegisterList": false
+        },
+        "DisableWeapon": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "DisableWeapon",
+            "NeedRegisterList": false
+        },
+        "OverrideWeapon": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "OverrideWeapon",
+            "NeedRegisterList": false
+        },
+        "NoSelect": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "NoSelect",
+            "NeedRegisterList": false
+        },
+        "Freeze": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Freeze",
+            "NeedRegisterList": false
+        },
+        "DamageReaction": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "DamageReaction",
+            "NeedRegisterList": false
+        },
+        "Teleport": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Teleport",
+            "NeedRegisterList": false
+        },
+        "DestroyAnim": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "DestroyAnim",
+            "NeedRegisterList": false
+        },
+        "Pump": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Pump",
+            "NeedRegisterList": false
+        },
+        "Scatter": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Scatter",
+            "NeedRegisterList": false
+        },
+        "Counter": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Counter",
+            "NeedRegisterList": false
+        },
+        "CounterTrigger": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "CounterTrigger",
+            "NeedRegisterList": false
+        },
+        "Bounce": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Bounce",
+            "NeedRegisterList": false
+        },
+        "ECM": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "ECM",
+            "NeedRegisterList": false
+        },
+
+        "Art_Voxel": {
+            "FrameColor": [ 104, 154, 179 ],
+            "Name": "VXL素材",
+            "ExportToINI": "Art",
+            "NeedRegisterList": false,
+            "UseRegName": true,
+            "KeepNameWhenCopied": true,
+            "DefaultLinks": {
+                "VehicleTypes": "Image",
+                "ProjectileTypes": "Image",
+                "AircraftTypes": "Image",
+                "VoxelAnims": "Image"
+
+            }
+        },
+        "Art_SHPInfantry": {
+            "FrameColor": [ 104, 129, 179 ],
+            "Name": "步兵素材",
+            "ExportToINI": "Art",
+            "NeedRegisterList": false,
+            "UseRegName": true,
+            "KeepNameWhenCopied": true,
+            "DefaultLinks": {
+                "InfantryTypes": "Image"
+            }
+        },
+        "Art_InfantrySequence": {
+            "FrameColor": [ 104, 129, 179 ],
+            "Name": "步兵序列",
+            "ExportToINI": "Art",
+            "NeedRegisterList": false,
+            "UseRegName": true,
+            "DefaultLinks": {
+                "Art_SHPInfantry": "Sequence"
+            }
+        },
+        "Art_SHPVehicle": {
+            "FrameColor": [ 129, 154, 179 ],
+            "Name": "SHP车辆素材",
+            "ExportToINI": "Art",
+            "NeedRegisterList": false,
+            "UseRegName": true,
+            "KeepNameWhenCopied": true,
+            "DefaultLinks": {
+                "VehicleTypes": "Image"
+            }
+        },
+        "PCXFile": {
+            "FrameColor": [ 129, 154, 179 ],
+            "Name": "PCX文件",
+            "ExportToINI": "Art",
+            "NeedRegisterList": false,
+            "UseRegName": true,
+            "DefaultLinks": {
+                "Art_SHPVehicle": "CameoPCX",
+                "Art_Voxel": "CameoPCX",
+                "Art_SHPInfantry": "CameoPCX",
+                "Art_SHPVehicle": "CameoPCX",
+                "Art_SHPBuilding": "CameoPCX",
+                "SuperWeaponTypes": "SidebarPCX"
+            }
+        },
+        "Art_SHPBuilding": {
+            "FrameColor": [ 129, 154, 179 ],
+            "Name": "建筑素材",
+            "ExportToINI": "Art",
+            "NeedRegisterList": false,
+            "UseRegName": true,
+            "KeepNameWhenCopied": true,
+            "DefaultLinks": {
+                "BuildingTypes": "Image"
+
+            }
+        },
+        "Register": {
+            "FrameColor": [ 179, 179, 179 ],
+            "Name": "新增注册",
+            "NeedRegisterList": false,
+            "UseRegName": true
+        },
+        "Tiberiums": {
+            "FrameColor": [ 179, 179, 179 ],
+            "Name": "矿石",
+            "NeedRegisterList": true,
+            "UseRegName": true
+        },
+        "MouseCursors": {
+            "FrameColor": [ 179, 179, 179 ],
+            "Name": "耗子",
+            "NeedRegisterList": true,
+            "UseRegName": true,
+			"CollectContentTo": "[MouseCursors]"
+        },
+        "RadiationTypes": {
+            "FrameColor": [ 154, 179, 154 ],
+            "Name": "PhobosRadiation",
+            "NeedRegisterList": true,
+            "UseOwnName": false,
+            "DefaultLinks": {
+                "WeaponTypes": "RadType"
+            }
+        },
+        "DigitalDisplayTypes": {
+            "FrameColor": [ 179, 179, 179 ],
+            "Name": "PhobosDigitalDisplay",
+            "NeedRegisterList": true,
+            "UseOwnName": false,
+            "DefaultLinks": {
+                "TechnoTypes": "DigitalDisplayTypes"
+            }
+        },
+        "SelectBoxTypes": {
+            "FrameColor": [ 179, 179, 179 ],
+            "Name": "PhobosSelectBox",
+            "NeedRegisterList": true,
+            "UseOwnName": false,
+            "DefaultLinks": {
+                "TechnoTypes": "SelectBox"
+            }
+        },
+
+        "ShieldTypes": {
+            "FrameColor": [ 54, 54, 179 ],
+            "Name": "PhobosShield",
+            "NeedRegisterList": true,
+            "UseOwnName": false,
+            "DefaultLinks": {
+                "TechnoTypes": "ShieldType"
+            }
+        },
+        "LaserTrailTypes": {
+            "FrameColor": [ 179, 154, 179 ],
+            "Name": "PhobosLaserTrail",
+            "ExportToINI": "Art",
+            "NeedRegisterList": true,
+            "UseRegName": false,
+            "DefaultLinks": {
+                "Art_SHPVehicle": "LaserTrail1.Type",
+                "Art_SHPInfantry": "LaserTrail1.Type",
+                "Animations": "LaserTrail.Types",
+                "TechnoTypes": "LaserTrail.Types"
+            }
+        },
+        "PhobosAE": {
+            "FrameColor": [ 117, 92, 179 ],
+            "Name": "PhobosAE",
+            "RegisterListName": "AttachEffectTypes",
+            "NeedRegisterList": true,
+            "UseRegName": false
+
+        },
+
+        "TaskForces": {
+            "FrameColor": [ 179, 54, 179 ],
+            "Name": "特遣部队",
+            "ExportToINI": "AI",
+            "NeedRegisterList": true,
+            "UseRegName": false,
+            "DefaultLinks": {
+                "TeamTypes": "TaskForce"
+            }
+        },
+		
+		/*
+        NoSameNameLink：禁止链接到同名rules，这是防止Image=链接到同名的单位块的措施
+        */
+		
+		
+        "SoundList": {
+            "FrameColor": [ 32, 107, 107 ],
+            "Name": "声音",
+            "ExportToINI": "Sound",
+            "NeedRegisterList": true,
+            "UseRegName": false,
+            "NoSameNameLink": true,
+			"DoNotTrace": true,
+            "DefaultLinks": {
+                "TechnoTypes": "DieSound"
+            }
+        },
+        "DialogList": {
+            "FrameColor": [ 32, 107, 107 ],
+            "Name": "EVA",
+            "ExportToINI": "Eva",
+            "NeedRegisterList": true,
+            "UseRegName": false
+        },
+        "TeamTypes": {
+            "FrameColor": [ 179, 54, 179 ],
+            "Name": "作战小队",
+            "ExportToINI": "AI",
+            "NeedRegisterList": true,
+            "UseRegName": false
+        },
+        "ScriptTypes": {
+            "FrameColor": [ 179, 54, 179 ],
+            "Name": "AI脚本",
+            "ExportToINI": "AI",
+            "NeedRegisterList": true,
+            "UseRegName": false,
+            "DefaultLinks": {
+                "TeamTypes": "Script"
+            }
+        },
+        "AITriggerTypes": {
+            "FrameColor": [ 179, 54, 179 ],
+            "Name": "AI触发",
+            "ExportToINI": "AI",
+            "NeedRegisterList": true,
+            "UseRegName": false,
+            "每个条目视为一个块": true,
+            "CollectContentTo": "[AITriggerTypes]"
+        },
+        "VoxelAnims": {
+            "FrameColor": [ 104, 154, 179 ],
+            "UseOwnName": true,
+            "Name": "VXL碎片动画",
+            "NeedRegisterList": true
+        },
+        "InsigniaTypes": {
+            "FrameColor": [ 79, 154, 179 ],
+            "UseOwnName": true,
+            "Name": "Phobos军衔",
+            "NeedRegisterList": true,
+            "DefaultLinks": {
+                "TechnoTypes": "Insignia"
+            }
+        },
+        "TrailType": {
+            "FrameColor": [ 179, 154, 179 ],
+            "Name": "奎秃斯尾巴",
+            "ExportToINI": "Art",
+            "NeedRegisterList": false,
+            "UseRegName": false,
+            "DefaultLinks": {
+                "Art_SHPVehicle": "Trail1.Type",
+                "Art_SHPInfantry": "Trail1.Type",
+                "Art_Voxel": "Trail1.Type",
+                "Animations": "Trail1.Type"
+                /*
+        TypeAlt里面这个只写到Trail8.Type，如果你的trail9也需要用连线模式，就得自己加了
+        */
+            }
+        },
+        "String": {
+            "FrameColor": [ 179, 179, 179 ],
+            "Name": "字符串",
+            "NeedRegisterList": false,
+            "UseRegName": true
+        },
+        "FlagPack": {
+            "FrameColor": [ 179, 179, 179 ],
+            "Name": "语句包",
+            "NeedRegisterList": false,
+            "UseRegName": true,
+            "DefaultLinks": {
+                "_AnyType": "UseFlagPack"
+            }
+        },
+		
+        "Injector": {
+            "FrameColor": [ 64, 64, 64 ],
+            "Name": "注入器",
+            "NeedRegisterList": false,
+            "UseRegName": true,
+			"IsInjector": true,
+            "DefaultLinks": {
+                "_AnyType": "InjectInto"
+            }
+        },		
+        /*
+        IndentBlock：这个类别的块，导出时写成「块头 + 内容缩进一层 + 块尾」（RA3 的 <X>…</X>、
+        将军的 Object…End 就靠它），导入时也按嵌套缩进认回来。
+        ⚠️ 引用键不写在这，写在下面 DefaultLinks 里 —— 导入时"用哪个键指过来"就是从那里读的。
+        想再加一种"带缩进的块"：Global/TypeAltSpecial.csv 加一行引用键（照 UseFormattedFlagPack 抄），
+        再照这个类别抄一份新类别、写 "IndentBlock": true、DefaultLinks 里填那个键名。**引擎不用改。**
+        */
+        "FormattedFlagPack": {
+            "FrameColor": [ 179, 179, 179 ],
+            "Name": "格式化语句包",
+            "NeedRegisterList": false,
+            "UseRegName": true,
+            "IndentBlock": true,
+            "DefaultLinks": {
+                "_AnyType": "UseFormattedFlagPack"
+            }
+        },
+        "OtherCNC": {
+            "FrameColor": [ 144, 179, 179 ],
+            "Name": "其他CNC块",
+            "NeedRegisterList": false,
+            "UseRegName": true
+        },
+        "AIFlagPack": {
+            "FrameColor": [ 179, 54, 179 ],
+            "Name": "AI触发器",
+            "NeedRegisterList": false,
+            "UseRegName": true,
+            "DefaultLinks": {
+                "_AnyType": "这是我的AI触发"
+            }
+        },
+        "AIRegister": {
+            "FrameColor": [ 179, 54, 179 ],
+            "Name": "AI触发列表",
+            "ExportToINI": "AI",
+            "NeedRegisterList": false,
+            "UseRegName": false
+        },
+        "IPROJ": {
+            "FrameColor": [ 54, 179, 54 ],
+            "Name": "织网者工程",
+            "ExportToINI": "Rules",
+            "NeedRegisterList": false,
+            "UseRegName": true
+        },
+        "WICBuff": {
+            "FrameColor": [ 59, 92, 179 ],
+            "Name": "WICBuff",
+            "NeedRegisterList": false,
+            "UseRegName": false
+        }
+        /*
+        随便写些什么。
+        比如这样："InfantryTypes": {"ExportToINI": "Rules", "FrameColor": [ 255, 255, 255] }
+        FrameColor：直接显示的颜色（RGB）—— 本版 UI 固定深色，这里写的就是暗色下的最终色，
+        等于亮色原值在 HSV 上 S*0.7 V*0.7 之后的结果，已经烘焙进本文件，
+        运行时不再做任何主题缩放（原版是运行时按主题算，见 IBB_RegType.cpp:264-300）
+		NeedRegisterList决定导出的时候会不会有注册表
+		UseRegName为true时该类型的新模块产生时会从注册名生成模块名而非序号
+		比如动画开的UseRegName=true会使得注册名为ELECTRO的模块的模块名变成"动画_ELECTRO"而不是"动画_1"
+        不写都是默认值 - 导出到Rules，并且没有默认边框
+		所谓DefaultLinks是指反向链接时，自动链接到的节点，如将一个抛射体拖到一个没写Projectile=的武器类模块上，则根据DefaultLinks的设定，会在武器类模块上自动创建Projectile=并创建连接。可以在单独的模块内
+        */
+    },
+    "Default": {
+        "ExportToINI": "Rules", //不写则默认Rules。内容输出到哪个文件在模块内部定义。LaserTrailTypes是少有的注册表也输出到art的例子，所以它的ExportToINI是Art。
+        "FrameColor": [ 179, 179, 179, 0 ], //有无alpha均可
+        "Name": "模块",
+		"BoolFmt":"yes_no",
+		"BoolOutFmt":"yeaaaaaaah_fuuuuuuuuuck"
+    },
+    "CompoundTypes": {
+        "TechnoTypes": {
+            "Name": "Techno",
+            "Types": [ "InfantryTypes", "VehicleTypes", "AircraftTypes", "BuildingTypes" ],
+			"DefaultLinks": {
+                "Stand": "Stand.Type",
+				"Host":"Host.Types",	
+				"GiftBox":"GiftBox.Types"
+            }
+        },
+        "ImageTypes": {
+            "NoSameNameLink": true,			
+			"FrameColor": [ 79, 154, 179 ],
+			"ExportToINI":"Art",
+            "Name": "图像",
+            "Types": [ "Art_Voxel", "Art_SHPInfantry", "Art_SHPVehicle", "Art_SHPBuilding", "Animations" ]
+
+        },
+		
+		"Techno+Projectile": {
+            "Name": "Techno",
+            "Types": [ "InfantryTypes", "VehicleTypes", "AircraftTypes", "BuildingTypes", "ProjectileTypes" ],
+			"DefaultLinks": {
+                "Stand": "Stand.Type",
+				"Host":"Host.Types",	
+				"GiftBox":"GiftBox.Types"
+            }
+        },
+		
+		
+		"Everything": {
+            "Name": "所有模块",
+            "Types": [ "InfantryTypes", "VehicleTypes", "AircraftTypes", "BuildingTypes","Art_Voxel", "Art_SHPInfantry", "Art_SHPVehicle", "Art_SHPBuilding", "Animations","AEAnim", "Status", "Stack", "Info", "Stand", "AttackBeacon", "AutoWeapon", "DamageSelf", "Broadcast", "Host", "Paintball", "DestroySelf", "Transform", "BlackHole", "GiftBox", "Immune", "Revenge", "Vampire", "ExtraFire", "FireSuperWeapon", "NoMoneyNoTalk", "DisableWeapon", "OverrideWeapon", "NoSelect", "Freeze", "DamageReaction", "Teleport", "DestroyAnim", "Pump", "Scatter", "Bounce", "ECM","Counter","CounterTrigger"  ]
+
+        },
+		
+		
+		"Spawns": {
+            "Name": "Spawns",
+            "Types": [ "Animations","VoxelAnims","AircraftTypes"]
+
+        },		
+        "AttachEffectTypes": {
+            "Name": "AE",
+			"FrameColor": [ 129, 79, 179 ],
+			"ExportToINI":"Rules",
+            "Types": [ "AEAnim", "Status", "Stack", "Info", "Stand", "AttackBeacon", "AutoWeapon", "DamageSelf", "Broadcast", "Host", "Paintball", "DestroySelf", "Transform", "BlackHole", "GiftBox", "Immune", "Revenge", "Vampire", "ExtraFire", "FireSuperWeapon", "NoMoneyNoTalk", "DisableWeapon", "OverrideWeapon", "NoSelect", "Freeze", "DamageReaction", "Teleport", "DestroyAnim", "Pump", "Scatter", "Bounce", "ECM","Counter","CounterTrigger","Vector" ],
+			"DefaultLinks": {
+                "WeaponTypes": "Feedback.AttachEffects",
+                "Warheads": "AttachEffectTypes",
+				"ProjectileTypes": "AttachEffectTypes",
+				"TechnoTypes": "AttachEffectTypes",
+				"Broadcast":"Broadcast.Types",
+				"Revenge":"Revenge.AttachEffects",
+				"Host":"Host.AttachEffects",
+				"DamageReaction":"DamageReaction.TriggeredAttachEffects",
+				"GiftBox":"GiftBox.AttachEffects",
+				"CounterTrigger":"CountTrigger.AttachEffects"
+
+            }
+        }
+    }
+}

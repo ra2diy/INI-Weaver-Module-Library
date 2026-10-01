@@ -1,0 +1,39 @@
+﻿{
+    "SpecialKeys": {
+        //SubSec 是在每个模块下面又拆出的子模块.
+        //模块在画布上显示时，会根据顺序逐一显示SubSec，并在SubSec下面显示其中的内容。
+        //每个SubSec都可以有多个语句，且分别在代码当中硬编码了相关的样式。
+        //目前有的SubSec：Default/Inherit/Import三个，后续可能还会继续添加。
+        //Default：默认的SubSec，显示在模块中间，使用默认样式。
+        //Inherit：继承语句所在的SubSec，显示在模块前面，并且有如下样式影响：
+        //    使用圆角矩形节点，在模块没有使用继承时隐藏该SubSec；
+        //Import：语句包所在的SubSec，显示在模块最后，并且有如下样式影响：
+        //    节点显示在中间；隐藏被连模块的标题并把左上角节点挪到顶部中间；连线没有额外的曲折；
+        "InSubSec": {
+            "AresInherit": "Inherit",
+            "UseFlagPack": "Import",
+            "UseFormattedFlagPack": "Import",
+            "UseGlobalFlagPack": "Import",
+            "UseGlobalModule": "Import",
+            "WeaverAIIniMagic": "Import",
+            //SubProject：modproj 里那条「子工程引用」栏（键是 iproj_path）。
+            //   用户 2026-09-18 定：它是一条**特殊栏**（跟继承栏/语句包栏同一路），不是普通语句。
+            //   栏的样式属于"SubSec 渲染"那一批（还没做），先在这儿占个档位。
+            "iproj_path": "SubProject"
+        },
+
+        //RingCheck 定义了哪些模块需要在导出时检查是否有环形依赖关系，如果有环形依赖关系则导出失败。
+        //一些语句因为在环形依赖时可能会导致死循环，所以需要在实际导出前进行检查。
+        "RingCheck": [
+            "AresInherit",
+            "UseFormattedFlagPack",
+            "UseFlagPack",
+            "UseGlobalFlagPack",
+            "UseGlobalModule",
+            "WeaverAIIniMagic"
+        ]
+    },
+    // ⚠️ 2026-09-22 退役两块（原文见 其他/归档/旧格式定义/RegisterTypesSpecial-退役块-20260922.json）：
+    //   TypeOfSection            —— 段名 → 类别；全仓无消费者。替代：判类规则.csv 的「块名」腿。
+    //   SkipTypeMatchingSections —— 整份已搬进 Resources/import-config.json 的 singleSections。
+}
