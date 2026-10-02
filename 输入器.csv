@@ -24,321 +24,321 @@ ScriptTypesCon,,,,61=送入坦克碉堡；0='0',,,,,,,,,,,,,,,,,,,,,,,,,,61=Send
 ScriptTypesCon,,,,62=送入生化反应炉；0='0',,,,,,,,,,,,,,,,,,,,,,,,,,62=Send to Bio Reactor；0='0',,,,,,,,,,,,,,,,,,,,,,,,,,
 ScriptTypesCon,,,,63=进入战斗碉堡；0='0',,,,,,,,,,,,,,,,,,,,,,,,,,63=Enter Battle Bunker；0='0',,,,,,,,,,,,,,,,,,,,,,,,,,
 ScriptTypesCon,,,,64=驻守最接近的平民建筑；0='0',,,,,,,,,,,,,,,,,,,,,,,,,,64=Guard nearest civilian building；0='0',,,,,,,,,,,,,,,,,,,,,,,,,,
-执行动作,选项,4,0,0=攻击最接近的敌方目标,,,,,,,,,,,,,,,,,,,,,,,,,,0=Attack nearest enemy target,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,5=原地待命6x秒,,,,,,,,,,,,,,,,,,,,,,,,,,5=Guard area for 6x seconds,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,6=转到行号,,,,,,,,,,,,,,,,,,,,,,,,,,6=Jump to line,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,8=运载工具卸载,,,,,,,,,,,,,,,,,,,,,,,,,,8=Transport unload,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,9=部署,,,,,,,,,,,,,,,,,,,,,,,,,,9=Deploy,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,11=设置小队Mission,,,,,,,,,,,,,,,,,,,,,,,,,,11=Set team Mission,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,14=装载到运载工具中,,,,,,,,,,,,,,,,,,,,,,,,,,14=Load into transport,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,43=等待直到运载工装满,,,,,,,,,,,,,,,,,,,,,,,,,,43=Wait until transport full,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,46=攻击敌方建筑ID,,,,,,,,,,,,,,,,,,,,,,,,,,46=Attack enemy building ID,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,47=移动至敌方建筑ID,,,,,,,,,,,,,,,,,,,,,,,,,,47=Move to enemy building ID,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,49=该小队任务完成,,,,,,,,,,,,,,,,,,,,,,,,,,49=Team mission complete,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,53=在敌方基地附近集结,,,,,,,,,,,,,,,,,,,,,,,,,,53=Rally near enemy base,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,54=在己方基地附近集结,,,,,,,,,,,,,,,,,,,,,,,,,,54=Rally near friendly base,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,55=请求铁幕，如果可用,,,,,,,,,,,,,,,,,,,,,,,,,,55=Request Iron Curtain if available,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,56=请求超时空传送至敌方建筑物ID,,,,,,,,,,,,,,,,,,,,,,,,,,56=Request Chrono Warp to enemy building ID,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,57=请求超时空传送至敌方目标,,,,,,,,,,,,,,,,,,,,,,,,,,57=Request Chrono Warp to enemy target,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,58=移动至己方建筑ID,,,,,,,,,,,,,,,,,,,,,,,,,,58=Move to friendly building ID,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,60=送入部队回收厂,,,,,,,,,,,,,,,,,,,,,,,,,,60=Send to Grinder,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,61=送入坦克碉堡,,,,,,,,,,,,,,,,,,,,,,,,,,61=Enter Tank Bunker,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,62=送入生化反应炉,,,,,,,,,,,,,,,,,,,,,,,,,,62=Enter Bio Reactor,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,63=进入战斗碉堡,,,,,,,,,,,,,,,,,,,,,,,,,,63=Enter Battle Bunker,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-执行动作,,,,64=驻守最接近的平民建筑,,,,,,,,,,,,,,,,,,,,,,,,,,64=Garrison nearest civilian building,,,,,,,,,,,,,,,,,,,,,,,,,,Action
-动作参数,文本框,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Action Parameter
-触发名称,文本框,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Name
-作战小队,连线,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Task Force
-Countries,选项,4,<all>,<all>=所有,,,,,,,,,,,,,,,,,,,,,,,,,,<all>=All,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries,,,,Americans=美国,,,,,,,,,,,,,,,,,,,,,,,,,,Americans=America,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries,,,,Alliance=韩国,,,,,,,,,,,,,,,,,,,,,,,,,,Alliance=Korea,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries,,,,French=法国,,,,,,,,,,,,,,,,,,,,,,,,,,French=France,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries,,,,British=英国,,,,,,,,,,,,,,,,,,,,,,,,,,British=Great Britain,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries,,,,Germans=德国,,,,,,,,,,,,,,,,,,,,,,,,,,Germans=Germany,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries,,,,Confederation=古巴,,,,,,,,,,,,,,,,,,,,,,,,,,Confederation=Cuba,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries,,,,Africans=利比亚,,,,,,,,,,,,,,,,,,,,,,,,,,Africans=Libya,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries,,,,Arabs=伊拉克,,,,,,,,,,,,,,,,,,,,,,,,,,Arabs=Iraq,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries,,,,Russians=苏俄,,,,,,,,,,,,,,,,,,,,,,,,,,Russians=Russia,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries,,,,YuriCountry=尤里,,,,,,,,,,,,,,,,,,,,,,,,,,YuriCountry=Yuri,,,,,,,,,,,,,,,,,,,,,,,,,,
-名称,文本框,14,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Name
-判定条件,选项,4,0,0=目标敌方单位满足条件,,,,,,,,,,,,,,,,,,,,,,,,,,0=Target enemy unit meets condition,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
-判定条件,,,,1=本方单位满足条件,,,,,,,,,,,,,,,,,,,,,,,,,,1=Own unit meets condition,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
-判定条件,,,,2=敌方电力黄,,,,,,,,,,,,,,,,,,,,,,,,,,2=Enemy power yellow,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
-判定条件,,,,3=敌方电力红,,,,,,,,,,,,,,,,,,,,,,,,,,3=Enemy power red,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
-判定条件,,,,4=目标敌方金钱大于或等于,,,,,,,,,,,,,,,,,,,,,,,,,,4=Target enemy credits greater than or equal to,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
-判定条件,,,,5=本方铁幕装置就绪,,,,,,,,,,,,,,,,,,,,,,,,,,5=Our Iron Curtain Device is ready,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
-判定条件,,,,6=本方超时空传送就绪,,,,,,,,,,,,,,,,,,,,,,,,,,6=Our Chronosphere is ready,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
-判定条件,,,,7=平民单位满足条件,,,,,,,,,,,,,,,,,,,,,,,,,,7=Civilian units meet the conditions,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
-判定用的单位名称,连线,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Condition Unit
-判定用数值（0-255）,文本框,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Condition Value (0-255)
-逻辑模式,选项,4,0,0=小于,,,,,,,,,,,,,,,,,,,,,,,,,,0=Less than,,,,,,,,,,,,,,,,,,,,,,,,,,Comparison
-逻辑模式,,,,1=小于或等于,,,,,,,,,,,,,,,,,,,,,,,,,,1=Less than or equal to,,,,,,,,,,,,,,,,,,,,,,,,,,Comparison
-逻辑模式,,,,2=等于,,,,,,,,,,,,,,,,,,,,,,,,,,2=Equal to,,,,,,,,,,,,,,,,,,,,,,,,,,Comparison
-逻辑模式,,,,3=大于或等于,,,,,,,,,,,,,,,,,,,,,,,,,,3=Greater than or equal to,,,,,,,,,,,,,,,,,,,,,,,,,,Comparison
-逻辑模式,,,,4=大于,,,,,,,,,,,,,,,,,,,,,,,,,,4=Greater than,,,,,,,,,,,,,,,,,,,,,,,,,,Comparison
-逻辑模式,,,,5=不等于,,,,,,,,,,,,,,,,,,,,,,,,,,5=Not equal to,,,,,,,,,,,,,,,,,,,,,,,,,,Comparison
-初始权重,选项,4,10,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
-初始权重,,,,20=20,,,,,,,,,,,,,,,,,,,,,,,,,,20=20,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
-初始权重,,,,40=40,,,,,,,,,,,,,,,,,,,,,,,,,,40=40,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
-初始权重,,,,50=50,,,,,,,,,,,,,,,,,,,,,,,,,,50=50,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
-初始权重,,,,70=70,,,,,,,,,,,,,,,,,,,,,,,,,,70=70,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
-初始权重,,,,500=500,,,,,,,,,,,,,,,,,,,,,,,,,,500=500,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
-初始权重,,,,5000=5000,,,,,,,,,,,,,,,,,,,,,,,,,,5000=5000,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
-最小权重,选项,4,10,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
-最小权重,,,,20=20,,,,,,,,,,,,,,,,,,,,,,,,,,20=20,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
-最小权重,,,,40=40,,,,,,,,,,,,,,,,,,,,,,,,,,40=40,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
-最小权重,,,,50=50,,,,,,,,,,,,,,,,,,,,,,,,,,50=50,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
-最小权重,,,,70=70,,,,,,,,,,,,,,,,,,,,,,,,,,70=70,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
-最小权重,,,,500=500,,,,,,,,,,,,,,,,,,,,,,,,,,500=500,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
-最小权重,,,,5000=5000,,,,,,,,,,,,,,,,,,,,,,,,,,5000=5000,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
-最大权重,选项,4,10,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
-最大权重,,,,20=20,,,,,,,,,,,,,,,,,,,,,,,,,,20=20,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
-最大权重,,,,40=40,,,,,,,,,,,,,,,,,,,,,,,,,,40=40,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
-最大权重,,,,50=50,,,,,,,,,,,,,,,,,,,,,,,,,,50=50,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
-最大权重,,,,70=70,,,,,,,,,,,,,,,,,,,,,,,,,,70=70,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
-最大权重,,,,500=500,,,,,,,,,,,,,,,,,,,,,,,,,,500=500,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
-最大权重,,,,5000=5000,,,,,,,,,,,,,,,,,,,,,,,,,,5000=5000,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-第二个作战小队,连线,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Second Task Force
-简单难度可用,布尔,7,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Available on Easy
-中等难度可用,布尔,7,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Available on Normal
-困难难度可用,布尔,7,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Available on Hard
-ColorEdit,颜色,12,"255,255,255",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Category,选项,4,Soldier,AirLift=运输机,,,,,,,,,,,,,,,,,,,,,,,,,,AirLift=Transport Plane,,,,,,,,,,,,,,,,,,,,,,,,,,
-Category,,,,AirPower=战机,,,,,,,,,,,,,,,,,,,,,,,,,,AirPower=Warplane,,,,,,,,,,,,,,,,,,,,,,,,,,
-Category,,,,Transport=运输车,,,,,,,,,,,,,,,,,,,,,,,,,,Transport=Transport Vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
-Category,,,,Support=基地车,,,,,,,,,,,,,,,,,,,,,,,,,,Support=MCV,,,,,,,,,,,,,,,,,,,,,,,,,,
-Category,,,,LRFS=远射程载具,,,,,,,,,,,,,,,,,,,,,,,,,,LRFS=Long-Range Vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
-Category,,,,IFV=步兵载具,,,,,,,,,,,,,,,,,,,,,,,,,,IFV=Infantry Vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
-Category,,,,AFV=载具,,,,,,,,,,,,,,,,,,,,,,,,,,AFV=Vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
-Category,,,,Recon=Recon载具,,,,,,,,,,,,,,,,,,,,,,,,,,Recon=Recon Vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
-Category,,,,Soldier=步兵,,,,,,,,,,,,,,,,,,,,,,,,,,Soldier=Infantry,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,选项,4,None,None=不会用,,,,,,,,,,,,,,,,,,,,,,,,,,None=Not Used,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,Nuke=侵略性或用触发指定,,,,,,,,,,,,,,,,,,,,,,,,,,Nuke=Aggressive or specified by trigger,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,LightningStorm=侵略性，不能和其他闪电一起,,,,,,,,,,,,,,,,,,,,,,,,,,LightningStorm=Aggressive cannot be used together with other Lightning Storms,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,PsychicDominator=最大的敌人单位集群,,,,,,,,,,,,,,,,,,,,,,,,,,PsychicDominator=largest enemy unit cluster,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,GeneticMutator=3X3内最大的敌人步兵集群,,,,,,,,,,,,,,,,,,,,,,,,,,GeneticMutator=largest enemy infantry cluster within 3X3,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,IronCurtain=运用55号脚本关联启动，类似原版铁幕,,,,,,,,,,,,,,,,,,,,,,,,,,IronCurtain=Triggered in association with Script 55 similar to the original Iron Curtain,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,ForceShield=敌人超武砸的地方,,,,,,,,,,,,,,,,,,,,,,,,,,ForceShield=where enemy superweapons hit,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,ParaDrop=敌人家防御最差的地方,,,,,,,,,,,,,,,,,,,,,,,,,,ParaDrop=where the enemy base's defenses are weakest,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,DropPod=敌人基地中心外围空地,,,,,,,,,,,,,,,,,,,,,,,,,,DropPod=open ground around the enemy base center,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,Offensive=侵略性,,,,,,,,,,,,,,,,,,,,,,,,,,Offensive=Aggressive,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,MultiMissile=根据附近单位威胁值选定目标,,,,,,,,,,,,,,,,,,,,,,,,,,MultiMissile=Select target based on threat value of nearby units,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,HunterSeeker=像NoTarget一样，但是会打敌人的单位，这个只对一些超武有用,,,,,,,,,,,,,,,,,,,,,,,,,,HunterSeeker=Like NoTarget but will attack enemy units this only works for some superweapons,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,NoTarget=随便砸，会导致Deliver等类型的超武无法正常生成对象,,,,,,,,,,,,,,,,,,,,,,,,,,NoTarget=Strikes randomly will cause superweapons such as Deliver to fail to generate objects normally,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,Stealth=只攻击隐形单位，受SW.RequiresTarget和SW.RequiresHouse影响,,,,,,,,,,,,,,,,,,,,,,,,,,Stealth=Only attacks stealth units affected by SW.RequiresTarget and SW.RequiresHouse,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,Self=砸这个超武的超武建筑,,,,,,,,,,,,,,,,,,,,,,,,,,Self=Strikes the superweapon building that owns this superweapon,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,Base=砸自己基地,,,,,,,,,,,,,,,,,,,,,,,,,,Base=Strikes own base,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,EnemyBase=砸敌人基地，不过这两个是直接算基地中心的单元格，哪怕那里什么都没有,,,,,,,,,,,,,,,,,,,,,,,,,,EnemyBase=Strikes enemy base but these two directly target the base center cell even if there is nothing there,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,Attack=类似于NoTarget，但是会在所属方被攻击时启动（类似于自卫）,,,,,,,,,,,,,,,,,,,,,,,,,,Attack=Similar to NoTarget but activates when the owning house is attacked (similar to self-defense),,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,LowPower=类似于NoTarget，但是会在所属方处于低电力时启动,,,,,,,,,,,,,,,,,,,,,,,,,,LowPower=Similar to NoTarget but activates when the owning house is at low power,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,LowPowerAttack=把上面那两个结合在一起,,,,,,,,,,,,,,,,,,,,,,,,,,LowPowerAttack=Combines the above two,,,,,,,,,,,,,,,,,,,,,,,,,,
-AITargeting,,,,LightningRandom=随机瞄准，仍然读取指示者和抑制者，可以正常生成对象,,,,,,,,,,,,,,,,,,,,,,,,,,LightningRandom=Random targeting still reads designators and inhibitors can spawn objects normally,,,,,,,,,,,,,,,,,,,,,,,,,,
-其他装甲,可手填选项,4,,none=无装甲,,,,,,,,,,,,,,,,,,,,,,,,,,none=No Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
-其他装甲,,,,flak=步兵轻甲,,,,,,,,,,,,,,,,,,,,,,,,,,flak=Infantry Light Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
-其他装甲,,,,plate=步兵中甲,,,,,,,,,,,,,,,,,,,,,,,,,,plate=Infantry Medium Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
-其他装甲,,,,light=单位轻甲,,,,,,,,,,,,,,,,,,,,,,,,,,light=Unit Light Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
-其他装甲,,,,medium=单位中甲,,,,,,,,,,,,,,,,,,,,,,,,,,medium=Unit Medium Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
-其他装甲,,,,heavy=单位重甲,,,,,,,,,,,,,,,,,,,,,,,,,,heavy=Unit Heavy Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
-其他装甲,,,,wood=建筑木甲,,,,,,,,,,,,,,,,,,,,,,,,,,wood=Building Wood Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
-其他装甲,,,,steel=建筑钢甲,,,,,,,,,,,,,,,,,,,,,,,,,,steel=Building Steel Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
-其他装甲,,,,concrete=建筑混凝土甲,,,,,,,,,,,,,,,,,,,,,,,,,,concrete=Building Concrete Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
-其他装甲,,,,special_1=特殊甲1,,,,,,,,,,,,,,,,,,,,,,,,,,special_1=Special Armor 1,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
-其他装甲,,,,special_2=特殊甲2,,,,,,,,,,,,,,,,,,,,,,,,,,special_2=Special Armor 2,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
-CounterMath,选项,4,ASS,ASS=增加,,,,,,,,,,,,,,,,,,,,,,,,,,ASS=Increase,,,,,,,,,,,,,,,,,,,,,,,,,,
-CounterMath,,,,INTERCOURSE=定值,,,,,,,,,,,,,,,,,,,,,,,,,,INTERCOURSE=Fixed Value,,,,,,,,,,,,,,,,,,,,,,,,,,
-CounterMath,,,,SHIT=减少,,,,,,,,,,,,,,,,,,,,,,,,,,SHIT=Decrease,,,,,,,,,,,,,,,,,,,,,,,,,,
-CounterMath,,,,MASTURBATION=乘,,,,,,,,,,,,,,,,,,,,,,,,,,MASTURBATION=Multiply,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,选项,4,LightGold,LightGold=橙色,,,,,,,,,,,,,,,,,,,,,,,,,,LightGold=Orange,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,Gold=亮黄,,,,,,,,,,,,,,,,,,,,,,,,,,Gold=Bright Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,LightGrey=白,,,,,,,,,,,,,,,,,,,,,,,,,,LightGrey=White,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,Grey=灰,,,,,,,,,,,,,,,,,,,,,,,,,,Grey=Gray,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,Red=棕色,,,,,,,,,,,,,,,,,,,,,,,,,,Red=Brown,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,DarkRed=红色,,,,,,,,,,,,,,,,,,,,,,,,,,DarkRed=Red,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,Orange=橙色,,,,,,,,,,,,,,,,,,,,,,,,,,Orange=Orange,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,Magenta=粉色,,,,,,,,,,,,,,,,,,,,,,,,,,Magenta=Pink,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,Purple=紫色,,,,,,,,,,,,,,,,,,,,,,,,,,Purple=Purple,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,LightBlue=浅蓝,,,,,,,,,,,,,,,,,,,,,,,,,,LightBlue=Light Blue,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,DarkBlue=蓝,,,,,,,,,,,,,,,,,,,,,,,,,,DarkBlue=Blue,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,NeonBlue=紫色,,,,,,,,,,,,,,,,,,,,,,,,,,NeonBlue=Purple,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,DarkSky=青色,,,,,,,,,,,,,,,,,,,,,,,,,,DarkSky=Cyan,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,Green=浅绿,,,,,,,,,,,,,,,,,,,,,,,,,,Green=Light Green,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,DarkGreen=绿色,,,,,,,,,,,,,,,,,,,,,,,,,,DarkGreen=Green,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,NeonGreen=黑,,,,,,,,,,,,,,,,,,,,,,,,,,NeonGreen=Black,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,Yellow=黄色,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow=Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,Purple2=紫色2,,,,,,,,,,,,,,,,,,,,,,,,,,Purple2=Purple2,,,,,,,,,,,,,,,,,,,,,,,,,,
-Colors,,,,Purple3=紫色3,,,,,,,,,,,,,,,,,,,,,,,,,,Purple3=Purple3,,,,,,,,,,,,,,,,,,,,,,,,,,
-CompareLogic,选项,4,EQ,EQ=等于,,,,,,,,,,,,,,,,,,,,,,,,,,EQ=Equal,,,,,,,,,,,,,,,,,,,,,,,,,,
-CompareLogic,,,,NE=不等于,,,,,,,,,,,,,,,,,,,,,,,,,,NE=Not Equal,,,,,,,,,,,,,,,,,,,,,,,,,,
-CompareLogic,,,,GT=大于,,,,,,,,,,,,,,,,,,,,,,,,,,GT=Greater Than,,,,,,,,,,,,,,,,,,,,,,,,,,
-CompareLogic,,,,LT=小于,,,,,,,,,,,,,,,,,,,,,,,,,,LT=Less Than,,,,,,,,,,,,,,,,,,,,,,,,,,
-CompareLogic,,,,GE=大于等于,,,,,,,,,,,,,,,,,,,,,,,,,,GE=Greater Than or Equal To,,,,,,,,,,,,,,,,,,,,,,,,,,
-CompareLogic,,,,LE=小于等于,,,,,,,,,,,,,,,,,,,,,,,,,,LE=Less Than or Equal To,,,,,,,,,,,,,,,,,,,,,,,,,,
-CounterActor,选项,4,ME,ME=触发器所在对象,,,,,,,,,,,,,,,,,,,,,,,,,,ME=Object where trigger is located,,,,,,,,,,,,,,,,,,,,,,,,,,
-CounterActor,,,,SUCK=触发器来源,,,,,,,,,,,,,,,,,,,,,,,,,,SUCK=Trigger source,,,,,,,,,,,,,,,,,,,,,,,,,,
-CounterActor,,,,CUNNILINGUS=计数器来源,,,,,,,,,,,,,,,,,,,,,,,,,,CUNNILINGUS=Counter source,,,,,,,,,,,,,,,,,,,,,,,,,,
-CounterReaction,选项,4,NO_PANTIES,NO_PANTIES=普通计数器,,,,,,,,,,,,,,,,,,,,,,,,,,NO_PANTIES=Normal counter,,,,,,,,,,,,,,,,,,,,,,,,,,
-CounterReaction,,,,HENTAI=与血量同时增减,,,,,,,,,,,,,,,,,,,,,,,,,,HENTAI=Increases/decreases with HP,,,,,,,,,,,,,,,,,,,,,,,,,,
-CounterReaction,,,,SHIT=护盾，抵扣伤害,,,,,,,,,,,,,,,,,,,,,,,,,,SHIT=Shield absorbs damage,,,,,,,,,,,,,,,,,,,,,,,,,,
-DamageReactionMode,选项,4,PISS,E-HENTAI=概率闪避,,,,,,,,,,,,,,,,,,,,,,,,,,E-HENTAI=Chance to dodge,,,,,,,,,,,,,,,,,,,,,,,,,,
-DamageReactionMode,,,,RoadRolarDa=比例减少,,,,,,,,,,,,,,,,,,,,,,,,,,RoadRolarDa=Proportional reduction,,,,,,,,,,,,,,,,,,,,,,,,,,
-DamageReactionMode,,,,FUCK=刚毅盾，减到定值,,,,,,,,,,,,,,,,,,,,,,,,,,FUCK=Fortitude shield reduces to a fixed value,,,,,,,,,,,,,,,,,,,,,,,,,,
-DamageReactionMode,,,,PISS=免疫死亡,,,,,,,,,,,,,,,,,,,,,,,,,,PISS=Immune to death,,,,,,,,,,,,,,,,,,,,,,,,,,
-Locomotor,选项,4,{4A582741-9839-11d1-B709-00A024DDAFD1},{4A582741-9839-11d1-B709-00A024DDAFD1}=地面载具,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582741-9839-11d1-B709-00A024DDAFD1}=Ground vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
-Locomotor,,,,{4A582742-9839-11d1-B709-00A024DDAFD1}=悬浮载具,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582742-9839-11d1-B709-00A024DDAFD1}=Hover vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
-Locomotor,,,,{4A582743-9839-11d1-B709-00A024DDAFD1}=钻地载具,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582743-9839-11d1-B709-00A024DDAFD1}=Burrowing vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
-Locomotor,,,,{4A582744-9839-11d1-B709-00A024DDAFD1}=地面步兵,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582744-9839-11d1-B709-00A024DDAFD1}=Ground infantry,,,,,,,,,,,,,,,,,,,,,,,,,,
-Locomotor,,,,{4A582745-9839-11d1-B709-00A024DDAFD1}=空降仓投送,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582745-9839-11d1-B709-00A024DDAFD1}=Drop pod delivery,,,,,,,,,,,,,,,,,,,,,,,,,,
-Locomotor,,,,{4A582746-9839-11d1-B709-00A024DDAFD1}=机场飞机,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582746-9839-11d1-B709-00A024DDAFD1}=Airport aircraft,,,,,,,,,,,,,,,,,,,,,,,,,,
-Locomotor,,,,{4A582747-9839-11d1-B709-00A024DDAFD1}=超时空,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582747-9839-11d1-B709-00A024DDAFD1}=Chrono,,,,,,,,,,,,,,,,,,,,,,,,,,
-Locomotor,,,,{55D141B8-DB94-11d1-AC98-006008055BB5}=步行鸡甲,,,,,,,,,,,,,,,,,,,,,,,,,,{55D141B8-DB94-11d1-AC98-006008055BB5}=Walking mech,,,,,,,,,,,,,,,,,,,,,,,,,,
-Locomotor,,,,{92612C46-F71F-11d1-AC9F-006008055BB5}=Jumpjet,,,,,,,,,,,,,,,,,,,,,,,,,,{92612C46-F71F-11d1-AC9F-006008055BB5}=Jumpjet,,,,,,,,,,,,,,,,,,,,,,,,,,
-Locomotor,,,,{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}=舰船,,,,,,,,,,,,,,,,,,,,,,,,,,{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}=Ship,,,,,,,,,,,,,,,,,,,,,,,,,,
-Locomotor,,,,{B7B49766-E576-11d3-9BD9-00104B972FE8}=导弹,,,,,,,,,,,,,,,,,,,,,,,,,,{B7B49766-E576-11d3-9BD9-00104B972FE8}=Missile,,,,,,,,,,,,,,,,,,,,,,,,,,
-TeleportMode,选项,4,NONE,NONE=无,,,,,,,,,,,,,,,,,,,,,,,,,,NONE=None,,,,,,,,,,,,,,,,,,,,,,,,,,
-TeleportMode,,,,MOVE=传送到移动目标,,,,,,,,,,,,,,,,,,,,,,,,,,MOVE=Teleport to moving target,,,,,,,,,,,,,,,,,,,,,,,,,,
-TeleportMode,,,,WARHEAD=传送到传送弹头爆炸点,,,,,,,,,,,,,,,,,,,,,,,,,,WARHEAD=Teleport to the explosion point of the teleport warhead,,,,,,,,,,,,,,,,,,,,,,,,,,
-TeleportMode,,,,BOTH=双模式,,,,,,,,,,,,,,,,,,,,,,,,,,BOTH=Dual mode,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries-2,选项,9,,Americans=美国,,,,,,,,,,,,,,,,,,,,,,,,,,Americans=America,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries-2,,,,Alliance=韩国,,,,,,,,,,,,,,,,,,,,,,,,,,Alliance=Korea,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries-2,,,,French=法国,,,,,,,,,,,,,,,,,,,,,,,,,,French=France,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries-2,,,,British=英国,,,,,,,,,,,,,,,,,,,,,,,,,,British=Great Britain,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries-2,,,,Germans=德国,,,,,,,,,,,,,,,,,,,,,,,,,,Germans=Germany,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries-2,,,,Confederation=古巴,,,,,,,,,,,,,,,,,,,,,,,,,,Confederation=Cuba,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries-2,,,,Africans=利比亚,,,,,,,,,,,,,,,,,,,,,,,,,,Africans=Libya,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries-2,,,,Arabs=伊拉克,,,,,,,,,,,,,,,,,,,,,,,,,,Arabs=Iraq,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries-2,,,,Russians=苏俄,,,,,,,,,,,,,,,,,,,,,,,,,,Russians=Soviet Russia,,,,,,,,,,,,,,,,,,,,,,,,,,
-Countries-2,,,,YuriCountry=尤里,,,,,,,,,,,,,,,,,,,,,,,,,,YuriCountry=Yuri,,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,选项,4,Destroyer,Amphibious= 两栖，可以同时被船厂和维修厂维修,,,,,,,,,,,,,,,,,,,,,,,,,,Amphibious= Amphibious can be repaired by both the Shipyard and the Service Depot,,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,,,,AmphibiousCrusher=两栖，并试图碾压步兵,,,,,,,,,,,,,,,,,,,,,,,,,,AmphibiousCrusher=Amphibious and attempts to crush infantry,,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,,,,AmphibiousDestroyer=两栖，并试图摧毁障碍物（树木、沙袋、铁丝网）两栖步兵卡树的原因之一,,,,,,,,,,,,,,,,,,,,,,,,,,AmphibiousDestroyer=Amphibious and attempts to destroy obstacles (trees sandbags barbed wire) one of the reasons amphibious infantry get stuck on trees,,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,,,,Crusher=陆地，并试图碾压步兵,,,,,,,,,,,,,,,,,,,,,,,,,,Crusher=Land and attempts to crush infantry,,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,,,,CrusherAll=陆地，并试图碾压一切包括围墙，根据Crusher决定穿墙而过还是强行碾掉不能碾的墙（真正决定是否为高级碾压的语句）,,,,,,,,,,,,,,,,,,,,,,,,,,CrusherAll=Land and attempts to crush everything including walls according to Crusher determines whether to pass through walls or forcibly crush walls that cannot be crushed (the statement that actually determines whether it is advanced crushing),,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,,,,Destroyer=陆地，并试图摧毁障碍物和碾压沙袋,,,,,,,,,,,,,,,,,,,,,,,,,,Destroyer=Land and attempts to destroy obstacles and crush sandbags,,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,,,,Fly=飞行，寻路无限制，会导致矿车无法手动返回矿场，PhobosBuild48已修复，会导致载具无法进入建筑,,,,,,,,,,,,,,,,,,,,,,,,,,Fly=Flying unrestricted pathfinding will cause miners to be unable to manually return to the refinery fixed in PhobosBuild48 will cause vehicles to be unable to enter buildings,,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,,,,Infantry=陆地，一般步兵,,,,,,,,,,,,,,,,,,,,,,,,,,Infantry=Land normal infantry,,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,,,,InfantryDestroyer=陆地，步兵，试图摧毁障碍物,,,,,,,,,,,,,,,,,,,,,,,,,,InfantryDestroyer=Land infantry attempts to destroy obstacles,,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,,,,Normal=陆地，并试图摧毁地形障碍和碾压步兵,,,,,,,,,,,,,,,,,,,,,,,,,,Normal=Land and attempts to destroy terrain obstacles and crush infantry,,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,,,,Subterannean=钻地车用，移动距离远时试图钻地，不钻地时与Crusher类似，作为矿车且被水域或悬崖包围时无法正确找到矿场，PhobosBuild49已修复,,,,,,,,,,,,,,,,,,,,,,,,,,Subterannean=For burrowing vehicles attempts to burrow when moving long distances when not burrowing similar to Crusher when used as a miner and surrounded by water or cliffs cannot correctly find the refinery fixed in PhobosBuild49,,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,,,,Water=只在水中寻路,,,,,,,,,,,,,,,,,,,,,,,,,,Water=Only pathfinds in water,,,,,,,,,,,,,,,,,,,,,,,,,,
-MovementZone,,,,WaterBeach=可在水中和海滩寻路,,,,,,,,,,,,,,,,,,,,,,,,,,WaterBeach=Can pathfind in water and on beaches,,,,,,,,,,,,,,,,,,,,,,,,,,
-VectorOrigin,选项,4,Destroyer,Target=抛射体预定目标,,,,,,,,,,,,,,,,,,,,,,,,,,Target=Projectile's intended target,,,,,,,,,,,,,,,,,,,,,,,,,,
-VectorOrigin,,,,Launcher=发射者,,,,,,,,,,,,,,,,,,,,,,,,,,Launcher=Launcher,,,,,,,,,,,,,,,,,,,,,,,,,,
-VectorOrigin,,,,Source=此AE的来源,,,,,,,,,,,,,,,,,,,,,,,,,,Source=The source of this AE,,,,,,,,,,,,,,,,,,,,,,,,,,
-VectorOrigin,,,,Self=自身，但是FLH偏移,,,,,,,,,,,,,,,,,,,,,,,,,,Self=Self but with FLH offset,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,选项,9,,FASTER=移速加成,,,,,,,,,,,,,,,,,,,,,,,,,,FASTER=Movement speed bonus,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,STRONGER=伤害减免,,,,,,,,,,,,,,,,,,,,,,,,,,STRONGER=Damage reduction,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,FIREPOWER=火力加成,,,,,,,,,,,,,,,,,,,,,,,,,,FIREPOWER=Firepower bonus,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,SCATTER=自动散开,,,,,,,,,,,,,,,,,,,,,,,,,,SCATTER=Auto scatter,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,ROF=开火速度加成,,,,,,,,,,,,,,,,,,,,,,,,,,ROF=Rate of fire bonus,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,SIGHT=视野加成,,,,,,,,,,,,,,,,,,,,,,,,,,SIGHT=Sight bonus,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,CLOAK=隐形,,,,,,,,,,,,,,,,,,,,,,,,,,CLOAK=Cloak,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,GUARD_AREA=区域守卫,,,,,,,,,,,,,,,,,,,,,,,,,,GUARD_AREA=Area guard,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,CRUSHER=可以碾压,,,,,,,,,,,,,,,,,,,,,,,,,,CRUSHER=Can Crush,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,SELF_HEAL=自动回血,,,,,,,,,,,,,,,,,,,,,,,,,,SELF_HEAL=Auto Heal,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,EXPLODES=死亡爆炸,,,,,,,,,,,,,,,,,,,,,,,,,,EXPLODES=Explodes on Death,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,RADAR_INVISIBLE=雷达上不可见,,,,,,,,,,,,,,,,,,,,,,,,,,RADAR_INVISIBLE=Invisible on Radar,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,SENSORS=探测隐形,,,,,,,,,,,,,,,,,,,,,,,,,,SENSORS=Detects Stealth,,,,,,,,,,,,,,,,,,,,,,,,,,
-Abilities,,,,FEARLESS=无畏,,,,,,,,,,,,,,,,,,,,,,,,,,FEARLESS=Fearless,,,,,,,,,,,,,,,,,,,,,,,,,,
-Land,选项,9,NONE,Clear=Clear,,,,,,,,,,,,,,,,,,,,,,,,,,Clear=Clear,,,,,,,,,,,,,,,,,,,,,,,,,,
-Land,,,,Road=Road,,,,,,,,,,,,,,,,,,,,,,,,,,Road=Road,,,,,,,,,,,,,,,,,,,,,,,,,,
-Land,,,,Water=Water,,,,,,,,,,,,,,,,,,,,,,,,,,Water=Water,,,,,,,,,,,,,,,,,,,,,,,,,,
-Land,,,,Rock=Rock,,,,,,,,,,,,,,,,,,,,,,,,,,Rock=Rock,,,,,,,,,,,,,,,,,,,,,,,,,,
-Land,,,,Wall=Wall,,,,,,,,,,,,,,,,,,,,,,,,,,Wall=Wall,,,,,,,,,,,,,,,,,,,,,,,,,,
-Land,,,,Tiberium=Tiberium,,,,,,,,,,,,,,,,,,,,,,,,,,Tiberium=Tiberium,,,,,,,,,,,,,,,,,,,,,,,,,,
-Land,,,,Beach=Beach,,,,,,,,,,,,,,,,,,,,,,,,,,Beach=Beach,,,,,,,,,,,,,,,,,,,,,,,,,,
-Land,,,,Rough=Rough,,,,,,,,,,,,,,,,,,,,,,,,,,Rough=Rough,,,,,,,,,,,,,,,,,,,,,,,,,,
-Land,,,,Ice=Ice,,,,,,,,,,,,,,,,,,,,,,,,,,Ice=Ice,,,,,,,,,,,,,,,,,,,,,,,,,,
-Land,,,,Railroad=Railroad,,,,,,,,,,,,,,,,,,,,,,,,,,Railroad=Railroad,,,,,,,,,,,,,,,,,,,,,,,,,,
-Land,,,,Tunnel=Tunnel,,,,,,,,,,,,,,,,,,,,,,,,,,Tunnel=Tunnel,,,,,,,,,,,,,,,,,,,,,,,,,,
-Land,,,,Weeds=Weeds,,,,,,,,,,,,,,,,,,,,,,,,,,Weeds=Weeds,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,选项,4,Attack,Attack=攻击,,,,,,,,,,,,,,,,,,,,,,,,,,Attack=Attack,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Move=移动,,,,,,,,,,,,,,,,,,,,,,,,,,Move=Move,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Guard=守卫,,,,,,,,,,,,,,,,,,,,,,,,,,Guard=Guard,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Enter=进入建筑或车,,,,,,,,,,,,,,,,,,,,,,,,,,Enter=Enter building or vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Capture=占领,,,,,,,,,,,,,,,,,,,,,,,,,,Capture=Capture,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,AreaGuard=区域守卫,,,,,,,,,,,,,,,,,,,,,,,,,,AreaGuard=Area Guard,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Stop=停止,,,,,,,,,,,,,,,,,,,,,,,,,,Stop=Stop,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Hunt=猎杀,,,,,,,,,,,,,,,,,,,,,,,,,,Hunt=Hunt,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Unload=部署,,,,,,,,,,,,,,,,,,,,,,,,,,Unload=Deploy,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Sleep=睡觉,,,,,,,,,,,,,,,,,,,,,,,,,,Sleep=Sleep,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Sabotage=C4任务,,,,,,,,,,,,,,,,,,,,,,,,,,Sabotage=C4 Mission,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Construction=播放建造动画,,,,,,,,,,,,,,,,,,,,,,,,,,Construction=Play construction animation,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Selling=建筑出售,,,,,,,,,,,,,,,,,,,,,,,,,,Selling=Building sale,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Repair=维修厂维修,,,,,,,,,,,,,,,,,,,,,,,,,,Repair=Repair at repair depot,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Rescue=救援，意味不明,,,,,,,,,,,,,,,,,,,,,,,,,,Rescue=Rescue meaning unknown,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Missile=核弹发射井发射,,,,,,,,,,,,,,,,,,,,,,,,,,Missile=Nuclear missile silo launch,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Harmless=无威胁,,,,,,,,,,,,,,,,,,,,,,,,,,Harmless=No threat,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Open=大门类建筑打开,,,,,,,,,,,,,,,,,,,,,,,,,,Open=Gate building opens,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Patrol=路径点巡逻,,,,,,,,,,,,,,,,,,,,,,,,,,Patrol=Waypoint patrol,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Eaten=进入回收站,,,,,,,,,,,,,,,,,,,,,,,,,,Eaten=Enter recycling center,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,QMove=路径点移动,,,,,,,,,,,,,,,,,,,,,,,,,,QMove=Waypoint move,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Retreat=跑路,,,,,,,,,,,,,,,,,,,,,,,,,,Retreat=Run away,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Sticky=类Guard，但是不动,,,,,,,,,,,,,,,,,,,,,,,,,,Sticky=Guard-like but doesn't move,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Harvest=挖矿,,,,,,,,,,,,,,,,,,,,,,,,,,Harvest=Mining,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Return=挖矿返回,,,,,,,,,,,,,,,,,,,,,,,,,,Return=Return from mining,,,,,,,,,,,,,,,,,,,,,,,,,,
-Mission,,,,Ambush=埋伏,,,,,,,,,,,,,,,,,,,,,,,,,,Ambush=Ambush,,,,,,,,,,,,,,,,,,,,,,,,,,
-CumulativeOptions,选项,4,NIPPLE,NIPPLE=不可叠加,,,,,,,,,,,,,,,,,,,,,,,,,,NIPPLE=Not stackable,,,,,,,,,,,,,,,,,,,,,,,,,,
-CumulativeOptions,,,,YEAAAAAAAAH=无限叠加,,,,,,,,,,,,,,,,,,,,,,,,,,YEAAAAAAAAH=Infinite stacking,,,,,,,,,,,,,,,,,,,,,,,,,,
-CumulativeOptions,,,,AssWeCan=每个单位一个,,,,,,,,,,,,,,,,,,,,,,,,,,AssWeCan=One per unit,,,,,,,,,,,,,,,,,,,,,,,,,,
-CumulativeOptions,,,,Hentai=每个阵营一个,,,,,,,,,,,,,,,,,,,,,,,,,,Hentai=One per faction,,,,,,,,,,,,,,,,,,,,,,,,,,
-None,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Flak,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Plate,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Light,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Medium,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Heavy,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Wood,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Steel,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Concrete,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-special_1,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-special_2,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-F,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-L,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-H,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-护甲名称,引用语句,10;16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Armor Name
-比例,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ratio
-强行攻击,布尔,8,no,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Force Attack
-还击,布尔,8,no,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Return Fire
-主动攻击,布尔,8,no,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Aggressive Attack
-装甲名称,文本框,14;16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Armor Type
-弹头比例（写%）/父类型,文本框,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Warhead Ratio & Parent
-生产时间,数值,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Build Time
-生产成本,数值,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Build Cost
-建造数量限制,数值,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Build Limit
-Buff的个数,文本框,,114,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Buff Count
-接受的BUFF,连线,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Accepted Buffs
-Buff的持续时间,文本框,,114,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Buff Duration
-订单上限,文本框,,114,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Order Limit
-触发ID,随机字符串,11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger ID
-TechLevel,选项,,1,TRUE,,,,,,,,,,,,,,,,,,,,,,,,,,TRUE,,,,,,,,,,,,,,,,,,,,,,,,,,
-TechLevel,,,,1=1,,,,,,,,,,,,,,,,,,,,,,,,,,1=1,,,,,,,,,,,,,,,,,,,,,,,,,,
-TechLevel,,,,2=2,,,,,,,,,,,,,,,,,,,,,,,,,,2=2,,,,,,,,,,,,,,,,,,,,,,,,,,
-TechLevel,,,,3=3,,,,,,,,,,,,,,,,,,,,,,,,,,3=3,,,,,,,,,,,,,,,,,,,,,,,,,,
-TechLevel,,,,4=4,,,,,,,,,,,,,,,,,,,,,,,,,,4=4,,,,,,,,,,,,,,,,,,,,,,,,,,
-TechLevel,,,,5=5,,,,,,,,,,,,,,,,,,,,,,,,,,5=5,,,,,,,,,,,,,,,,,,,,,,,,,,
-TechLevel,,,,6=6,,,,,,,,,,,,,,,,,,,,,,,,,,6=6,,,,,,,,,,,,,,,,,,,,,,,,,,
-TechLevel,,,,7=7,,,,,,,,,,,,,,,,,,,,,,,,,,7=7,,,,,,,,,,,,,,,,,,,,,,,,,,
-TechLevel,,,,8=8,,,,,,,,,,,,,,,,,,,,,,,,,,8=8,,,,,,,,,,,,,,,,,,,,,,,,,,
-TechLevel,,,,9=9,,,,,,,,,,,,,,,,,,,,,,,,,,9=9,,,,,,,,,,,,,,,,,,,,,,,,,,
-TechLevel,,,,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,
-TechLevel,,,,11=11,,,,,,,,,,,,,,,,,,,,,,,,,,11=11,,,,,,,,,,,,,,,,,,,,,,,,,,
-阵营,选项,,0,0=盟,,,,,,,,,,,,,,,,,,,,,,,,,,0=Allied,,,,,,,,,,,,,,,,,,,,,,,,,,House
-阵营,,,,1=苏,,,,,,,,,,,,,,,,,,,,,,,,,,1=Soviet,,,,,,,,,,,,,,,,,,,,,,,,,,House
-阵营,,,,2=尤,,,,,,,,,,,,,,,,,,,,,,,,,,2=Yuri,,,,,,,,,,,,,,,,,,,,,,,,,,House
-初始帧,数值,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Start Frame
-总帧数,数值,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Total Frames
-两帧间隔,数值,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Frame Interval
-小地图初始帧,数值,,-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Minimap Start Frame
-小地图帧数,数值,,-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Minimap Frames
-触发点X,选项,4,Left,left,,,,,,,,,,,,,,,,,,,,,,,,,,left,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Point X
-触发点X,,,,top,,,,,,,,,,,,,,,,,,,,,,,,,,top,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Point X
-触发点X,,,,right,,,,,,,,,,,,,,,,,,,,,,,,,,right,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Point X
-触发点Y,选项,4,top,Top,,,,,,,,,,,,,,,,,,,,,,,,,,Top,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Point Y
-触发点Y,,,,Middle,,,,,,,,,,,,,,,,,,,,,,,,,,Middle,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Point Y
-触发点Y,,,,Bottom,,,,,,,,,,,,,,,,,,,,,,,,,,Bottom,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Point Y
-自由节点,连线,15;14;16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Free Node
-语句包,连线,15;16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Statement Pack
-集线器节点,连线,15;14;16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Hub Node
-字符串项,文本框,14;16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,String Item
-单值项,文本框,14,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Single Value
+动作参数,文本框,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+触发名称,文本框,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+作战小队,连线,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries,选项,4,<all>,<all>=所有,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries,,,,Americans=美国,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries,,,,Alliance=韩国,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries,,,,French=法国,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries,,,,British=英国,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries,,,,Germans=德国,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries,,,,Confederation=古巴,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries,,,,Africans=利比亚,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries,,,,Arabs=伊拉克,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries,,,,Russians=苏俄,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries,,,,YuriCountry=尤里,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+名称,文本框,14,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+判定条件,选项,4,0,0=目标敌方单位满足条件,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+判定条件,,,,1=本方单位满足条件,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+判定条件,,,,2=敌方电力黄,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+判定条件,,,,3=敌方电力红,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+判定条件,,,,4=目标敌方金钱大于或等于,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+判定条件,,,,5=本方铁幕装置就绪,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+判定条件,,,,6=本方超时空传送就绪,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+判定条件,,,,7=平民单位满足条件,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Action Parameter
+判定用的单位名称,连线,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Name
+判定用数值（0-255）,文本框,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Task Force
+逻辑模式,选项,4,0,0=小于,,,,,,,,,,,,,,,,,,,,,,,,,,<all>=All,,,,,,,,,,,,,,,,,,,,,,,,,,
+逻辑模式,,,,1=小于或等于,,,,,,,,,,,,,,,,,,,,,,,,,,Americans=America,,,,,,,,,,,,,,,,,,,,,,,,,,
+逻辑模式,,,,2=等于,,,,,,,,,,,,,,,,,,,,,,,,,,Alliance=Korea,,,,,,,,,,,,,,,,,,,,,,,,,,
+逻辑模式,,,,3=大于或等于,,,,,,,,,,,,,,,,,,,,,,,,,,French=France,,,,,,,,,,,,,,,,,,,,,,,,,,
+逻辑模式,,,,4=大于,,,,,,,,,,,,,,,,,,,,,,,,,,British=Great Britain,,,,,,,,,,,,,,,,,,,,,,,,,,
+逻辑模式,,,,5=不等于,,,,,,,,,,,,,,,,,,,,,,,,,,Germans=Germany,,,,,,,,,,,,,,,,,,,,,,,,,,
+初始权重,选项,4,10,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,Confederation=Cuba,,,,,,,,,,,,,,,,,,,,,,,,,,
+初始权重,,,,20=20,,,,,,,,,,,,,,,,,,,,,,,,,,Africans=Libya,,,,,,,,,,,,,,,,,,,,,,,,,,
+初始权重,,,,40=40,,,,,,,,,,,,,,,,,,,,,,,,,,Arabs=Iraq,,,,,,,,,,,,,,,,,,,,,,,,,,
+初始权重,,,,50=50,,,,,,,,,,,,,,,,,,,,,,,,,,Russians=Russia,,,,,,,,,,,,,,,,,,,,,,,,,,
+初始权重,,,,70=70,,,,,,,,,,,,,,,,,,,,,,,,,,YuriCountry=Yuri,,,,,,,,,,,,,,,,,,,,,,,,,,
+初始权重,,,,500=500,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Name
+初始权重,,,,5000=5000,,,,,,,,,,,,,,,,,,,,,,,,,,0=Target enemy unit meets condition,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
+最小权重,选项,4,10,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,1=Own unit meets condition,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
+最小权重,,,,20=20,,,,,,,,,,,,,,,,,,,,,,,,,,2=Enemy power yellow,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
+最小权重,,,,40=40,,,,,,,,,,,,,,,,,,,,,,,,,,3=Enemy power red,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
+最小权重,,,,50=50,,,,,,,,,,,,,,,,,,,,,,,,,,4=Target enemy credits greater than or equal to,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
+最小权重,,,,70=70,,,,,,,,,,,,,,,,,,,,,,,,,,5=Our Iron Curtain Device is ready,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
+最小权重,,,,500=500,,,,,,,,,,,,,,,,,,,,,,,,,,6=Our Chronosphere is ready,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
+最小权重,,,,5000=5000,,,,,,,,,,,,,,,,,,,,,,,,,,7=Civilian units meet the conditions,,,,,,,,,,,,,,,,,,,,,,,,,,Condition
+最大权重,选项,4,10,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Condition Unit
+最大权重,,,,20=20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Condition Value (0-255)
+最大权重,,,,40=40,,,,,,,,,,,,,,,,,,,,,,,,,,0=Less than,,,,,,,,,,,,,,,,,,,,,,,,,,Comparison
+最大权重,,,,50=50,,,,,,,,,,,,,,,,,,,,,,,,,,1=Less than or equal to,,,,,,,,,,,,,,,,,,,,,,,,,,Comparison
+最大权重,,,,70=70,,,,,,,,,,,,,,,,,,,,,,,,,,2=Equal to,,,,,,,,,,,,,,,,,,,,,,,,,,Comparison
+最大权重,,,,500=500,,,,,,,,,,,,,,,,,,,,,,,,,,3=Greater than or equal to,,,,,,,,,,,,,,,,,,,,,,,,,,Comparison
+最大权重,,,,5000=5000,,,,,,,,,,,,,,,,,,,,,,,,,,4=Greater than,,,,,,,,,,,,,,,,,,,,,,,,,,Comparison
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5=Not equal to,,,,,,,,,,,,,,,,,,,,,,,,,,Comparison
+第二个作战小队,连线,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
+简单难度可用,布尔,7,0,,,,,,,,,,,,,,,,,,,,,,,,,,,20=20,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
+中等难度可用,布尔,7,0,,,,,,,,,,,,,,,,,,,,,,,,,,,40=40,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
+困难难度可用,布尔,7,0,,,,,,,,,,,,,,,,,,,,,,,,,,,50=50,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
+ColorEdit,颜色,12,"255,255,255",,,,,,,,,,,,,,,,,,,,,,,,,,,70=70,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
+Category,选项,4,Soldier,AirLift=运输机,,,,,,,,,,,,,,,,,,,,,,,,,,500=500,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
+Category,,,,AirPower=战机,,,,,,,,,,,,,,,,,,,,,,,,,,5000=5000,,,,,,,,,,,,,,,,,,,,,,,,,,Initial Weight
+Category,,,,Transport=运输车,,,,,,,,,,,,,,,,,,,,,,,,,,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
+Category,,,,Support=基地车,,,,,,,,,,,,,,,,,,,,,,,,,,20=20,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
+Category,,,,LRFS=远射程载具,,,,,,,,,,,,,,,,,,,,,,,,,,40=40,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
+Category,,,,IFV=步兵载具,,,,,,,,,,,,,,,,,,,,,,,,,,50=50,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
+Category,,,,AFV=载具,,,,,,,,,,,,,,,,,,,,,,,,,,70=70,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
+Category,,,,Recon=Recon载具,,,,,,,,,,,,,,,,,,,,,,,,,,500=500,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
+Category,,,,Soldier=步兵,,,,,,,,,,,,,,,,,,,,,,,,,,5000=5000,,,,,,,,,,,,,,,,,,,,,,,,,,Min Weight
+AITargeting,选项,4,None,None=不会用,,,,,,,,,,,,,,,,,,,,,,,,,,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
+AITargeting,,,,Nuke=侵略性或用触发指定,,,,,,,,,,,,,,,,,,,,,,,,,,20=20,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
+AITargeting,,,,LightningStorm=侵略性，不能和其他闪电一起,,,,,,,,,,,,,,,,,,,,,,,,,,40=40,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
+AITargeting,,,,PsychicDominator=最大的敌人单位集群,,,,,,,,,,,,,,,,,,,,,,,,,,50=50,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
+AITargeting,,,,GeneticMutator=3X3内最大的敌人步兵集群,,,,,,,,,,,,,,,,,,,,,,,,,,70=70,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
+AITargeting,,,,IronCurtain=运用55号脚本关联启动，类似原版铁幕,,,,,,,,,,,,,,,,,,,,,,,,,,500=500,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
+AITargeting,,,,ForceShield=敌人超武砸的地方,,,,,,,,,,,,,,,,,,,,,,,,,,5000=5000,,,,,,,,,,,,,,,,,,,,,,,,,,Max Weight
+AITargeting,,,,ParaDrop=敌人家防御最差的地方,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AITargeting,,,,DropPod=敌人基地中心外围空地,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Second Task Force
+AITargeting,,,,Offensive=侵略性,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Available on Easy
+AITargeting,,,,MultiMissile=根据附近单位威胁值选定目标,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Available on Normal
+AITargeting,,,,HunterSeeker=像NoTarget一样，但是会打敌人的单位，这个只对一些超武有用,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Available on Hard
+AITargeting,,,,NoTarget=随便砸，会导致Deliver等类型的超武无法正常生成对象,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AITargeting,,,,Stealth=只攻击隐形单位，受SW.RequiresTarget和SW.RequiresHouse影响,,,,,,,,,,,,,,,,,,,,,,,,,,AirLift=Transport Plane,,,,,,,,,,,,,,,,,,,,,,,,,,
+AITargeting,,,,Self=砸这个超武的超武建筑,,,,,,,,,,,,,,,,,,,,,,,,,,AirPower=Warplane,,,,,,,,,,,,,,,,,,,,,,,,,,
+AITargeting,,,,Base=砸自己基地,,,,,,,,,,,,,,,,,,,,,,,,,,Transport=Transport Vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
+AITargeting,,,,EnemyBase=砸敌人基地，不过这两个是直接算基地中心的单元格，哪怕那里什么都没有,,,,,,,,,,,,,,,,,,,,,,,,,,Support=MCV,,,,,,,,,,,,,,,,,,,,,,,,,,
+AITargeting,,,,Attack=类似于NoTarget，但是会在所属方被攻击时启动（类似于自卫）,,,,,,,,,,,,,,,,,,,,,,,,,,LRFS=Long-Range Vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
+AITargeting,,,,LowPower=类似于NoTarget，但是会在所属方处于低电力时启动,,,,,,,,,,,,,,,,,,,,,,,,,,IFV=Infantry Vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
+AITargeting,,,,LowPowerAttack=把上面那两个结合在一起,,,,,,,,,,,,,,,,,,,,,,,,,,AFV=Vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
+AITargeting,,,,LightningRandom=随机瞄准，仍然读取指示者和抑制者，可以正常生成对象,,,,,,,,,,,,,,,,,,,,,,,,,,Recon=Recon Vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,可手填选项,4,,none=无装甲,,,,,,,,,,,,,,,,,,,,,,,,,,Soldier=Infantry,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,,,,flak=步兵轻甲,,,,,,,,,,,,,,,,,,,,,,,,,,None=Not Used,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,,,,plate=步兵中甲,,,,,,,,,,,,,,,,,,,,,,,,,,Nuke=Aggressive or specified by trigger,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,,,,light=单位轻甲,,,,,,,,,,,,,,,,,,,,,,,,,,LightningStorm=Aggressive cannot be used together with other Lightning Storms,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,,,,medium=单位中甲,,,,,,,,,,,,,,,,,,,,,,,,,,PsychicDominator=largest enemy unit cluster,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,,,,heavy=单位重甲,,,,,,,,,,,,,,,,,,,,,,,,,,GeneticMutator=largest enemy infantry cluster within 3X3,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,,,,wood=建筑木甲,,,,,,,,,,,,,,,,,,,,,,,,,,IronCurtain=Triggered in association with Script 55 similar to the original Iron Curtain,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,,,,steel=建筑钢甲,,,,,,,,,,,,,,,,,,,,,,,,,,ForceShield=where enemy superweapons hit,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,,,,concrete=建筑混凝土甲,,,,,,,,,,,,,,,,,,,,,,,,,,ParaDrop=where the enemy base's defenses are weakest,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,,,,special_1=特殊甲1,,,,,,,,,,,,,,,,,,,,,,,,,,DropPod=open ground around the enemy base center,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,,,,special_2=特殊甲2,,,,,,,,,,,,,,,,,,,,,,,,,,Offensive=Aggressive,,,,,,,,,,,,,,,,,,,,,,,,,,
+CounterMath,选项,4,ASS,ASS=增加,,,,,,,,,,,,,,,,,,,,,,,,,,MultiMissile=Select target based on threat value of nearby units,,,,,,,,,,,,,,,,,,,,,,,,,,
+CounterMath,,,,INTERCOURSE=定值,,,,,,,,,,,,,,,,,,,,,,,,,,HunterSeeker=Like NoTarget but will attack enemy units this only works for some superweapons,,,,,,,,,,,,,,,,,,,,,,,,,,
+CounterMath,,,,SHIT=减少,,,,,,,,,,,,,,,,,,,,,,,,,,NoTarget=Strikes randomly will cause superweapons such as Deliver to fail to generate objects normally,,,,,,,,,,,,,,,,,,,,,,,,,,
+CounterMath,,,,MASTURBATION=乘,,,,,,,,,,,,,,,,,,,,,,,,,,Stealth=Only attacks stealth units affected by SW.RequiresTarget and SW.RequiresHouse,,,,,,,,,,,,,,,,,,,,,,,,,,
+Colors,选项,4,LightGold,LightGold=橙色,,,,,,,,,,,,,,,,,,,,,,,,,,Self=Strikes the superweapon building that owns this superweapon,,,,,,,,,,,,,,,,,,,,,,,,,,
+Colors,,,,Gold=亮黄,,,,,,,,,,,,,,,,,,,,,,,,,,Base=Strikes own base,,,,,,,,,,,,,,,,,,,,,,,,,,
+Colors,,,,LightGrey=白,,,,,,,,,,,,,,,,,,,,,,,,,,EnemyBase=Strikes enemy base but these two directly target the base center cell even if there is nothing there,,,,,,,,,,,,,,,,,,,,,,,,,,
+Colors,,,,Grey=灰,,,,,,,,,,,,,,,,,,,,,,,,,,Attack=Similar to NoTarget but activates when the owning house is attacked (similar to self-defense),,,,,,,,,,,,,,,,,,,,,,,,,,
+Colors,,,,Red=棕色,,,,,,,,,,,,,,,,,,,,,,,,,,LowPower=Similar to NoTarget but activates when the owning house is at low power,,,,,,,,,,,,,,,,,,,,,,,,,,
+Colors,,,,DarkRed=红色,,,,,,,,,,,,,,,,,,,,,,,,,,LowPowerAttack=Combines the above two,,,,,,,,,,,,,,,,,,,,,,,,,,
+Colors,,,,Orange=橙色,,,,,,,,,,,,,,,,,,,,,,,,,,LightningRandom=Random targeting still reads designators and inhibitors can spawn objects normally,,,,,,,,,,,,,,,,,,,,,,,,,,
+Colors,,,,Magenta=粉色,,,,,,,,,,,,,,,,,,,,,,,,,,none=No Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
+Colors,,,,Purple=紫色,,,,,,,,,,,,,,,,,,,,,,,,,,flak=Infantry Light Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
+Colors,,,,LightBlue=浅蓝,,,,,,,,,,,,,,,,,,,,,,,,,,plate=Infantry Medium Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
+Colors,,,,DarkBlue=蓝,,,,,,,,,,,,,,,,,,,,,,,,,,light=Unit Light Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
+Colors,,,,NeonBlue=紫色,,,,,,,,,,,,,,,,,,,,,,,,,,medium=Unit Medium Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
+Colors,,,,DarkSky=青色,,,,,,,,,,,,,,,,,,,,,,,,,,heavy=Unit Heavy Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
+Colors,,,,Green=浅绿,,,,,,,,,,,,,,,,,,,,,,,,,,wood=Building Wood Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
+Colors,,,,DarkGreen=绿色,,,,,,,,,,,,,,,,,,,,,,,,,,steel=Building Steel Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
+Colors,,,,NeonGreen=黑,,,,,,,,,,,,,,,,,,,,,,,,,,concrete=Building Concrete Armor,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
+Colors,,,,Yellow=黄色,,,,,,,,,,,,,,,,,,,,,,,,,,special_1=Special Armor 1,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
+Colors,,,,Purple2=紫色2,,,,,,,,,,,,,,,,,,,,,,,,,,special_2=Special Armor 2,,,,,,,,,,,,,,,,,,,,,,,,,,Other Armor
+Colors,,,,Purple3=紫色3,,,,,,,,,,,,,,,,,,,,,,,,,,ASS=Increase,,,,,,,,,,,,,,,,,,,,,,,,,,
+CompareLogic,选项,4,EQ,EQ=等于,,,,,,,,,,,,,,,,,,,,,,,,,,INTERCOURSE=Fixed Value,,,,,,,,,,,,,,,,,,,,,,,,,,
+CompareLogic,,,,NE=不等于,,,,,,,,,,,,,,,,,,,,,,,,,,SHIT=Decrease,,,,,,,,,,,,,,,,,,,,,,,,,,
+CompareLogic,,,,GT=大于,,,,,,,,,,,,,,,,,,,,,,,,,,MASTURBATION=Multiply,,,,,,,,,,,,,,,,,,,,,,,,,,
+CompareLogic,,,,LT=小于,,,,,,,,,,,,,,,,,,,,,,,,,,LightGold=Orange,,,,,,,,,,,,,,,,,,,,,,,,,,
+CompareLogic,,,,GE=大于等于,,,,,,,,,,,,,,,,,,,,,,,,,,Gold=Bright Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,
+CompareLogic,,,,LE=小于等于,,,,,,,,,,,,,,,,,,,,,,,,,,LightGrey=White,,,,,,,,,,,,,,,,,,,,,,,,,,
+CounterActor,选项,4,ME,ME=触发器所在对象,,,,,,,,,,,,,,,,,,,,,,,,,,Grey=Gray,,,,,,,,,,,,,,,,,,,,,,,,,,
+CounterActor,,,,SUCK=触发器来源,,,,,,,,,,,,,,,,,,,,,,,,,,Red=Brown,,,,,,,,,,,,,,,,,,,,,,,,,,
+CounterActor,,,,CUNNILINGUS=计数器来源,,,,,,,,,,,,,,,,,,,,,,,,,,DarkRed=Red,,,,,,,,,,,,,,,,,,,,,,,,,,
+CounterReaction,选项,4,NO_PANTIES,NO_PANTIES=普通计数器,,,,,,,,,,,,,,,,,,,,,,,,,,Orange=Orange,,,,,,,,,,,,,,,,,,,,,,,,,,
+CounterReaction,,,,HENTAI=与血量同时增减,,,,,,,,,,,,,,,,,,,,,,,,,,Magenta=Pink,,,,,,,,,,,,,,,,,,,,,,,,,,
+CounterReaction,,,,SHIT=护盾，抵扣伤害,,,,,,,,,,,,,,,,,,,,,,,,,,Purple=Purple,,,,,,,,,,,,,,,,,,,,,,,,,,
+DamageReactionMode,选项,4,PISS,E-HENTAI=概率闪避,,,,,,,,,,,,,,,,,,,,,,,,,,LightBlue=Light Blue,,,,,,,,,,,,,,,,,,,,,,,,,,
+DamageReactionMode,,,,RoadRolarDa=比例减少,,,,,,,,,,,,,,,,,,,,,,,,,,DarkBlue=Blue,,,,,,,,,,,,,,,,,,,,,,,,,,
+DamageReactionMode,,,,FUCK=刚毅盾，减到定值,,,,,,,,,,,,,,,,,,,,,,,,,,NeonBlue=Purple,,,,,,,,,,,,,,,,,,,,,,,,,,
+DamageReactionMode,,,,PISS=免疫死亡,,,,,,,,,,,,,,,,,,,,,,,,,,DarkSky=Cyan,,,,,,,,,,,,,,,,,,,,,,,,,,
+Locomotor,选项,4,{4A582741-9839-11d1-B709-00A024DDAFD1},{4A582741-9839-11d1-B709-00A024DDAFD1}=地面载具,,,,,,,,,,,,,,,,,,,,,,,,,,Green=Light Green,,,,,,,,,,,,,,,,,,,,,,,,,,
+Locomotor,,,,{4A582742-9839-11d1-B709-00A024DDAFD1}=悬浮载具,,,,,,,,,,,,,,,,,,,,,,,,,,DarkGreen=Green,,,,,,,,,,,,,,,,,,,,,,,,,,
+Locomotor,,,,{4A582743-9839-11d1-B709-00A024DDAFD1}=钻地载具,,,,,,,,,,,,,,,,,,,,,,,,,,NeonGreen=Black,,,,,,,,,,,,,,,,,,,,,,,,,,
+Locomotor,,,,{4A582744-9839-11d1-B709-00A024DDAFD1}=地面步兵,,,,,,,,,,,,,,,,,,,,,,,,,,Yellow=Yellow,,,,,,,,,,,,,,,,,,,,,,,,,,
+Locomotor,,,,{4A582745-9839-11d1-B709-00A024DDAFD1}=空降仓投送,,,,,,,,,,,,,,,,,,,,,,,,,,Purple2=Purple2,,,,,,,,,,,,,,,,,,,,,,,,,,
+Locomotor,,,,{4A582746-9839-11d1-B709-00A024DDAFD1}=机场飞机,,,,,,,,,,,,,,,,,,,,,,,,,,Purple3=Purple3,,,,,,,,,,,,,,,,,,,,,,,,,,
+Locomotor,,,,{4A582747-9839-11d1-B709-00A024DDAFD1}=超时空,,,,,,,,,,,,,,,,,,,,,,,,,,EQ=Equal,,,,,,,,,,,,,,,,,,,,,,,,,,
+Locomotor,,,,{55D141B8-DB94-11d1-AC98-006008055BB5}=步行鸡甲,,,,,,,,,,,,,,,,,,,,,,,,,,NE=Not Equal,,,,,,,,,,,,,,,,,,,,,,,,,,
+Locomotor,,,,{92612C46-F71F-11d1-AC9F-006008055BB5}=Jumpjet,,,,,,,,,,,,,,,,,,,,,,,,,,GT=Greater Than,,,,,,,,,,,,,,,,,,,,,,,,,,
+Locomotor,,,,{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}=舰船,,,,,,,,,,,,,,,,,,,,,,,,,,LT=Less Than,,,,,,,,,,,,,,,,,,,,,,,,,,
+Locomotor,,,,{B7B49766-E576-11d3-9BD9-00104B972FE8}=导弹,,,,,,,,,,,,,,,,,,,,,,,,,,GE=Greater Than or Equal To,,,,,,,,,,,,,,,,,,,,,,,,,,
+TeleportMode,选项,4,NONE,NONE=无,,,,,,,,,,,,,,,,,,,,,,,,,,LE=Less Than or Equal To,,,,,,,,,,,,,,,,,,,,,,,,,,
+TeleportMode,,,,MOVE=传送到移动目标,,,,,,,,,,,,,,,,,,,,,,,,,,ME=Object where trigger is located,,,,,,,,,,,,,,,,,,,,,,,,,,
+TeleportMode,,,,WARHEAD=传送到传送弹头爆炸点,,,,,,,,,,,,,,,,,,,,,,,,,,SUCK=Trigger source,,,,,,,,,,,,,,,,,,,,,,,,,,
+TeleportMode,,,,BOTH=双模式,,,,,,,,,,,,,,,,,,,,,,,,,,CUNNILINGUS=Counter source,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries-2,选项,9,,Americans=美国,,,,,,,,,,,,,,,,,,,,,,,,,,NO_PANTIES=Normal counter,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries-2,,,,Alliance=韩国,,,,,,,,,,,,,,,,,,,,,,,,,,HENTAI=Increases/decreases with HP,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries-2,,,,French=法国,,,,,,,,,,,,,,,,,,,,,,,,,,SHIT=Shield absorbs damage,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries-2,,,,British=英国,,,,,,,,,,,,,,,,,,,,,,,,,,E-HENTAI=Chance to dodge,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries-2,,,,Germans=德国,,,,,,,,,,,,,,,,,,,,,,,,,,RoadRolarDa=Proportional reduction,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries-2,,,,Confederation=古巴,,,,,,,,,,,,,,,,,,,,,,,,,,FUCK=Fortitude shield reduces to a fixed value,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries-2,,,,Africans=利比亚,,,,,,,,,,,,,,,,,,,,,,,,,,PISS=Immune to death,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries-2,,,,Arabs=伊拉克,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582741-9839-11d1-B709-00A024DDAFD1}=Ground vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries-2,,,,Russians=苏俄,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582742-9839-11d1-B709-00A024DDAFD1}=Hover vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
+Countries-2,,,,YuriCountry=尤里,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582743-9839-11d1-B709-00A024DDAFD1}=Burrowing vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,选项,4,Destroyer,Amphibious= 两栖，可以同时被船厂和维修厂维修,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582744-9839-11d1-B709-00A024DDAFD1}=Ground infantry,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,,,,AmphibiousCrusher=两栖，并试图碾压步兵,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582745-9839-11d1-B709-00A024DDAFD1}=Drop pod delivery,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,,,,AmphibiousDestroyer=两栖，并试图摧毁障碍物（树木、沙袋、铁丝网）两栖步兵卡树的原因之一,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582746-9839-11d1-B709-00A024DDAFD1}=Airport aircraft,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,,,,Crusher=陆地，并试图碾压步兵,,,,,,,,,,,,,,,,,,,,,,,,,,{4A582747-9839-11d1-B709-00A024DDAFD1}=Chrono,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,,,,CrusherAll=陆地，并试图碾压一切包括围墙，根据Crusher决定穿墙而过还是强行碾掉不能碾的墙（真正决定是否为高级碾压的语句）,,,,,,,,,,,,,,,,,,,,,,,,,,{55D141B8-DB94-11d1-AC98-006008055BB5}=Walking mech,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,,,,Destroyer=陆地，并试图摧毁障碍物和碾压沙袋,,,,,,,,,,,,,,,,,,,,,,,,,,{92612C46-F71F-11d1-AC9F-006008055BB5}=Jumpjet,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,,,,Fly=飞行，寻路无限制，会导致矿车无法手动返回矿场，PhobosBuild48已修复，会导致载具无法进入建筑,,,,,,,,,,,,,,,,,,,,,,,,,,{2BEA74E1-7CCA-11d3-BE14-00104B62A16C}=Ship,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,,,,Infantry=陆地，一般步兵,,,,,,,,,,,,,,,,,,,,,,,,,,{B7B49766-E576-11d3-9BD9-00104B972FE8}=Missile,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,,,,InfantryDestroyer=陆地，步兵，试图摧毁障碍物,,,,,,,,,,,,,,,,,,,,,,,,,,NONE=None,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,,,,Normal=陆地，并试图摧毁地形障碍和碾压步兵,,,,,,,,,,,,,,,,,,,,,,,,,,MOVE=Teleport to moving target,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,,,,Subterannean=钻地车用，移动距离远时试图钻地，不钻地时与Crusher类似，作为矿车且被水域或悬崖包围时无法正确找到矿场，PhobosBuild49已修复,,,,,,,,,,,,,,,,,,,,,,,,,,WARHEAD=Teleport to the explosion point of the teleport warhead,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,,,,Water=只在水中寻路,,,,,,,,,,,,,,,,,,,,,,,,,,BOTH=Dual mode,,,,,,,,,,,,,,,,,,,,,,,,,,
+MovementZone,,,,WaterBeach=可在水中和海滩寻路,,,,,,,,,,,,,,,,,,,,,,,,,,Americans=America,,,,,,,,,,,,,,,,,,,,,,,,,,
+VectorOrigin,选项,4,Destroyer,Target=抛射体预定目标,,,,,,,,,,,,,,,,,,,,,,,,,,Alliance=Korea,,,,,,,,,,,,,,,,,,,,,,,,,,
+VectorOrigin,,,,Launcher=发射者,,,,,,,,,,,,,,,,,,,,,,,,,,French=France,,,,,,,,,,,,,,,,,,,,,,,,,,
+VectorOrigin,,,,Source=此AE的来源,,,,,,,,,,,,,,,,,,,,,,,,,,British=Great Britain,,,,,,,,,,,,,,,,,,,,,,,,,,
+VectorOrigin,,,,Self=自身，但是FLH偏移,,,,,,,,,,,,,,,,,,,,,,,,,,Germans=Germany,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,选项,9,,FASTER=移速加成,,,,,,,,,,,,,,,,,,,,,,,,,,Confederation=Cuba,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,STRONGER=伤害减免,,,,,,,,,,,,,,,,,,,,,,,,,,Africans=Libya,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,FIREPOWER=火力加成,,,,,,,,,,,,,,,,,,,,,,,,,,Arabs=Iraq,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,SCATTER=自动散开,,,,,,,,,,,,,,,,,,,,,,,,,,Russians=Soviet Russia,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,ROF=开火速度加成,,,,,,,,,,,,,,,,,,,,,,,,,,YuriCountry=Yuri,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,SIGHT=视野加成,,,,,,,,,,,,,,,,,,,,,,,,,,Amphibious= Amphibious can be repaired by both the Shipyard and the Service Depot,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,CLOAK=隐形,,,,,,,,,,,,,,,,,,,,,,,,,,AmphibiousCrusher=Amphibious and attempts to crush infantry,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,GUARD_AREA=区域守卫,,,,,,,,,,,,,,,,,,,,,,,,,,AmphibiousDestroyer=Amphibious and attempts to destroy obstacles (trees sandbags barbed wire) one of the reasons amphibious infantry get stuck on trees,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,CRUSHER=可以碾压,,,,,,,,,,,,,,,,,,,,,,,,,,Crusher=Land and attempts to crush infantry,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,SELF_HEAL=自动回血,,,,,,,,,,,,,,,,,,,,,,,,,,CrusherAll=Land and attempts to crush everything including walls according to Crusher determines whether to pass through walls or forcibly crush walls that cannot be crushed (the statement that actually determines whether it is advanced crushing),,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,EXPLODES=死亡爆炸,,,,,,,,,,,,,,,,,,,,,,,,,,Destroyer=Land and attempts to destroy obstacles and crush sandbags,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,RADAR_INVISIBLE=雷达上不可见,,,,,,,,,,,,,,,,,,,,,,,,,,Fly=Flying unrestricted pathfinding will cause miners to be unable to manually return to the refinery fixed in PhobosBuild48 will cause vehicles to be unable to enter buildings,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,SENSORS=探测隐形,,,,,,,,,,,,,,,,,,,,,,,,,,Infantry=Land normal infantry,,,,,,,,,,,,,,,,,,,,,,,,,,
+Abilities,,,,FEARLESS=无畏,,,,,,,,,,,,,,,,,,,,,,,,,,InfantryDestroyer=Land infantry attempts to destroy obstacles,,,,,,,,,,,,,,,,,,,,,,,,,,
+Land,选项,9,NONE,Clear=Clear,,,,,,,,,,,,,,,,,,,,,,,,,,Normal=Land and attempts to destroy terrain obstacles and crush infantry,,,,,,,,,,,,,,,,,,,,,,,,,,
+Land,,,,Road=Road,,,,,,,,,,,,,,,,,,,,,,,,,,Subterannean=For burrowing vehicles attempts to burrow when moving long distances when not burrowing similar to Crusher when used as a miner and surrounded by water or cliffs cannot correctly find the refinery fixed in PhobosBuild49,,,,,,,,,,,,,,,,,,,,,,,,,,
+Land,,,,Water=Water,,,,,,,,,,,,,,,,,,,,,,,,,,Water=Only pathfinds in water,,,,,,,,,,,,,,,,,,,,,,,,,,
+Land,,,,Rock=Rock,,,,,,,,,,,,,,,,,,,,,,,,,,WaterBeach=Can pathfind in water and on beaches,,,,,,,,,,,,,,,,,,,,,,,,,,
+Land,,,,Wall=Wall,,,,,,,,,,,,,,,,,,,,,,,,,,Target=Projectile's intended target,,,,,,,,,,,,,,,,,,,,,,,,,,
+Land,,,,Tiberium=Tiberium,,,,,,,,,,,,,,,,,,,,,,,,,,Launcher=Launcher,,,,,,,,,,,,,,,,,,,,,,,,,,
+Land,,,,Beach=Beach,,,,,,,,,,,,,,,,,,,,,,,,,,Source=The source of this AE,,,,,,,,,,,,,,,,,,,,,,,,,,
+Land,,,,Rough=Rough,,,,,,,,,,,,,,,,,,,,,,,,,,Self=Self but with FLH offset,,,,,,,,,,,,,,,,,,,,,,,,,,
+Land,,,,Ice=Ice,,,,,,,,,,,,,,,,,,,,,,,,,,FASTER=Movement speed bonus,,,,,,,,,,,,,,,,,,,,,,,,,,
+Land,,,,Railroad=Railroad,,,,,,,,,,,,,,,,,,,,,,,,,,STRONGER=Damage reduction,,,,,,,,,,,,,,,,,,,,,,,,,,
+Land,,,,Tunnel=Tunnel,,,,,,,,,,,,,,,,,,,,,,,,,,FIREPOWER=Firepower bonus,,,,,,,,,,,,,,,,,,,,,,,,,,
+Land,,,,Weeds=Weeds,,,,,,,,,,,,,,,,,,,,,,,,,,SCATTER=Auto scatter,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,选项,4,Attack,Attack=攻击,,,,,,,,,,,,,,,,,,,,,,,,,,ROF=Rate of fire bonus,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Move=移动,,,,,,,,,,,,,,,,,,,,,,,,,,SIGHT=Sight bonus,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Guard=守卫,,,,,,,,,,,,,,,,,,,,,,,,,,CLOAK=Cloak,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Enter=进入建筑或车,,,,,,,,,,,,,,,,,,,,,,,,,,GUARD_AREA=Area guard,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Capture=占领,,,,,,,,,,,,,,,,,,,,,,,,,,CRUSHER=Can Crush,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,AreaGuard=区域守卫,,,,,,,,,,,,,,,,,,,,,,,,,,SELF_HEAL=Auto Heal,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Stop=停止,,,,,,,,,,,,,,,,,,,,,,,,,,EXPLODES=Explodes on Death,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Hunt=猎杀,,,,,,,,,,,,,,,,,,,,,,,,,,RADAR_INVISIBLE=Invisible on Radar,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Unload=部署,,,,,,,,,,,,,,,,,,,,,,,,,,SENSORS=Detects Stealth,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Sleep=睡觉,,,,,,,,,,,,,,,,,,,,,,,,,,FEARLESS=Fearless,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Sabotage=C4任务,,,,,,,,,,,,,,,,,,,,,,,,,,Clear=Clear,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Construction=播放建造动画,,,,,,,,,,,,,,,,,,,,,,,,,,Road=Road,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Selling=建筑出售,,,,,,,,,,,,,,,,,,,,,,,,,,Water=Water,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Repair=维修厂维修,,,,,,,,,,,,,,,,,,,,,,,,,,Rock=Rock,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Rescue=救援，意味不明,,,,,,,,,,,,,,,,,,,,,,,,,,Wall=Wall,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Missile=核弹发射井发射,,,,,,,,,,,,,,,,,,,,,,,,,,Tiberium=Tiberium,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Harmless=无威胁,,,,,,,,,,,,,,,,,,,,,,,,,,Beach=Beach,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Open=大门类建筑打开,,,,,,,,,,,,,,,,,,,,,,,,,,Rough=Rough,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Patrol=路径点巡逻,,,,,,,,,,,,,,,,,,,,,,,,,,Ice=Ice,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Eaten=进入回收站,,,,,,,,,,,,,,,,,,,,,,,,,,Railroad=Railroad,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,QMove=路径点移动,,,,,,,,,,,,,,,,,,,,,,,,,,Tunnel=Tunnel,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Retreat=跑路,,,,,,,,,,,,,,,,,,,,,,,,,,Weeds=Weeds,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Sticky=类Guard，但是不动,,,,,,,,,,,,,,,,,,,,,,,,,,Attack=Attack,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Harvest=挖矿,,,,,,,,,,,,,,,,,,,,,,,,,,Move=Move,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Return=挖矿返回,,,,,,,,,,,,,,,,,,,,,,,,,,Guard=Guard,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mission,,,,Ambush=埋伏,,,,,,,,,,,,,,,,,,,,,,,,,,Enter=Enter building or vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,
+CumulativeOptions,选项,4,NIPPLE,NIPPLE=不可叠加,,,,,,,,,,,,,,,,,,,,,,,,,,Capture=Capture,,,,,,,,,,,,,,,,,,,,,,,,,,
+CumulativeOptions,,,,YEAAAAAAAAH=无限叠加,,,,,,,,,,,,,,,,,,,,,,,,,,AreaGuard=Area Guard,,,,,,,,,,,,,,,,,,,,,,,,,,
+CumulativeOptions,,,,AssWeCan=每个单位一个,,,,,,,,,,,,,,,,,,,,,,,,,,Stop=Stop,,,,,,,,,,,,,,,,,,,,,,,,,,
+CumulativeOptions,,,,Hentai=每个阵营一个,,,,,,,,,,,,,,,,,,,,,,,,,,Hunt=Hunt,,,,,,,,,,,,,,,,,,,,,,,,,,
+None,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Unload=Deploy,,,,,,,,,,,,,,,,,,,,,,,,,,
+Flak,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Sleep=Sleep,,,,,,,,,,,,,,,,,,,,,,,,,,
+Plate,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Sabotage=C4 Mission,,,,,,,,,,,,,,,,,,,,,,,,,,
+Light,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Construction=Play construction animation,,,,,,,,,,,,,,,,,,,,,,,,,,
+Medium,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Selling=Building sale,,,,,,,,,,,,,,,,,,,,,,,,,,
+Heavy,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Repair=Repair at repair depot,,,,,,,,,,,,,,,,,,,,,,,,,,
+Wood,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Rescue=Rescue meaning unknown,,,,,,,,,,,,,,,,,,,,,,,,,,
+Steel,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Missile=Nuclear missile silo launch,,,,,,,,,,,,,,,,,,,,,,,,,,
+Concrete,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Harmless=No threat,,,,,,,,,,,,,,,,,,,,,,,,,,
+special_1,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Open=Gate building opens,,,,,,,,,,,,,,,,,,,,,,,,,,
+special_2,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Patrol=Waypoint patrol,,,,,,,,,,,,,,,,,,,,,,,,,,
+F,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Eaten=Enter recycling center,,,,,,,,,,,,,,,,,,,,,,,,,,
+L,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,QMove=Waypoint move,,,,,,,,,,,,,,,,,,,,,,,,,,
+H,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Retreat=Run away,,,,,,,,,,,,,,,,,,,,,,,,,,
+护甲名称,引用语句,10;16,,,,,,,,,,,,,,,,,,,,,,,,,,,,Sticky=Guard-like but doesn't move,,,,,,,,,,,,,,,,,,,,,,,,,,
+比例,数值,,100,,,,,,,,,,,,,,,,,,,,,,,,,,,Harvest=Mining,,,,,,,,,,,,,,,,,,,,,,,,,,
+强行攻击,布尔,8,no,,,,,,,,,,,,,,,,,,,,,,,,,,,Return=Return from mining,,,,,,,,,,,,,,,,,,,,,,,,,,
+还击,布尔,8,no,,,,,,,,,,,,,,,,,,,,,,,,,,,Ambush=Ambush,,,,,,,,,,,,,,,,,,,,,,,,,,
+主动攻击,布尔,8,no,,,,,,,,,,,,,,,,,,,,,,,,,,,NIPPLE=Not stackable,,,,,,,,,,,,,,,,,,,,,,,,,,
+装甲名称,文本框,14;16,,,,,,,,,,,,,,,,,,,,,,,,,,,,YEAAAAAAAAH=Infinite stacking,,,,,,,,,,,,,,,,,,,,,,,,,,
+弹头比例（写%）/父类型,文本框,,,,,,,,,,,,,,,,,,,,,,,,,,,,,AssWeCan=One per unit,,,,,,,,,,,,,,,,,,,,,,,,,,
+生产时间,数值,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,Hentai=One per faction,,,,,,,,,,,,,,,,,,,,,,,,,,
+生产成本,数值,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+建造数量限制,数值,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Buff的个数,文本框,,114,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+接受的BUFF,连线,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Buff的持续时间,文本框,,114,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+订单上限,文本框,,114,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+触发ID,随机字符串,11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TechLevel,选项,,1,TRUE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TechLevel,,,,1=1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TechLevel,,,,2=2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TechLevel,,,,3=3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TechLevel,,,,4=4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TechLevel,,,,5=5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TechLevel,,,,6=6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TechLevel,,,,7=7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Armor Name
+TechLevel,,,,8=8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ratio
+TechLevel,,,,9=9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Force Attack
+TechLevel,,,,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Return Fire
+TechLevel,,,,11=11,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Aggressive Attack
+阵营,选项,,0,0=盟,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Armor Type
+阵营,,,,1=苏,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Warhead Ratio & Parent
+阵营,,,,2=尤,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Build Time
+初始帧,数值,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Build Cost
+总帧数,数值,,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Build Limit
+两帧间隔,数值,,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Buff Count
+小地图初始帧,数值,,-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Accepted Buffs
+小地图帧数,数值,,-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Buff Duration
+触发点X,选项,4,Left,left,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Order Limit
+触发点X,,,,top,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger ID
+触发点X,,,,right,,,,,,,,,,,,,,,,,,,,,,,,,,TRUE,,,,,,,,,,,,,,,,,,,,,,,,,,
+触发点Y,选项,4,top,Top,,,,,,,,,,,,,,,,,,,,,,,,,,1=1,,,,,,,,,,,,,,,,,,,,,,,,,,
+触发点Y,,,,Middle,,,,,,,,,,,,,,,,,,,,,,,,,,2=2,,,,,,,,,,,,,,,,,,,,,,,,,,
+触发点Y,,,,Bottom,,,,,,,,,,,,,,,,,,,,,,,,,,3=3,,,,,,,,,,,,,,,,,,,,,,,,,,
+自由节点,连线,15;14;16,,,,,,,,,,,,,,,,,,,,,,,,,,,,4=4,,,,,,,,,,,,,,,,,,,,,,,,,,
+语句包,连线,15;16,,,,,,,,,,,,,,,,,,,,,,,,,,,,5=5,,,,,,,,,,,,,,,,,,,,,,,,,,
+集线器节点,连线,15;14;16,,,,,,,,,,,,,,,,,,,,,,,,,,,,6=6,,,,,,,,,,,,,,,,,,,,,,,,,,
+字符串项,文本框,14;16,,,,,,,,,,,,,,,,,,,,,,,,,,,,7=7,,,,,,,,,,,,,,,,,,,,,,,,,,
+单值项,文本框,14,,,,,,,,,,,,,,,,,,,,,,,,,,,,8=8,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9=9,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10=10,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11=11,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0=Allied,,,,,,,,,,,,,,,,,,,,,,,,,,House
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1=Soviet,,,,,,,,,,,,,,,,,,,,,,,,,,House
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2=Yuri,,,,,,,,,,,,,,,,,,,,,,,,,,House
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Start Frame
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Total Frames
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Frame Interval
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Minimap Start Frame
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Minimap Frames
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,left,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Point X
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,top,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Point X
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,right,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Point X
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Top,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Point Y
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Middle,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Point Y
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Bottom,,,,,,,,,,,,,,,,,,,,,,,,,,Trigger Point Y
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Free Node
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Statement Pack
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Hub Node
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,String Item
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Single Value

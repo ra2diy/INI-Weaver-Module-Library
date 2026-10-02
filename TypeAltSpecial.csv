@@ -16,7 +16,7 @@
 ;【列含义】键名 | 链接种类 | 链接限制 | 短描述 | 长描述 | 连线颜色 | 输入类型 | 许可模块类型(可空),,,,,,,,
 ;【实例】将军的 Object … End、RA3 的 <X> … </X> 就是靠 UseFormattedFlagPack + FormattedFlagPack 还原的,,,,,,,,
 ;────────────────────────────────────────────────────────────────────────,,,,,,,,
-AresInherit,_AnyType,-1,织网者内置Ares继承,会创建[a]:[b]格式的继承,3250FF,Link,,
+AresInherit,_AnyType,10,织网者内置Ares继承,会创建[a]:[b]格式的继承,3250FF,Link,,
 UseFlagPack,_AnyType,-1,语句包节点,调用一个语句包。语句包之间互相应当串联,808080,ImportAndMerge,,
 UseGlobalFlagPack,_AnyType,1,全局语句包节点,引用 modproj 里的全局常量组（编译与导出时把包内容内联到引用者内容底下）,808080,ImportAndMerge,,
 ;↓ 带缩进的语句包（块）：展开成「块头 + 内容缩进一层 + 块尾」；限制 -1 = 一行能连多个子包,,,,,,,,
