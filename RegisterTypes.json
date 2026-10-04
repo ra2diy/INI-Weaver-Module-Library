@@ -18,7 +18,10 @@
         "BuildingTypes": {
             "FrameColor": [ 129, 179, 104 ],
             "Name": "建筑",
-            "NeedRegisterList": true
+            "NeedRegisterList": true,
+            // HasIndex：这一类注册表的成员在游戏眼里都有隐含 index（引擎读**行号**，第一行就是 0）。
+            // 配了它，引擎把成员序列整理成从 0 起、连续、无断号的编号挂到每个块上（见 regtypes.js 的 hasIndex）。
+            "HasIndex": true
         },
         "TunnelTypes": {
             "FrameColor": [ 129, 179, 104 ],
@@ -60,6 +63,8 @@
             "Name": "动画/抛射体图形",
             "NeedRegisterList": true,
             "UseRegName": true,
+            // HasIndex：成员带隐含 index（引擎读**行号**），成因见 regtypes.js 的 hasIndex。
+            "HasIndex": true,
 			"ExportToINI": "Art",
 			"RegisterExportToINI":"Rules",
             /* KeepNameWhenCopied —— **复制粘贴**时保不保原名（画布 Ctrl+C/Ctrl+V、右键复制）。
@@ -431,6 +436,26 @@
             "NeedRegisterList": false,
             "UseRegName": true
         },
+        // 「索引式注册表」（用户 2026-10-02 定）：判类规则里【块名 → indexedRegister】点到的那些段，
+        // 单独输出时成员写【0=名字】【1=名字】（编号从 0 起、按成员先后连续），而不是【名字=名字】。
+        // 为什么要它：有些注册表段游戏是【按键的编号】读的（案例 AIScriptsList）。
+        // 这个类别自己不产段（NeedRegisterList=false），只当【索引式】的标记。
+        // 认法见 js/core/exportini.js 的 buildRegisterSections（类别自己配 IsIndexed 也走同一套）。
+        "indexedRegister": {
+            "FrameColor": [ 179, 179, 179 ],
+            "Name": "索引注册表",
+            "NeedRegisterList": false,
+            "IsIndexed": true,
+            "UseOwnName": true,			
+            // HasIndex 与 IsIndexed 是**两件事**（格式 vs 逻辑），显式分开写（用户 2026-10-02 定：不搞耦合）：
+            // 这里要写【0=名字】所以配了 IsIndexed；成员本身也有隐含 index 号，所以同时配 HasIndex。
+            "HasIndex": true,
+            // 「链到键」（用户 2026-10-03 定）：这一类的块**每一行**都自动是「链入节点」
+            // （画布上画成黄色空心圆），别的语句连上来时抄走的是**行的键**，不是行的值
+            // （案例：AITargetingTypes 的【1=HTNK】【2=LTNK,APC】 → 连上去抄到的是【1】【2】）。
+            // 引擎侧见 js/core/regtypes.js 的 linkToKeyKindsOf 与 js/core/project.js 的 defaultInNodesOf。
+            // "LinkToKey": true
+        },
         "Tiberiums": {
             "FrameColor": [ 179, 179, 179 ],
             "Name": "矿石",
@@ -551,6 +576,11 @@
             "ExportToINI": "AI",
             "NeedRegisterList": true,
             "UseRegName": false,
+            // HasIndex：成员带隐含 index（引擎读**行号**），成因见 regtypes.js 的 hasIndex。
+            // ⚠️ AI 本的【[ScriptTypes]】与 Rules 本的【[AIScriptsList]】是同一批成员，index 也是同一套。
+            "HasIndex": true,
+            // 除了自己那段【[ScriptTypes]】（AI 本），成员名再出一段到 Rules 本的【[AIScriptsList]】
+            // "ExtraRegisterLists": [ { "Name": "AIScriptsList", "Ini": "Rules" } ],
             "DefaultLinks": {
                 "TeamTypes": "Script"
             }
@@ -559,10 +589,11 @@
             "FrameColor": [ 179, 54, 179 ],
             "Name": "AI触发",
             "ExportToINI": "AI",
-            "NeedRegisterList": true,
+            "NeedRegisterList": false,	
             "UseRegName": false,
             "每个条目视为一个块": true,
-            "CollectContentTo": "[AITriggerTypes]"
+            "CollectContentTo": "[AITriggerTypes]",
+			"CollectContentToINI": "AI"
         },
         "VoxelAnims": {
             "FrameColor": [ 104, 154, 179 ],

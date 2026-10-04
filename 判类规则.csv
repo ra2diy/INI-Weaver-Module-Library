@@ -44,7 +44,7 @@
 引用,*.ini,EliteSecondary,,WeaponTypes,
 引用,*.ini,Weapon1,,WeaponTypes,
 引用,*.ini,EliteWeapon1,,WeaponTypes,
-块特征,*.ini,Buildable,,TerrainTypes,
+块特征,*.ini,Buildable,,Register,
 块特征,*.ini,Foundation,,Art_SHPBuilding,
 块特征,*.ini,AnimRate,,Animations,
 块特征,*.ini,Verses,,Warheads,
@@ -62,6 +62,7 @@
 块名,,,MouseCursors,Register,
 块名,,,ArmorTypes,Register,
 块名,,,$include,Register,
+块名,,,AIScriptsList,indexedRegister,段名是 AIScriptsList 的注册表段走索引式（成员写成 0=名字、1=名字）—— 它是 ScriptTypes 的额外注册表段，游戏按键的编号读
 块特征,*.ini,CounterTrigger.*,,CounterTrigger,块里有以『CounterTrigger.』开头的语句 → AE 子类 CounterTrigger
 块特征,*.ini,DamageReaction.*,,DamageReaction,块里有以『DamageReaction.』开头的语句 → AE 子类 DamageReaction
 块特征,*.ini,OverrideWeapon.*,,OverrideWeapon,块里有以『OverrideWeapon.』开头的语句 → AE 子类 OverrideWeapon
@@ -97,3 +98,4 @@
 块特征,*.ini,ECM.*,,ECM,块里有以『ECM.』开头的语句 → AE 子类 ECM
 块特征,*.ini,Primary,,TechnoTypes,
 块特征,*.ini,Weapon1,,TechnoTypes,
+块名,,,AITargetTypes,indexedRegister,

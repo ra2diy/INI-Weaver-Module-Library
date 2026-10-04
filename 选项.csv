@@ -15,3 +15,13 @@
 14,自动链入,,,
 15,连线,_AnyType,,255;255;180
 16,不显示短描述,,,
+17,连线,ScriptTypes,-1,255;0;255
+18,连线,TechnoTypes,-1,0;255;0
+19,CollectAndIndexTo,AIScriptsList,Rules,255;0;255
+20,CollectAndIndexTo,AITargetTypes,Rules,255;0;255
+21,自动链入,键,FFD800,
+22,档位路由,,,
+23,连线,BuildingTypes.Index,1,0;255;0,0
+24,连线,BuildingTypes.Index,1,0;255;0,65536
+25,连线,BuildingTypes.Index,1,0;255;0,131072
+26,连线,BuildingTypes.Index,1,0;255;0,196608

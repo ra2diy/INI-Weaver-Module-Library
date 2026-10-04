@@ -25,6 +25,8 @@ UseFormattedFlagPack,_AnyType,-1,格式化语句包节点,调用一个语句包�
 SingleVal,_AnyType,0,单值块,单值块,007F7F,SingleVal,,
 StrEntry.,_AnyType,1,字符串列表项,字符串列表项,FFFFC0,StringListEntry,,
 Collector.,_AnyType,-1,集线器,集线器,FFFFC0,Collector,,
+索引收集.,_AnyType,-1,索引收集器,索引收集器,FFFFC0,索引收集,,
+单位收集.,_AnyType,-1,单位收集器,单位收集器,FFFFC0,单位收集,,
 MultColl.,_AnyType,0,顺序集线器,顺序集线器,FFFFC0,MultipleCollector,,
 MultColl1,_AnyType,1,顺序集线器,顺序集线器,FFFFC0,MultipleCollector.1,,
 InjectInto,_AnyType,-1,注入,把值写在后面而不是相加,404040,,,
