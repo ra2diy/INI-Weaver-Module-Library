@@ -371,6 +371,21 @@
 
             }
         },
+        "Art_Vox": {
+            "FrameColor": [ 104, 154, 179 ],
+            "Name": "MagicaVoxel素材",
+            "ExportToINI": "Art",
+            "NeedRegisterList": false,
+            "UseRegName": true,
+            "KeepNameWhenCopied": true,
+            "DefaultLinks": {
+                "VehicleTypes": "Image",
+                "ProjectileTypes": "Image",
+                "AircraftTypes": "Image",
+                "VoxelAnims": "Image"
+
+            }
+        },		
         "Art_SHPInfantry": {
             "FrameColor": [ 104, 129, 179 ],
             "Name": "步兵素材",
@@ -739,7 +754,7 @@
 			"FrameColor": [ 79, 154, 179 ],
 			"ExportToINI":"Art",
             "Name": "图像",
-            "Types": [ "Art_Voxel", "Art_SHPInfantry", "Art_SHPVehicle", "Art_SHPBuilding", "Animations" ]
+            "Types": [ "Art_Voxel", "Art_SHPInfantry", "Art_SHPVehicle", "Art_SHPBuilding", "Animations", "Art_Vox" ]
 
         },
 		
