@@ -38,7 +38,8 @@
                 "AutoWeapon": "AutoWeapon.Types",
                 "ExtraFire": "ExtraFire.Primary",
                 "Revenge": "Revenge.Types",
-                "ProjectileTypes": "ShrapnelWeapon"
+                "ProjectileTypes": "ShrapnelWeapon",
+				"Animations":"Weapon"
             }
         },
         "Warheads": {

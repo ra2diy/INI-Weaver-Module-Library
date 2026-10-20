@@ -25,3 +25,4 @@
 24,连线,BuildingTypes.Index,1,0;255;0,65536
 25,连线,BuildingTypes.Index,1,0;255;0,131072
 26,连线,BuildingTypes.Index,1,0;255;0,196608
+27,嵌套共用值位,custom,,

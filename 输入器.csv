@@ -233,7 +233,7 @@ AITargeting,,,,Attack=类似于NoTarget，但是会在所属方被攻击时启�
 AITargeting,,,,LowPower=类似于NoTarget，但是会在所属方处于低电力时启动,,,,,,,,,,,,,,,,,,,,,,,,,,AFV=Vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,,
 AITargeting,,,,LowPowerAttack=把上面那两个结合在一起,,,,,,,,,,,,,,,,,,,,,,,,,,Recon=Recon Vehicle,,,,,,,,,,,,,,,,,,,,,,,,,,,
 AITargeting,,,,LightningRandom=随机瞄准，仍然读取指示者和抑制者，可以正常生成对象,,,,,,,,,,,,,,,,,,,,,,,,,,Soldier=Infantry,,,,,,,,,,,,,,,,,,,,,,,,,,,
-其他装甲,可手填选项,4,,none=无装甲,,,,,,,,,,,,,,,,,,,,,,,,,,None=Not Used,,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,复杂选项,4;27,,none=无装甲,,,,,,,,,,,,,,,,,,,,,,,,,,None=Not Used,,,,,,,,,,,,,,,,,,,,,,,,,,,
 其他装甲,,,,flak=步兵轻甲,,,,,,,,,,,,,,,,,,,,,,,,,,Nuke=Aggressive or specified by trigger,,,,,,,,,,,,,,,,,,,,,,,,,,,
 其他装甲,,,,plate=步兵中甲,,,,,,,,,,,,,,,,,,,,,,,,,,LightningStorm=Aggressive cannot be used together with other Lightning Storms,,,,,,,,,,,,,,,,,,,,,,,,,,,
 其他装甲,,,,light=单位轻甲,,,,,,,,,,,,,,,,,,,,,,,,,,PsychicDominator=largest enemy unit cluster,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -244,6 +244,7 @@ AITargeting,,,,LightningRandom=随机瞄准，仍然读取指示者和抑制者�
 其他装甲,,,,concrete=建筑混凝土甲,,,,,,,,,,,,,,,,,,,,,,,,,,DropPod=open ground around the enemy base center,,,,,,,,,,,,,,,,,,,,,,,,,,,
 其他装甲,,,,special_1=特殊甲1,,,,,,,,,,,,,,,,,,,,,,,,,,Offensive=Aggressive,,,,,,,,,,,,,,,,,,,,,,,,,,,
 其他装甲,,,,special_2=特殊甲2,,,,,,,,,,,,,,,,,,,,,,,,,,MultiMissile=Select target based on threat value of nearby units,,,,,,,,,,,,,,,,,,,,,,,,,,,
+其他装甲,,,,,,,,,,,,,,,custom=自定义；0=【护甲名称】,,,,,,,,,,,,,,,,,,,,,,,,,,custom=Custom,,,,,,,,,,,,,,,,
 CounterMath,选项,4,ASS,ASS=增加,,,,,,,,,,,,,,,,,,,,,,,,,,HunterSeeker=Like NoTarget but will attack enemy units this only works for some superweapons,,,,,,,,,,,,,,,,,,,,,,,,,,,
 CounterMath,,,,INTERCOURSE=定值,,,,,,,,,,,,,,,,,,,,,,,,,,NoTarget=Strikes randomly will cause superweapons such as Deliver to fail to generate objects normally,,,,,,,,,,,,,,,,,,,,,,,,,,,
 CounterMath,,,,SHIT=减少,,,,,,,,,,,,,,,,,,,,,,,,,,Stealth=Only attacks stealth units affected by SW.RequiresTarget and SW.RequiresHouse,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -471,3 +472,4 @@ TechLevel,,,,11=11,,,,,,,,,,,,,,,,,,,,,,,,,,11=11,,,,,,,,,,,,,,,,,,,,,,,,,,Armor
 建筑索引连131072,连线,25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 建筑索引连196608,连线,26,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 建筑档位,复杂选项,16;22,,0=最小威胁；0=【建筑索引连0】,1=最大威胁；0=【建筑索引连65536】,2=最近；0=【建筑索引连131072】,3=最远；0=【建筑索引连196608】,,,,,,,,,,,,,,,,,,,,,,,0=Min threat；0=【建筑索引连0】,1=Max threat；0=【建筑索引连65536】,2=Closest；0=【建筑索引连131072】,3=Farthest；0=【建筑索引连196608】,,,,,,,,,,,,,,,,,,,,,,,,
+
