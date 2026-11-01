@@ -356,7 +356,24 @@
             "Name": "ECM",
             "NeedRegisterList": false
         },
-
+        "Copy": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Copy",
+            "NeedRegisterList": false
+        },		
+        "Trace": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "Trace",
+            "NeedRegisterList": false
+        },
+        "DamageControl": {
+            "FrameColor": [ 129, 79, 179 ],
+            "UseOwnName": true,
+            "Name": "DamageControl",
+            "NeedRegisterList": false
+        },		
         "Art_Voxel": {
             "FrameColor": [ 104, 154, 179 ],
             "Name": "VXL素材",
@@ -786,7 +803,7 @@
             "Name": "AE",
 			"FrameColor": [ 129, 79, 179 ],
 			"ExportToINI":"Rules",
-            "Types": [ "AEAnim", "Status", "Stack", "Info", "Stand", "AttackBeacon", "AutoWeapon", "DamageSelf", "Broadcast", "Host", "Paintball", "DestroySelf", "Transform", "BlackHole", "GiftBox", "Immune", "Revenge", "Vampire", "ExtraFire", "FireSuperWeapon", "NoMoneyNoTalk", "DisableWeapon", "OverrideWeapon", "NoSelect", "Freeze", "DamageReaction", "Teleport", "DestroyAnim", "Pump", "Scatter", "Bounce", "ECM","Counter","CounterTrigger","Vector" ],
+            "Types": [ "AEAnim", "Status", "Stack", "Info", "Stand", "AttackBeacon", "AutoWeapon", "DamageSelf", "Broadcast", "Host", "Paintball", "DestroySelf", "Transform", "BlackHole", "GiftBox", "Immune", "Revenge", "Vampire", "ExtraFire", "FireSuperWeapon", "NoMoneyNoTalk", "DisableWeapon", "OverrideWeapon", "NoSelect", "Freeze", "DamageReaction", "Teleport", "DestroyAnim", "Pump", "Scatter", "Bounce", "ECM","Counter","CounterTrigger","Vector","Copy","Trace","DamageControl" ],
 			"DefaultLinks": {
                 "WeaponTypes": "Feedback.AttachEffects",
                 "Warheads": "AttachEffectTypes",
